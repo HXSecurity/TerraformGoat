@@ -1,0 +1,32 @@
+name: Lint
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "**.md"
+      - "**.tf"
+      - ".github/workflows/lint.yml"
+  pull_request:
+    branches: [main]
+    paths:
+      - "**.md"
+      - "**.tf"
+      - ".github/workflows/lint.yml"
+
+jobs:
+  lint:
+    name: Lint
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Check out"
+        uses: actions/checkout@v2
+
+      - name: Lint markdown
+        uses: nosborn/github-action-markdown-cli@v3.0.1
+        with:
+          files: .
+          config_file: .markdownlint.yaml
+
+      - name: Lint Terraform
+        uses: actionshub/terraform-lint@main

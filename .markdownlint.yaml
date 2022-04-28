@@ -1,0 +1,8 @@
+# Default state for all rules
+default: true
+
+# MD013/line-length - Allow long lines
+MD013: false
+
+# MD041 - Display Caution block before a top-level heading
+MD041: false
