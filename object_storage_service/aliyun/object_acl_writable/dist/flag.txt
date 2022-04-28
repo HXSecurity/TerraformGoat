@@ -1,0 +1,1 @@
+flag{Hx_Cloud_Security_Lab}
