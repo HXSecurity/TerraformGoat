@@ -2,7 +2,7 @@
 
 English | [中文](./README_CN.md)
 
-This is a script that helps you quickly build ACL read/write scenarios for storage bucket objects 
+This is a script that helps you quickly build ACL read/write scenarios for storage bucket objects
 
 Although you may not encounter it in a real situation, but have fun!
 
