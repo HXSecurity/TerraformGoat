@@ -8,28 +8,28 @@ Cloud Platform、Microsoft Azure 六个云厂商的云场景漏洞搭建。
 
 ## 目前所支持的靶场环境
 
-|序号| 云服务类型 | 云厂商 | 漏洞环境 |
-| :----:| :----:| :---: | :----: |
-| 1 |对象存储|腾讯云|[Bucket 对象遍历](https://github.com/HXSecurity/TerraformGoat/tree/main/object_storage_service/tencentcloud/bucket_object_traversal)|
-| 2 |对象存储|腾讯云|[任意文件上传](https://github.com/HXSecurity/TerraformGoat/tree/main/object_storage_service/tencentcloud/unrestricted_file_upload)|
-|3| 对象存储 | 阿里云 | [Bucket 对象遍历](https://github.com/HXSecurity/TerraformGoat/tree/main/object_storage_service/aliyun/bucket_object_traversal) |
-|4| 对象存储 | 阿里云 | [Object ACL 可写](https://github.com/HXSecurity/TerraformGoat/tree/main/object_storage_service/aliyun/object_acl_writable) |
-|5| 对象存储 | 阿里云 | [特殊的 Bucket 策略](https://github.com/HXSecurity/TerraformGoat/tree/main/object_storage_service/aliyun/special_bucket_policy) |
-|6| 对象存储 | 阿里云 | [任意文件上传](https://github.com/HXSecurity/TerraformGoat/tree/main/object_storage_service/aliyun/unrestricted_file_upload) |
-| 7 | 对象存储 | 华为云 | [Object ACL 可写](https://github.com/HXSecurity/TerraformGoat/tree/main/object_storage_service/huaweicloud/object_acl_writable) |
-| 8 |对象存储|华为云|[特殊的 Bucket 策略](https://github.com/HXSecurity/TerraformGoat/tree/main/object_storage_service/huaweicloud/special_bucket_policy)|
-| 9 |对象存储|华为云|[任意文件上传](https://github.com/HXSecurity/TerraformGoat/tree/main/object_storage_service/huaweicloud/unrestricted_file_upload)|
-| 10 |对象存储|华为云|[Bucket 对象遍历](https://github.com/HXSecurity/TerraformGoat/tree/main/object_storage_service/huaweicloud/bucket_object_traversal)|
-| 11 |对象存储|Amazon Web Services|[Bucket 对象遍历](https://github.com/HXSecurity/TerraformGoat/tree/main/object_storage_service/aws/bucket_object_traversal)|
-| 12 |对象存储|Amazon Web Services|[特殊的 Bucket 策略](https://github.com/HXSecurity/TerraformGoat/tree/main/object_storage_service/aws/special_bucket_policy)|
-| 13 |对象存储|Amazon Web Services|[任意文件上传](https://github.com/HXSecurity/TerraformGoat/tree/main/object_storage_service/aws/unrestricted_file_upload)|
-| 14 |对象存储|Amazon Web Services|[Object ACL 可写](https://github.com/HXSecurity/TerraformGoat/tree/main/object_storage_service/aws/object_acl_writable)|
-| 15 |对象存储|Google Cloud Platform|[Bucket 对象遍历](https://github.com/HXSecurity/TerraformGoat/tree/main/object_storage_service/gcp/bucket_object_traversal)|
-| 16 |对象存储|Google Cloud Platform|[Object ACL 可写](https://github.com/HXSecurity/TerraformGoat/tree/main/object_storage_service/gcp/object_acl_writable)|
-| 17 |对象存储|Google Cloud Platform|[Bucket ACL 可写](https://github.com/HXSecurity/TerraformGoat/tree/main/object_storage_service/gcp/bucket_acl_writable)|
-| 18 |对象存储|Google Cloud Platform|[任意文件上传](https://github.com/HXSecurity/TerraformGoat/tree/main/object_storage_service/gcp/unrestricted_file_upload)|
-| 19 |对象存储|Microsoft Azure|[Blob 公开访问](https://github.com/HXSecurity/TerraformGoat/tree/main/object_storage_service/azure/blob_public_access/)|
-|20| 弹性计算服务 | Amazon Web Services | [EC2 SSRF 漏洞环境](https://github.com/HXSecurity/TerraformGoat/tree/main/elastic_computing_service/aws/ec2_ssrf) |
+| 序号 |         云厂商         |  云服务类型  |                           漏洞环境                           |
+| :--: | :--------------------: | :----------: | :----------------------------------------------------------: |
+|  1   |         腾讯云         |   对象存储   | [Bucket 对象遍历](https://github.com/HXSecurity/TerraformGoat/tree/main/tencentcloud/object_storage_service/bucket_object_traversal) |
+|  2   |         腾讯云         |   对象存储   | [任意文件上传](https://github.com/HXSecurity/TerraformGoat/tree/main/tencentcloud/object_storage_service/unrestricted_file_upload) |
+|  3   |         阿里云         |   对象存储   | [Bucket 对象遍历](https://github.com/HXSecurity/TerraformGoat/tree/main/aliyun/object_storage_service/bucket_object_traversal) |
+|  4   |         阿里云         |   对象存储   | [Object ACL 可写](https://github.com/HXSecurity/TerraformGoat/tree/main/aliyun/object_storage_service/object_acl_writable) |
+|  5   |         阿里云         |   对象存储   | [特殊的 Bucket 策略](https://github.com/HXSecurity/TerraformGoat/tree/main/aliyun/object_storage_service/special_bucket_policy) |
+|  6   |         阿里云         |   对象存储   | [任意文件上传](https://github.com/HXSecurity/TerraformGoat/tree/main/aliyun/object_storage_service/unrestricted_file_upload) |
+|  7   |         华为云         |   对象存储   | [Object ACL 可写](https://github.com/HXSecurity/TerraformGoat/tree/main/huaweicloud/object_storage_service/object_acl_writable) |
+|  8   |         华为云         |   对象存储   | [特殊的 Bucket 策略](https://github.com/HXSecurity/TerraformGoat/tree/main/huaweicloud/object_storage_service/special_bucket_policy) |
+|  9   |         华为云         |   对象存储   | [任意文件上传](https://github.com/HXSecurity/TerraformGoat/tree/main/huaweicloud/object_storage_service/unrestricted_file_upload) |
+|  10  |         华为云         |   对象存储   | [Bucket 对象遍历](https://github.com/HXSecurity/TerraformGoat/tree/main/huaweicloud/object_storage_service/bucket_object_traversal) |
+|  11  |  Amazon  Web Services  |   对象存储   | [Bucket 对象遍历](https://github.com/HXSecurity/TerraformGoat/tree/main/aws/object_storage_service/bucket_object_traversal) |
+|  12  |  Amazon  Web Services  |   对象存储   | [特殊的 Bucket 策略](https://github.com/HXSecurity/TerraformGoat/tree/main/aws/object_storage_service/special_bucket_policy) |
+|  13  |  Amazon  Web Services  |   对象存储   | [任意文件上传](https://github.com/HXSecurity/TerraformGoat/tree/main/aws/object_storage_service/unrestricted_file_upload) |
+|  14  |  Amazon  Web Services  |   对象存储   | [Object ACL 可写](https://github.com/HXSecurity/TerraformGoat/tree/main/aws/object_storage_service/object_acl_writable) |
+|  15  |  Amazon  Web Services  | 弹性计算服务 | [EC2 SSRF 漏洞环境](https://github.com/HXSecurity/TerraformGoat/tree/main/aws/elastic_computing_service/ec2_ssrf) |
+|  16  | Google  Cloud Platform |   对象存储   | [Bucket 对象遍历](https://github.com/HXSecurity/TerraformGoat/tree/main/gcp/object_storage_service/bucket_object_traversal) |
+|  17  | Google  Cloud Platform |   对象存储   | [Object ACL 可写](https://github.com/HXSecurity/TerraformGoat/tree/main/gcp/object_storage_service/object_acl_writable) |
+|  18  | Google  Cloud Platform |   对象存储   | [Bucket ACL 可写](https://github.com/HXSecurity/TerraformGoat/tree/main/gcp/object_storage_service/bucket_acl_writable) |
+|  19  | Google  Cloud Platform |   对象存储   | [任意文件上传](https://github.com/HXSecurity/TerraformGoat/tree/main/gcp/object_storage_service/unrestricted_file_upload) |
+|  20  |    Microsoft  Azure    |   对象存储   | [Blob 公开访问](https://github.com/HXSecurity/TerraformGoat/tree/main/azure/object_storage_service/blob_public_access/) |
 
 ## 安装
 
