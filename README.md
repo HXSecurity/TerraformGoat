@@ -9,7 +9,6 @@ Currently supported cloud vendors include Alibaba Cloud, Tencent Cloud, Huawei C
 
 ## Currently Supported Vulnerability Environments
 
-
 |  ID  | Types Of Cloud Services |   Cloud Service Company   |                    Vulnerable Environment                    |
 | :--: | :---------------------: | :-----------------------: | :----------------------------------------------------------: |
 |  1   |      Tencent Cloud      |      Object Storage       | [Bucket Object Traversal](https://github.com/HXSecurity/TerraformGoat/tree/main/tencentcloud/object_storage_service/bucket_object_traversal) |
