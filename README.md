@@ -9,28 +9,29 @@ Currently supported cloud vendors include Alibaba Cloud, Tencent Cloud, Huawei C
 
 ## Currently Supported Vulnerability Environments
 
-|  ID  |  Types Of Cloud Services  | Cloud Service Company |                    Vulnerable Environment                    |
-| :--: | :-----------------------: | :-------------------: | :----------------------------------------------------------: |
-|  1   |   Object Storage   |   Tencent Cloud | [Bucket Object Traversal](https://github.com/HXSecurity/TerraformGoat/tree/main/object_storage_service/tencentcloud/bucket_object_traversal) |
-|  2   |   Object Storage   |   Tencent Cloud | [Unrestricted File Upload](https://github.com/HXSecurity/TerraformGoat/tree/main/object_storage_service/tencentcloud/unrestricted_file_upload) |
-|  3   |   Object Storage   |   Alibaba Cloud | [Bucket Object Traversal](https://github.com/HXSecurity/TerraformGoat/tree/main/object_storage_service/aliyun/bucket_object_traversal) |
-|  4   |   Object Storage   | Alibaba Cloud | [Object ACL Writable](https://github.com/HXSecurity/TerraformGoat/tree/main/object_storage_service/aliyun/object_acl_writable) |
-|  5   |   Object Storage   |   Alibaba Cloud | [Special Bucket Policy](https://github.com/HXSecurity/TerraformGoat/tree/main/object_storage_service/aliyun/special_bucket_policy) |
-|  6   |   Object Storage   |   Alibaba Cloud | [Unrestricted File Upload](https://github.com/HXSecurity/TerraformGoat/tree/main/object_storage_service/aliyun/unrestricted_file_upload) |
-|  7   |   Object Storage   |    Huawei Cloud | [Object ACL Writable](https://github.com/HXSecurity/TerraformGoat/tree/main/object_storage_service/huaweicloud/object_acl_writable) |
-|  8   |   Object Storage   |    Huawei Cloud | [Special Bucket Policy](https://github.com/HXSecurity/TerraformGoat/tree/main/object_storage_service/huaweicloud/special_bucket_policy) |
-|  9   |   Object Storage   |    Huawei Cloud | [Unrestricted File Upload](https://github.com/HXSecurity/TerraformGoat/tree/main/object_storage_service/huaweicloud/unrestricted_file_upload) |
-|  10  |   Object Storage   |    Huawei Cloud | [Bucket Object Traversal](https://github.com/HXSecurity/TerraformGoat/tree/main/object_storage_service/huaweicloud/bucket_object_traversal) |
-|  11  |   Object Storage   |  Amazon Web Services  | [Bucket Object Traversal](https://github.com/HXSecurity/TerraformGoat/tree/main/object_storage_service/aws/bucket_object_traversal) |
-|  12  |   Object Storage   |  Amazon Web Services  | [Special Bucket Policy](https://github.com/HXSecurity/TerraformGoat/tree/main/object_storage_service/aws/special_bucket_policy) |
-|  13  |   Object Storage   |  Amazon Web Services  | [Unrestricted File Upload](https://github.com/HXSecurity/TerraformGoat/tree/main/object_storage_service/aws/unrestricted_file_upload) |
-|  14  |   Object Storage   |  Amazon Web Services  | [Object ACL Writable](https://github.com/HXSecurity/TerraformGoat/tree/main/object_storage_service/aws/object_acl_writable) |
-|  15  |   Object Storage   | Google Cloud Platform | [Bucket Object Traversal](https://github.com/HXSecurity/TerraformGoat/tree/main/object_storage_service/gcp/bucket_object_traversal) |
-|  16  |   Object Storage   | Google Cloud Platform | [Object ACL Writable](https://github.com/HXSecurity/TerraformGoat/tree/main/object_storage_service/gcp/object_acl_writable) |
-|  17  |   Object Storage   | Google Cloud Platform | [Bucket ACL Writable](https://github.com/HXSecurity/TerraformGoat/tree/main/object_storage_service/gcp/bucket_acl_writable) |
-|  18  |   Object Storage   | Google Cloud Platform | [Unrestricted File Upload](https://github.com/HXSecurity/TerraformGoat/tree/main/object_storage_service/gcp/unrestricted_file_upload) |
-|  19  |   Object Storage   |    Microsoft Azure    | [Blob Public Access](https://github.com/HXSecurity/TerraformGoat/tree/main/object_storage_service/azure/blob_public_access/) |
-|  20  | Elastic Computing Service |  Amazon Web Services  | [EC2 SSRF](https://github.com/HXSecurity/TerraformGoat/tree/main/elastic_computing_service/aws/ec2_ssrf) |
+
+|  ID  | Types Of Cloud Services |   Cloud Service Company   |                    Vulnerable Environment                    |
+| :--: | :---------------------: | :-----------------------: | :----------------------------------------------------------: |
+|  1   |      Tencent Cloud      |      Object Storage       | [Bucket Object Traversal](https://github.com/HXSecurity/TerraformGoat/tree/main/tencentcloud/object_storage_service/bucket_object_traversal) |
+|  2   |      Tencent Cloud      |      Object Storage       | [Unrestricted File Upload](https://github.com/HXSecurity/TerraformGoat/tree/main/tencentcloud/object_storage_service/unrestricted_file_upload) |
+|  3   |      Alibaba Cloud      |      Object Storage       | [Bucket Object Traversal](https://github.com/HXSecurity/TerraformGoat/tree/main/aliyun/object_storage_service/bucket_object_traversal) |
+|  4   |      Alibaba Cloud      |      Object Storage       | [Object ACL Writable](https://github.com/HXSecurity/TerraformGoat/tree/main/aliyun/object_storage_service/object_acl_writable) |
+|  5   |      Alibaba Cloud      |      Object Storage       | [Special Bucket Policy](https://github.com/HXSecurity/TerraformGoat/tree/main/aliyun/object_storage_service/special_bucket_policy) |
+|  6   |      Alibaba Cloud      |      Object Storage       | [Unrestricted File Upload](https://github.com/HXSecurity/TerraformGoat/tree/main/aliyun/object_storage_service/unrestricted_file_upload) |
+|  7   |      Huawei Cloud       |      Object Storage       | [Object ACL Writable](https://github.com/HXSecurity/TerraformGoat/tree/main/huaweicloud/object_storage_service/object_acl_writable) |
+|  8   |      Huawei Cloud       |      Object Storage       | [Special Bucket Policy](https://github.com/HXSecurity/TerraformGoat/tree/main/huaweicloud/object_storage_service/special_bucket_policy) |
+|  9   |      Huawei Cloud       |      Object Storage       | [Unrestricted File Upload](https://github.com/HXSecurity/TerraformGoat/tree/main/huaweicloud/object_storage_service/unrestricted_file_upload) |
+|  10  |      Huawei Cloud       |      Object Storage       | [Bucket Object Traversal](https://github.com/HXSecurity/TerraformGoat/tree/main/huaweicloud/object_storage_service/bucket_object_traversal) |
+|  11  |  Amazon  Web Services   |      Object Storage       | [Bucket Object Traversal](https://github.com/HXSecurity/TerraformGoat/tree/main/aws/object_storage_service/bucket_object_traversal) |
+|  12  |  Amazon  Web Services   |      Object Storage       | [Special Bucket Policy](https://github.com/HXSecurity/TerraformGoat/tree/main/aws/object_storage_service/special_bucket_policy) |
+|  13  |  Amazon  Web Services   |      Object Storage       | [Unrestricted File Upload](https://github.com/HXSecurity/TerraformGoat/tree/main/aws/object_storage_service/unrestricted_file_upload) |
+|  14  |  Amazon  Web Services   |      Object Storage       | [Object ACL Writable](https://github.com/HXSecurity/TerraformGoat/tree/main/aws/object_storage_service/object_acl_writable) |
+|  15  |  Amazon  Web Services   | Elastic Computing Service | [EC2 SSRF](https://github.com/HXSecurity/TerraformGoat/tree/main/aws/elastic_computing_service/ec2_ssrf) |
+|  16  | Google  Cloud Platform  |      Object Storage       | [Bucket Object Traversal](https://github.com/HXSecurity/TerraformGoat/tree/main/gcp/object_storage_service/bucket_object_traversal) |
+|  17  | Google  Cloud Platform  |      Object Storage       | [Object ACL Writable](https://github.com/HXSecurity/TerraformGoat/tree/main/gcp/object_storage_service/object_acl_writable) |
+|  18  | Google  Cloud Platform  |      Object Storage       | [Bucket ACL Writable](https://github.com/HXSecurity/TerraformGoat/tree/main/gcp/object_storage_service/bucket_acl_writable) |
+|  19  | Google  Cloud Platform  |      Object Storage       | [Unrestricted File Upload](https://github.com/HXSecurity/TerraformGoat/tree/main/gcp/object_storage_service/unrestricted_file_upload) |
+|  20  |    Microsoft  Azure     |      Object Storage       | [Blob  Public Access](https://github.com/HXSecurity/TerraformGoat/tree/main/azure/object_storage_service/blob_public_access/) |
 
 ## Install
 
