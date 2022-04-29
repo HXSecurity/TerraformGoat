@@ -54,7 +54,7 @@ terraform apply
 terraform destory
 ```
 
-![image-20220427185131878](../../../images/image-20220427185131878.png)
+![image-20220429175750411](../../../images/image-20220429175750411.png)
 
 如果确认没有问题，输入 yes 然后回车即可
 
