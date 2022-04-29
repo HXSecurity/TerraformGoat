@@ -56,7 +56,7 @@ Now you can see that output shows the address of the storage bucket we created w
 terraform destory
 ```
 
-![image-20220427185131878](../../../images/image-20220427185131878.png)
+![image-20220429174543957](../../../images/image-20220429174543957.png)
 
 To verify that there is no problem, type Yes
 
