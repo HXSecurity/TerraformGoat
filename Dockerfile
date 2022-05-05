@@ -1,5 +1,5 @@
 FROM ubuntu:20.04
-LABEL maintainer="HuoXian Research Team <https://github.com/HXSecurity>"
+LABEL maintainer="HuoXian Research Team <https://github.com/HuoCorp>"
 
 RUN apt-get update -y && \
     apt-get install -qy gnupg2 && \  
