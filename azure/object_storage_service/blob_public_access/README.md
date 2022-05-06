@@ -4,7 +4,7 @@ English | [中文](./README_CN.md)
 
 ## Description
 
-This is a vulnerability environment range for building public access to Microsoft cloud storage blobs.
+This is a vulnerability environment scenario for building public access to Microsoft cloud storage blobs.
 
 After you build an environment with Terraform, users can access blobs with public access directly.
 

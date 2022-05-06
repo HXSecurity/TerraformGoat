@@ -2,7 +2,7 @@
 
 English | [中文](./README_CN.md)
 
-This is a script that can quickly help you build arbitrary file upload scenarios for storage buckets
+This is a script that can quickly help you build arbitrary file upload scenario for storage buckets
 
 ## Deployment environment
 

@@ -4,7 +4,7 @@ English | [中文](./README_CN.md)
 
 ## Description
 
-This is a vulnerability environment shooting range for building GCP cloud storage bucket object traversal.
+This is a vulnerability environment scenario for building GCP cloud storage bucket object traversal.
 
 After building the environment with Terraform, Users can traverse the objects in the vulnerable Bucket and access the objects by splicing the key values of the objects.
 
