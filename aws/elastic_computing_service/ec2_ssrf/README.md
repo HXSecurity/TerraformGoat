@@ -4,7 +4,7 @@ English | [中文](./README_CN.md)
 
 ## Description
 
-This is a shooting range used to build the AWS EC2 SSRF vulnerability environment.
+This is a scenario used to build the AWS EC2 SSRF vulnerability environment.
 
 After building the environment with Terraform, users can obtain metadata and user data and other information on EC2 through the SSRF vulnerabilities.
 
@@ -37,7 +37,7 @@ terraform apply
 
 ![img](../../../images/1650428695.png)
 
-After the environment is set up, You can see the access address of the shooting range at Outputs, then access to the browser.
+After the environment is set up, You can see the access address of the scenario at Outputs, then access to the browser.
 
 ![img](../../../images/1650429022.png)
 
@@ -63,7 +63,7 @@ http://169.254.169.254/latest/user-data
 
 ![img](../../../images/1650429432.png)
 
-In the user data information, you can see that there is a flag file in the root directory of the shooting range, try to use SSRF to read this file.
+In the user data information, you can see that there is a flag file in the root directory of the scenario, try to use SSRF to read this file.
 
 ```shell
 file:///flag69152201.txt

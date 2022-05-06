@@ -4,7 +4,7 @@ English | [中文](./README_CN.md)
 
 ## Description
 
-This is a vulnerability environment range for building GCP cloud storage bucket ACLs that can be written.
+This is a vulnerability environment scenario for building GCP cloud storage bucket ACLs that can be written.
 
 After you build an environment using Terraform, you can modify the bucket's ACL policy to make data that could otherwise be read unreadable, resulting in an unavailable cloud storage service.
 

@@ -4,7 +4,7 @@ English | [中文](./README_CN.md)
 
 ## Description
 
-This is a vulnerability environment shooting range for building Huawei Cloud object storage bucket object traversal.
+This is a vulnerability environment scenario for building Huawei Cloud object storage bucket object traversal.
 
 When you build an environment using Terraform, users can traverse objects in a vulnerable bucket and access them by stitching them into key values.
 

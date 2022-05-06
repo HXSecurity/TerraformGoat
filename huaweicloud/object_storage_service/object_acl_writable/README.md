@@ -4,7 +4,7 @@ English | [中文](./README_CN.md)
 
 ## Description
 
-This is a vulnerability environment range for building HUAWEI CLOUD Object ACL.
+This is a vulnerability environment scenario for building HUAWEI CLOUD Object ACL.
 
 After you build an environment with Terraform, users can read data that would otherwise not be read by modifying object's ACL policy.
 

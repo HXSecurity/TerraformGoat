@@ -4,7 +4,7 @@ English | [中文](./README_CN.md)
 
 ## Description
 
-This is a vulnerability environment shooting range for building GCP cloud storage unrestricted file upload.
+This is a vulnerability environment scenario for building GCP cloud storage unrestricted file upload.
 
 After building the environment with Terraform, Users can upload any file to cloud storage through PUT method.
 

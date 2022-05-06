@@ -4,7 +4,7 @@ English | [中文](./README_CN.md)
 
 ## Description
 
-This is a vulnerability environment shooting range for building GCP cloud storage object ACL writable.
+This is a vulnerability environment scenario for building GCP cloud storage object ACL writable.
 
 After building the environment with Terraform, Users can read the data that could not be read by modifying the ACL policy of the object.
 

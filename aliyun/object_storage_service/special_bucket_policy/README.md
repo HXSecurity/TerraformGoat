@@ -4,7 +4,7 @@ English | [中文](./README_CN.md)
 
 This is a script that will help you quickly start a storage bucket with a special policy configuration, Get Flag
 
-Although in actual use will not encounter this kind of range, but enjoy playing
+Although in actual use will not encounter this kind of scenario, but enjoy playing
 
 ## Deployment Environment
 
