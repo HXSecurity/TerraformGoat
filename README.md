@@ -68,4 +68,4 @@ docker rmi terraformgoat:v0.1
 ## Notice
 
 1. The README of each vulnerable environment is executed within the terraformgoat container environment, so the terraformgoat container environment needs to be deployed first.
-2. Due to the horizontal risk of intranet horizontal on the cloud in some ranges, it is strongly recommended that users use their own test accounts to configure the ranges, avoid using the cloud account of the production environment, and install Terraform Goat using Dockerfile to isolate the user's local cloud vendor token and the test account token.
+2. Due to the horizontal risk of intranet horizontal on the cloud in some scenarios, it is strongly recommended that users use their own test accounts to configure the scenarios, avoid using the cloud account of the production environment, and install Terraform Goat using Dockerfile to isolate the user's local cloud vendor token and the test account token.

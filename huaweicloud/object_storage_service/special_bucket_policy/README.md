@@ -4,7 +4,7 @@ English | [中文](./README_CN.md)
 
 ## Description
 
-This is a vulnerability environment range for building a special bucket policy for HUAWEI CLOUD object storage.
+This is a vulnerability environment scenario for building a special bucket policy for HUAWEI CLOUD object storage.
 
 After you build an environment using Terraform, you can configure specific bucket policies to read data that would otherwise not be readable.
 

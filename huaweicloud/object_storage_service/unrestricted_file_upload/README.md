@@ -4,7 +4,7 @@ English | [中文](./README_CN.md)
 
 ## Description
 
-This is a vulnerability environment shooting range for building Huawei Cloud object storage unrestricted file upload.
+This is a vulnerability environment scenario for building Huawei Cloud object storage unrestricted file upload.
 
 After building the environment with Terraform, Users can upload unrestricted file in the vulnerable bucket.
 

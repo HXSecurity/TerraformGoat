@@ -2,7 +2,7 @@
 
 English | [中文](./README_CN.md)
 
-This is a script that can help you quickly build a bucket object ACL reading and writing scenarios
+This is a script that can help you quickly build a bucket object ACL reading and writing scenario
 
 Although you may not encounter it in a real environment, have fun playing
 
