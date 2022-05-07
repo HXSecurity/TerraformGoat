@@ -3,7 +3,7 @@
 
 English | [中文](./README_CN.md)
 
-Terraform Goat is HuoXian research team' "Vulnerable by Design" multi cloud deployment tool.
+Terraform Goat is HuoCorp research lab' "Vulnerable by Design" multi cloud deployment tool.
 
 Currently supported cloud vendors include Alibaba Cloud, Tencent Cloud, Huawei Cloud, Amazon Web Services, Google Cloud Platform, Microsoft Azure.
 
