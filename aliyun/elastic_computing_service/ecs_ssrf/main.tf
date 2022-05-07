@@ -22,7 +22,7 @@ sudo sed -i 's/Listen 80/Listen 8080/' /etc/apache2/ports.conf
 sudo /etc/init.d/apache2 restart
 cd /var/www/html
 sudo apt-get -y install wget
-sudo wget https://ghproxy.com/raw.githubusercontent.com/HuoCorp/TerraformGoat/main/aws/elastic_computing_service/ec2_ssrf/ssrf-lab.zip
+sudo wget https://huocorp-oss.oss-cn-beijing.aliyuncs.com/terraform-goat-dependency-files/ssrf-lab.zip
 sudo apt-get -y install unzip
 sudo unzip ssrf-lab.zip
 sudo mv ./ssrf-lab/static/flag69152201.txt /
