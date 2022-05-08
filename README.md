@@ -3,7 +3,7 @@
 
 English | [中文](./README_CN.md)
 
-Terraform Goat is HuoCorp research lab' "Vulnerable by Design" multi cloud deployment tool.
+TerraformGoat is HuoCorp research lab' "Vulnerable by Design" multi cloud deployment tool.
 
 Currently supported cloud vendors include Alibaba Cloud, Tencent Cloud, Huawei Cloud, Amazon Web Services, Google Cloud Platform, Microsoft Azure.
 
@@ -36,7 +36,7 @@ Currently supported cloud vendors include Alibaba Cloud, Tencent Cloud, Huawei C
 
 ## Install
 
-Terraform Goat is built using Dockerfile, so you need to install the Docker environment first. For the Docker installation method, please refer to: [https://docs.docker.com/get-docker/](https://docs.docker.com/get-docker/)
+TerraformGoat is built using Dockerfile, so you need to install the Docker environment first. For the Docker installation method, please refer to: [https://docs.docker.com/get-docker/](https://docs.docker.com/get-docker/)
 
 ```shell
 git clone https://github.com/HuoCorp/TerraformGoat.git
@@ -57,7 +57,7 @@ When entering the container, you need to select the cloud service to run
 
 ![img](./images/1651136346.png)
 
-After selecting the cloud service you want to use, the relevant dependencies will be installed. After the relevant dependencies are installed, you can use terraformgoat.
+After selecting the cloud service you want to use, the relevant dependencies will be installed. After the relevant dependencies are installed, you can use TerraformGoat.
 
 ## Uninstall
 
@@ -69,5 +69,5 @@ docker rmi terraformgoat:v0.1
 
 ## Notice
 
-1. The README of each vulnerable environment is executed within the terraformgoat container environment, so the terraformgoat container environment needs to be deployed first.
-2. Due to the horizontal risk of intranet horizontal on the cloud in some scenarios, it is strongly recommended that users use their own test accounts to configure the scenarios, avoid using the cloud account of the production environment, and install Terraform Goat using Dockerfile to isolate the user's local cloud vendor token and the test account token.
+1. The README of each vulnerable environment is executed within the TerraformGoat container environment, so the TerraformGoat container environment needs to be deployed first.
+2. Due to the horizontal risk of intranet horizontal on the cloud in some scenarios, it is strongly recommended that users use their own test accounts to configure the scenarios, avoid using the cloud account of the production environment, and install TerraformGoat using Dockerfile to isolate the user's local cloud vendor token and the test account token.
