@@ -3,7 +3,7 @@
 
 [English](./README.md) | 中文
 
-Terraform Goat 是一个支持多云的云场景漏洞靶场搭建工具，目前支持阿里云、腾讯云、华为云、Amazon Web Services、Google
+TerraformGoat 是一个支持多云的云场景漏洞靶场搭建工具，目前支持阿里云、腾讯云、华为云、Amazon Web Services、Google
 Cloud Platform、Microsoft Azure 六个云厂商的云场景漏洞搭建。
 
 ## 目前所支持的靶场环境
@@ -35,7 +35,7 @@ Cloud Platform、Microsoft Azure 六个云厂商的云场景漏洞搭建。
 
 ## 安装
 
-Terraform Goat 使用 Dockerfile 构建，因此需要先安装 Docker 环境，Docker 安装方法可以参考：[https://docs.docker.com/get-docker/](https://docs.docker.com/get-docker/)
+TerraformGoat 使用 Dockerfile 构建，因此需要先安装 Docker 环境，Docker 安装方法可以参考：[https://docs.docker.com/get-docker/](https://docs.docker.com/get-docker/)
 
 ```shell
 git clone https://github.com/HuoCorp/TerraformGoat.git
@@ -56,7 +56,7 @@ docker exec -it terraformgoat /bin/bash
 
 ![img](./images/1651136346.png)
 
-选择你要用的云服务后会安装相关依赖，等相关依赖安装完后，就可以使用 terraformgoat 了
+选择你要用的云服务后会安装相关依赖，等相关依赖安装完后，就可以使用 TerraformGoat 了
 
 ## 卸载
 
@@ -68,5 +68,5 @@ docker rmi terraformgoat:v0.1
 
 ## 注意
 
-1. 在每个漏洞环境的 README 中都是在 terraformgoat 容器环境内执行的，因此需要先部署 terraformgoat 容器环境。
-2. 由于部分靶场存在云上内网横向的风险，因此强烈建议用户使用自己的测试账号配置靶场，避免使用生产环境的云账号，使用 Dockerfile 安装 Terraform Goat 也是为了将用户本地的云厂商令牌和测试账号的令牌进行隔离。
+1. 在每个漏洞环境的 README 中都是在 TerraformGoat 容器环境内执行的，因此需要先部署 TerraformGoat 容器环境。
+2. 由于部分靶场存在云上内网横向的风险，因此强烈建议用户使用自己的测试账号配置靶场，避免使用生产环境的云账号，使用 Dockerfile 安装 TerraformGoat 也是为了将用户本地的云厂商令牌和测试账号的令牌进行隔离。
