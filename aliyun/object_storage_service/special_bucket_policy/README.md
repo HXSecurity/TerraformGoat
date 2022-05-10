@@ -16,6 +16,14 @@ cd /TerraformGoat/aliyun/object_storage_service/special_bucket_policy/
 
 ![image-20220425182349048](../../../images/image-20220425182349048.png)
 
+Configure Alibaba Cloud Access Credentials
+
+```shell
+aliyun configure
+```
+
+> You can create and view your AccessKey on the [AccessKey page](https://ram.console.aliyun.com/manage/ak) of the Alibaba Cloud console
+
 ```BASH
 terraform init
 ```

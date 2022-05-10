@@ -13,6 +13,14 @@ cd /TerraformGoat/aliyun/object_storage_service/special_bucket_policy/
 
 ![image-20220425182349048](../../../images/image-20220425182349048.png)
 
+配置阿里云访问凭证
+
+```shell
+aliyun configure
+```
+
+> 在阿里云控制台的 [AccessKey 页面](https://ram.console.aliyun.com/manage/ak) 可以创建和查看您的 AccessKey
+
 ```BASH
 terraform init
 ```

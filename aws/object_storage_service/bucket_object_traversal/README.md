@@ -12,6 +12,14 @@ cd /TerraformGoat/aws/object_storage_service/bucket_object_traversal/
 
 ![image-20220424181052943](../../../images/UzJuMarkDownImageimage-20220424181052943.png)
 
+Configure AWS Access Credentials
+
+```shell
+aws configure
+```
+
+> You can see the access key in the AWS [Console --> Security Credentials]
+
 ```bash
 terraform init
 ```

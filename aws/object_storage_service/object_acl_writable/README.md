@@ -14,6 +14,14 @@ cd /TerraformGoat/aws/object_storage_service/object_acl_writable/
 
 ![image-20220426152245856](../../../images/image-20220426152245856.png)
 
+Configure AWS Access Credentials
+
+```shell
+aws configure
+```
+
+> You can see the access key in the AWS [Console --> Security Credentials]
+
 ```bash
 terraform init
 ```

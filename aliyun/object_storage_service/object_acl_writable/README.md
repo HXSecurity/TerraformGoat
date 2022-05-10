@@ -12,6 +12,14 @@ Although you may not encounter it in a real situation, but have fun!
 cd /TerraformGoat/aliyun/object_storage_service/object_acl_writable/ 
 ```
 
+Configure Alibaba Cloud Access Credentials
+
+```shell
+aliyun configure
+```
+
+> You can create and view your AccessKey on the [AccessKey page](https://ram.console.aliyun.com/manage/ak) of the Alibaba Cloud console
+
 ```bash
 terraform init
 ```
