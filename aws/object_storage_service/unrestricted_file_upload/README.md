@@ -12,6 +12,14 @@ cd /TerraformGoat/aws/object_storage_service/unrestricted_file_upload/
 
 ![image](../../../images/UzJuMarkDownImageimage-20220426122100745.png)
 
+Configure AWS Access Credentials
+
+```shell
+aws configure
+```
+
+> You can see the access key in the AWS [Console --> Security Credentials]
+
 ```bash
 terraform init
 ```

@@ -12,6 +12,14 @@ cd /TerraformGoat/aws/object_storage_service/special_bucket_policy/
 
 ![image-20220425205833343](../../../images/image-20220425205833343.png)
 
+Configure AWS Access Credentials
+
+```shell
+aws configure
+```
+
+> You can see the access key in the AWS [Console --> Security Credentials]
+
 ```bash
 terraform init
 ```

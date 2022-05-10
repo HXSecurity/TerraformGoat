@@ -12,6 +12,14 @@ cd /TerraformGoat/aws/object_storage_service/unrestricted_file_upload/
 
 ![image](../../../images/UzJuMarkDownImageimage-20220426122100745.png)
 
+配置 AWS 访问凭证
+
+```shell
+aws configure
+```
+
+> 在 AWS 「控制台——》安全凭证」处可以设置并查看你的 `aws_access_key_id` 和 `aws_secret_access_key`
+
 ```bash
 terraform init
 ```

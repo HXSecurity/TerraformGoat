@@ -12,6 +12,14 @@
 cd /TerraformGoat/aliyun/object_storage_service/unrestricted_file_upload/ 
 ```
 
+配置阿里云访问凭证
+
+```shell
+aliyun configure
+```
+
+> 在阿里云控制台的 [AccessKey 页面](https://ram.console.aliyun.com/manage/ak) 可以创建和查看您的 AccessKey
+
 ```bash
 terraform init
 ```

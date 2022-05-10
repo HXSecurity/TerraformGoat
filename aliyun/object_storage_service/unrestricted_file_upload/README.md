@@ -18,6 +18,14 @@ terraform init
 
 ![image-20220425192835507](../../../images/image-20220425192835507.png)
 
+Configure Alibaba Cloud Access Credentials
+
+```shell
+aliyun configure
+```
+
+> You can create and view your AccessKey on the [AccessKey page](https://ram.console.aliyun.com/manage/ak) of the Alibaba Cloud console
+
 ```bash
 terraform apply
 ```

@@ -8,6 +8,14 @@ This is a script that will help you quickly build a storage bucket object traver
 cd /TerraformGoat/aliyun/object_storage_service/bucket_object_traversal/
 ```
 
+Configure Alibaba Cloud Access Credentials
+
+```shell
+aliyun configure
+```
+
+> You can create and view your AccessKey on the [AccessKey page](https://ram.console.aliyun.com/manage/ak) of the Alibaba Cloud console
+
 ```BASH
 terraform init
 ```
