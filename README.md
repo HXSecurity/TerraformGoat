@@ -88,3 +88,7 @@ Contributions are welcomed and greatly appreciated. Further reading — [CONTRIB
 ## 🪪 License
 
 TerraformGoat is under the Apache 2.0 license. See the [LICENSE](https://github.com/HuoCorp/TerraformGoat/blob/main/LICENSE) file for details.
+
+## Stats
+
+![Alt](https://repobeats.axiom.co/api/embed/7b7a9507cda2a2e4ec4303668dfc3e3f15ff29d2.svg "Repobeats analytics image")

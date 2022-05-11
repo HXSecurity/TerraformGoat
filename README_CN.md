@@ -87,3 +87,7 @@ docker rmi terraformgoat:v0.0.2
 ## 🪪 许可证
 
 TerraformGoat 使用 Apache 2.0 许可证，详情参见 [LICENSE](https://github.com/HuoCorp/TerraformGoat/blob/main/LICENSE)
+
+## Stats
+
+![Alt](https://repobeats.axiom.co/api/embed/7b7a9507cda2a2e4ec4303668dfc3e3f15ff29d2.svg "Repobeats analytics image")
