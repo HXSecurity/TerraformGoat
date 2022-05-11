@@ -72,7 +72,7 @@ Using the build of the Alibaba Cloud ECS SSRF vulnerability scenario as a demo:
 ```shell
 docker stop terraformgoat
 docker rm terraformgoat
-docker rmi terraformgoat:v0.1
+docker rmi terraformgoat:v0.0.2
 ```
 
 ## ⚠️ Notice
