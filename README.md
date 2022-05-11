@@ -1,4 +1,4 @@
-# :star2: Terraform Goat
+# :star2: TerraformGoat
 
 [![License: Apache-2.0](https://img.shields.io/badge/license-Apache--2.0-blue)](https://github.com/HuoCorp/TerraformGoat/blob/main/LICENSE) [![GitHub release](https://img.shields.io/github/release/HuoCorp/TerraformGoat.svg)](https://github.com/HuoCorp/TerraformGoat/releases) [![Github Stars](https://img.shields.io/github/stars/HuoCorp/TerraformGoat)](https://github.com/HuoCorp/TerraformGoat/stargazers) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/HuoCorp/TerraformGoat/pulls) [![tweet](https://img.shields.io/twitter/url?url=https://github.com/HuoCorp/TerraformGoat)](https://twitter.com/intent/tweet/?text=TerraformGoat%20is%20HuoCorp%20research%20lab's%20%22Vulnerable%20by%20Design%22%20multi%20cloud%20deployment%20tool.%20Check%20it%20out%20https%3A%2F%2Fgithub.com%2FHuoCorp%2FTerraformGoat%0A%23TerraformGoat%20%23Terraform%20%23Cloud%20%23Security%20%23cloudsecurity)
 
@@ -63,7 +63,7 @@ When entering the container, you need to select the cloud service to run
 
 After selecting the cloud service you want to use, the relevant dependencies will be installed. After the relevant dependencies are installed, you can use TerraformGoat.
 
-Using the build of the Alibaba Cloud ECS SSRF vulnerability scenario as a demo:
+Using the build of the [Alibaba Cloud ECS SSRF](https://github.com/HuoCorp/TerraformGoat/tree/main/aliyun/elastic_computing_service/ecs_ssrf) vulnerability scenario as a demo:
 
 [![asciicast](https://asciinema.org/a/493554.svg)](https://asciinema.org/a/493554)
 
