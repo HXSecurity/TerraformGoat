@@ -43,31 +43,35 @@ TerraformGoat 使用 Dockerfile 构建，因此需要先安装 Docker 环境，D
 
 ```shell
 git clone https://github.com/HuoCorp/TerraformGoat.git
-cd terraformgoat
-docker build -t terraformgoat:v0.1 .
+cd TerraformGoat
+docker build -t terraformgoat:v0.0.2 .
 ```
 
-![img](./images/1651136182.png)
+![img](./images/1652250379.png)
 
 docker build 完成后，启动并进入容器
 
 ```shell
-docker run -itd --name terraformgoat terraformgoat:v0.1
+docker run -itd --name terraformgoat terraformgoat:v0.0.2
 docker exec -it terraformgoat /bin/bash
 ```
 
 在进入容器时需要选择要使用到的云服务
 
-![img](./images/1651136346.png)
+![img](./images/1652250438.png)
 
 选择你要用的云服务后会安装相关依赖，等相关依赖安装完后，就可以使用 TerraformGoat 了
+
+这里以阿里云 ECS SSRF 漏洞场景的搭建进行演示：
+
+[![asciicast](https://asciinema.org/a/493554.svg)](https://asciinema.org/a/493554)
 
 ## :rocket: 卸载
 
 ```shell
 docker stop terraformgoat
 docker rm terraformgoat
-docker rmi terraformgoat:v0.1
+docker rmi terraformgoat:v0.0.2
 ```
 
 ## ⚠️ 注意事项

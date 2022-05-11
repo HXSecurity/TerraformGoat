@@ -44,24 +44,28 @@ TerraformGoat is built using Dockerfile, so you need to install the Docker envir
 
 ```shell
 git clone https://github.com/HuoCorp/TerraformGoat.git
-cd terraformgoat
-docker build -t terraformgoat:v0.1 .
+cd TerraformGoat
+docker build -t terraformgoat:v0.0.2 .
 ```
 
-![img](./images/1651136182.png)
+![img](./images/1652250379.png)
 
 After docker build is complete, start and enter the container
 
 ```shell
-docker run -itd --name terraformgoat terraformgoat:v0.1
+docker run -itd --name terraformgoat terraformgoat:v0.0.2
 docker exec -it terraformgoat /bin/bash
 ```
 
 When entering the container, you need to select the cloud service to run
 
-![img](./images/1651136346.png)
+![img](./images/1652250438.png)
 
 After selecting the cloud service you want to use, the relevant dependencies will be installed. After the relevant dependencies are installed, you can use TerraformGoat.
+
+Using the build of the Alibaba Cloud ECS SSRF vulnerability scenario as a demo:
+
+[![asciicast](https://asciinema.org/a/493554.svg)](https://asciinema.org/a/493554)
 
 ## :rocket: Uninstall
 
