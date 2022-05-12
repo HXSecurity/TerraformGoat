@@ -28,14 +28,15 @@ Cloud Platform、Microsoft Azure 六个云厂商的云场景漏洞搭建。
 |  15  |  Amazon  Web Services  |   对象存储   | [特殊的 Bucket 策略](https://github.com/HuoCorp/TerraformGoat/tree/main/aws/object_storage_service/special_bucket_policy) |
 |  16  |  Amazon  Web Services  |   对象存储   | [任意文件上传](https://github.com/HuoCorp/TerraformGoat/tree/main/aws/object_storage_service/unrestricted_file_upload) |
 |  17  |  Amazon  Web Services  |   对象存储   | [Object ACL 可写](https://github.com/HuoCorp/TerraformGoat/tree/main/aws/object_storage_service/object_acl_writable) |
-|  18  |  Amazon  Web Services  | 弹性计算服务 | [EC2 SSRF 漏洞环境](https://github.com/HuoCorp/TerraformGoat/tree/main/aws/elastic_computing_service/ec2_ssrf) |
-|  19  | Google  Cloud Platform |   对象存储   | [Bucket 对象遍历](https://github.com/HuoCorp/TerraformGoat/tree/main/gcp/object_storage_service/bucket_object_traversal) |
-|  20  | Google  Cloud Platform |   对象存储   | [Object ACL 可写](https://github.com/HuoCorp/TerraformGoat/tree/main/gcp/object_storage_service/object_acl_writable) |
-|  21  | Google  Cloud Platform |   对象存储   | [Bucket ACL 可写](https://github.com/HuoCorp/TerraformGoat/tree/main/gcp/object_storage_service/bucket_acl_writable) |
-|  22  | Google  Cloud Platform |   对象存储   | [任意文件上传](https://github.com/HuoCorp/TerraformGoat/tree/main/gcp/object_storage_service/unrestricted_file_upload) |
-|  23  |  Google  Cloud Platform  | 弹性计算服务 | [VM 命令执行漏洞环境](https://github.com/HuoCorp/TerraformGoat/tree/main/gcp/elastic_computing_service/vm_command_execution) |
-|  24  |    Microsoft  Azure    |   对象存储   | [Blob 公开访问](https://github.com/HuoCorp/TerraformGoat/tree/main/azure/object_storage_service/blob_public_access/) |
-|  25  |  Microsoft  Azure  | 弹性计算服务 | [VM 命令执行漏洞环境](https://github.com/HuoCorp/TerraformGoat/tree/main/azure/elastic_computing_service/vm_command_execution) |
+|  18  |  Amazon  Web Services  |   对象存储   | [Bucket ACL 可写](https://github.com/HuoCorp/TerraformGoat/tree/main/aws/object_storage_service/bucket_acl_writable) |
+|  19  |  Amazon  Web Services  | 弹性计算服务 | [EC2 SSRF 漏洞环境](https://github.com/HuoCorp/TerraformGoat/tree/main/aws/elastic_computing_service/ec2_ssrf) |
+|  20  | Google  Cloud Platform |   对象存储   | [Bucket 对象遍历](https://github.com/HuoCorp/TerraformGoat/tree/main/gcp/object_storage_service/bucket_object_traversal) |
+|  21  | Google  Cloud Platform |   对象存储   | [Object ACL 可写](https://github.com/HuoCorp/TerraformGoat/tree/main/gcp/object_storage_service/object_acl_writable) |
+|  22  | Google  Cloud Platform |   对象存储   | [Bucket ACL 可写](https://github.com/HuoCorp/TerraformGoat/tree/main/gcp/object_storage_service/bucket_acl_writable) |
+|  23  | Google  Cloud Platform |   对象存储   | [任意文件上传](https://github.com/HuoCorp/TerraformGoat/tree/main/gcp/object_storage_service/unrestricted_file_upload) |
+|  24  |  Google  Cloud Platform  | 弹性计算服务 | [VM 命令执行漏洞环境](https://github.com/HuoCorp/TerraformGoat/tree/main/gcp/elastic_computing_service/vm_command_execution) |
+|  25  |    Microsoft  Azure    |   对象存储   | [Blob 公开访问](https://github.com/HuoCorp/TerraformGoat/tree/main/azure/object_storage_service/blob_public_access/) |
+|  26  |  Microsoft  Azure  | 弹性计算服务 | [VM 命令执行漏洞环境](https://github.com/HuoCorp/TerraformGoat/tree/main/azure/elastic_computing_service/vm_command_execution) |
 
 ## :dizzy: 安装
 
