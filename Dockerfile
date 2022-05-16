@@ -7,6 +7,8 @@ RUN apt-get update -y && \
     apt-get install -qy vim && \
     apt-get install -qy lsb-release && \
     apt-get install -qy software-properties-common && \
+    apt-get install -y -qq less && \
+    apt-get install -y -qq groff && \
     curl -fsSL https://apt.releases.hashicorp.com/gpg | apt-key add - 2>/dev/null && \
     apt-add-repository "deb [arch=amd64] https://apt.releases.hashicorp.com $(lsb_release -cs) main" && \
     apt-get update && \
