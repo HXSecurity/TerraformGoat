@@ -28,11 +28,11 @@ terraform apply
 
 If you confirm that there are no problems, just press enter
 
-![image-20220420184331190](../../../images/UzJuMarkDownImage20220420184734125_6.png)
+![image-20220420184708033](../../../images/UzJuMarkDownImage20220420184331190_3.png)
 
 Type “yes” to start the build, at which point you can go make a cup of coffee because it will be done before you get back, very fast!
 
-![image-20220420184456968](../../../images/UzJuMarkDownImage20220420184708033_5.png)
+![image-20220420184734125](../../../images/UzJuMarkDownImage20220420184456968_4.png)
 
 Access to hx-cloud-security-ctf-xxx.oss-cn-beijing.aliyuncs.com
 
@@ -56,8 +56,8 @@ What is this? Maybe you can check the latitude and longitude to determine where 
 terraform destroy
 ```
 
-![image-20220420184708033](../../../images/UzJuMarkDownImage20220420184331190_3.png)
+![image-20220420184456968](../../../images/UzJuMarkDownImage20220420184708033_5.png)
 
 If you have made up your mind, then just type yes
 
-![image-20220420184734125](../../../images/UzJuMarkDownImage20220420184456968_4.png)
+![image-20220420184331190](../../../images/UzJuMarkDownImage20220420184734125_6.png)
