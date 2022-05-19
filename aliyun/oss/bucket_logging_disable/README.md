@@ -33,7 +33,7 @@ terraform apply
 
 After the scenario is built, you can see the URL of the Bucket in the Outputs.
 
-## Solution
+## Steps
 
 Use aliyun cli to see the current configuration of logging
 

@@ -59,7 +59,7 @@ aliyun oss logging --method get oss://huoxian-terraformgoat-bucket-xxxxx
 <?xml version="1.0" encoding="UTF-8"?>
   <BucketLoggingStatus>
       <LoggingEnabled>
-          <TargetBucket>huoxian-terraformgoat-bucket-xxx</TargetBucket>
+          <TargetBucket>huoxian-terraformgoat-bucket-xxxxx</TargetBucket>
           <TargetPrefix>log/</TargetPrefix>
       </LoggingEnabled>
   </BucketLoggingStatus>
