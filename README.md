@@ -58,10 +58,10 @@ TerraformGoat is built using Dockerfile, so you need to install the Docker envir
 ```shell
 git clone https://github.com/HuoCorp/TerraformGoat.git --depth 1
 cd TerraformGoat
-docker build -t terraformgoat:v0.0.3 .
+docker build . -t terraformgoat:v0.0.3
 ```
 
-![img](./images/1652250379.png)
+![img](./images/1653031694.png)
 
 After docker build is complete, start and enter the container
 
@@ -72,7 +72,7 @@ docker exec -it terraformgoat /bin/bash
 
 When entering the container, you need to select the cloud service to run
 
-![img](./images/1652250438.png)
+![img](./images/1653035756.png)
 
 After selecting the cloud service you want to use, the relevant dependencies will be installed. After the relevant dependencies are installed, you can use TerraformGoat.
 

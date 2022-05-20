@@ -57,10 +57,10 @@ TerraformGoat 使用 Dockerfile 构建，因此需要先安装 Docker 环境，D
 ```shell
 git clone https://github.com/HuoCorp/TerraformGoat.git --depth 1
 cd TerraformGoat
-docker build -t terraformgoat:v0.0.3 .
+docker build . -t terraformgoat:v0.0.3
 ```
 
-![img](./images/1652250379.png)
+![img](./images/1653031694.png)
 
 docker build 完成后，启动并进入容器
 
@@ -71,7 +71,7 @@ docker exec -it terraformgoat /bin/bash
 
 在进入容器时需要选择要使用到的云服务
 
-![img](./images/1652250438.png)
+![img](./images/1653035756.png)
 
 选择你要用的云服务后会安装相关依赖，等相关依赖安装完后，就可以使用 TerraformGoat 了
 
