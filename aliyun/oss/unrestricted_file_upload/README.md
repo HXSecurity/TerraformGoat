@@ -9,32 +9,23 @@ This is a script to help you quickly build storage buckets for unauthorized uplo
 ### Git clone
 
 ```bash
-cd /TerraformGoat/aliyun/oss/unrestricted_file_upload/ 
+cd /TerraformGoat/aliyun/oss/unrestricted_file_upload/
 ```
-
-```bash
-terraform init
-```
-
-![image-20220425192835507](../../../images/image-20220425192835507.png)
 
 Configure Alibaba Cloud Access Credentials
 
-```shell
+```bash
 aliyun configure
 ```
 
 > You can create and view your AccessKey on the [AccessKey page](https://ram.console.aliyun.com/manage/ak) of the Alibaba Cloud console
 
-```bash
+```shell
+terraform init
 terraform apply
 ```
 
-![image-20220425192251992](../../../images/image-20220425192251992.png)
-
 If you confirm that there is no problem, type yes and wait for the build
-
-![image-20220425192314435](../../../images/image-20220425192314435.png)
 
 ## Get Flag
 
@@ -69,5 +60,3 @@ Afterwards, we use the GET method to get the contents of our overwritten
 ```bash
 terraform destroy
 ```
-
-![image-20220425192403147](../../../images/image-20220425192403147.png)

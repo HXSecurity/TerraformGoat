@@ -1,5 +1,8 @@
-# Author: UzJu
-# TIME: 2022-4-19
 terraform {
-  required_version = ">= 0.13"
+  required_providers {
+    tencentcloud = {
+      source  = "tencentcloudstack/tencentcloud"
+      version = "1.70.2"
+    }
+  }
 }

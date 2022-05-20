@@ -10,8 +10,6 @@
 cd /TerraformGoat/aws/s3/special_bucket_policy/
 ```
 
-![image-20220425205833343](../../../images/image-20220425205833343.png)
-
 配置 AWS 访问凭证
 
 ```shell
@@ -22,19 +20,10 @@ aws configure
 
 ```bash
 terraform init
-```
-
-![image-20220425205950630](../../../images/image-20220425205950630.png)
-
-```bash
 terraform apply
 ```
 
-![image-20220425210019067](../../../images/image-20220425210019067.png)
-
 随后输入yes会自动构建，速度非常快
-
-![image-20220425210041960](../../../images/image-20220425210041960.png)
 
 ## Get Flag
 
@@ -66,7 +55,5 @@ Upgrade-Insecure-Requests: 1
 ```bash
 terraform destroy
 ```
-
-![image-20220425210329402](../../../images/image-20220425210329402.png)
 
 随后输入yes即可销毁

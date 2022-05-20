@@ -21,19 +21,10 @@ aliyun configure
 
 ```bash
 terraform init
-```
-
-![image-20220425190538237](../../../images/image-20220425190538237.png)
-
-```bash
 terraform apply
 ```
 
-![image-20220425190558881](../../../images/image-20220425190558881.png)
-
 在确认没有问题后，输入yes回车即可快速构建
-
-![image-20220425190632275](../../../images/image-20220425190632275.png)
 
 直接访问该存储桶的/flag.txt
 
@@ -80,5 +71,3 @@ terraform destroy
 ```
 
 随后输入yes，等待销毁即可
-
-![image-20220425191136549](../../../images/image-20220425191136549.png)

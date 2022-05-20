@@ -10,8 +10,6 @@ This is a script that can help you quickly build a bucket arbitrary file overwri
 cd /TerraformGoat/aws/s3/unrestricted_file_upload/
 ```
 
-![image](../../../images/UzJuMarkDownImageimage-20220426122100745.png)
-
 Configure AWS Access Credentials
 
 ```shell
@@ -22,17 +20,8 @@ aws configure
 
 ```bash
 terraform init
-```
-
-![image-20220426122243708](../../../images/image-20220426122243708.png)
-
-```bash
 terraform apply
 ```
-
-![image-20220426122302921](../../../images/image-20220426122302921.png)
-
-![image-20220426122334770](../../../images/image-20220426122334770.png)
 
 ## Exploit
 
@@ -53,7 +42,5 @@ We can upload any file on this bucket
 ```bash
 terraform destroy
 ```
-
-![image-20220426122633164](../../../images/image-20220426122633164.png)
 
 Just type yes and wait for it be destroyed

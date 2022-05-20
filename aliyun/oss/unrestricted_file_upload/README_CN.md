@@ -22,19 +22,10 @@ aliyun configure
 
 ```bash
 terraform init
-```
-
-![image-20220425192835507](../../../images/image-20220425192835507.png)
-
-```bash
 terraform apply
 ```
 
-![image-20220425192251992](../../../images/image-20220425192251992.png)
-
 如果确认没有问题，输入yes等待构建即可
-
-![image-20220425192314435](../../../images/image-20220425192314435.png)
 
 ## Get Flag
 
@@ -69,5 +60,3 @@ HxSecurityLab
 ```bash
 terraform destroy
 ```
-
-![image-20220425192403147](../../../images/image-20220425192403147.png)

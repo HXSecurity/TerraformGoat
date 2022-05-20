@@ -10,33 +10,20 @@ This is a script that can quickly help you build arbitrary file upload scenario 
 cd /TerraformGoat/tencentcloud/cos/unrestricted_file_upload/
 ```
 
-![image-20220425194621232](../../../images/image-20220425194621232.png)
+Write in your Tencent Cloud account AK with KEY
 
 ```bash
 vim terraform.tfvars
 ```
 
-Write in your Tencent Cloud account AK with KEY and APPID
-
-![image-20220425195518630](../../../images/image-20220425195518630.png)
+build scenario
 
 ```bash
 terraform init
-```
-
-![image-20220425194722112](../../../images/image-20220425194722112.png)
-
-```bash
 terraform apply
 ```
 
-![image-20220425194755297](../../../images/image-20220425194755297.png)
-
-Type the name of the bucket you want to create, then press enter, check if there are any problems, and type yes
-
-![image-20220425195010422](../../../images/image-20220425195010422.png)
-
- access /hx.png Directly
+ access /hx.png
 
 ![image-20220425195047346](../../../images/image-20220425195047346.png)
 
@@ -67,7 +54,5 @@ Then use the GET method to get the image we covered
 ```bash
 terraform destroy
 ```
-
-![image-20220425195226825](../../../images/image-20220425195226825.png)
 
 Then press enter, type yes and wait for the destruction

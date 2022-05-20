@@ -1,51 +1,34 @@
-# Author: UzJu
-# TIME: 2022-4-19
-terraform {
-  required_providers {
-    tencentcloud = {
-      source  = "tencentcloudstack/tencentcloud"
-      version = "1.70.2"
-    }
-  }
-}
-
-# Need the user to write the key here, otherwise you can comment secret_id and secret_key then the local Tencent cloud cli will be used by default to make the call
 provider "tencentcloud" {
-  secret_id  = var.TenCentCloud_Cos_ID
-  secret_key = var.TenCentCloud_Cos_Key
-  region     = var.TenCentCloud_Cos_Region
+  secret_id  = var.tencentcloud_secret_id
+  secret_key = var.tencentcloud_secret_key
+  region     = "ap-beijing"
 }
 
-# Creating storage buckets
 resource "tencentcloud_cos_bucket" "create_bucket" {
-  bucket = "${var.TenCentCloud_Cos_Name}${random_string.random_suffix.result}-${var.TenCentCloud_Cos_APPID}"
+  bucket = "hxlab-${local.random_string_result}-${local.tencentcloud_app_id}"
   acl    = "private"
 }
 
-# Uploading files to the storage bucket
 resource "tencentcloud_cos_bucket_object" "index" {
-  depends_on = [
-    tencentcloud_cos_bucket.create_bucket,
-  ]
   bucket = tencentcloud_cos_bucket.create_bucket.bucket
   key    = "index.html"
   source = "./file/index.html"
   acl    = "public-read"
-}
-
-# Uploading files to the storage bucket
-resource "tencentcloud_cos_bucket_object" "Flag" {
   depends_on = [
     tencentcloud_cos_bucket.create_bucket,
   ]
+}
+
+resource "tencentcloud_cos_bucket_object" "Flag" {
   bucket = tencentcloud_cos_bucket.create_bucket.bucket
   key    = "weflag.txt"
   source = "./file/flag.txt"
   acl    = "public-read"
-
+  depends_on = [
+    tencentcloud_cos_bucket.create_bucket,
+  ]
 }
 
-# Write to Storage Bucket Policy
 resource "tencentcloud_cos_bucket_policy" "cos_policy" {
   depends_on = [
     tencentcloud_cos_bucket.create_bucket,
@@ -80,7 +63,7 @@ resource "tencentcloud_cos_bucket_policy" "cos_policy" {
                 ]
             },
             "Resource": [
-                "qcs::cos:${var.TenCentCloud_Cos_Region}:uid/${var.TenCentCloud_Cos_APPID}:${tencentcloud_cos_bucket.create_bucket.bucket}/*"
+                "qcs::cos:ap-beijing:uid/${local.tencentcloud_app_id}:${tencentcloud_cos_bucket.create_bucket.bucket}/*"
             ]
         }
     ],
@@ -89,9 +72,16 @@ resource "tencentcloud_cos_bucket_policy" "cos_policy" {
 EOF
 }
 
-# Randomly generate a 5-digit random number
 resource "random_string" "random_suffix" {
   length  = 5
   special = false
   upper   = false
+}
+
+data "tencentcloud_user_info" "foo" {}
+
+locals {
+  tencentcloud_account_id = data.tencentcloud_user_info.foo.owner_uin
+  tencentcloud_app_id     = data.tencentcloud_user_info.foo.app_id
+  random_string_result    = random_string.random_suffix.result
 }

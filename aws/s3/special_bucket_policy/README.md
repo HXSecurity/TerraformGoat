@@ -10,8 +10,6 @@ This is a script that can help you quickly build a special bucket strategy, whic
 cd /TerraformGoat/aws/s3/special_bucket_policy/
 ```
 
-![image-20220425205833343](../../../images/image-20220425205833343.png)
-
 Configure AWS Access Credentials
 
 ```shell
@@ -22,19 +20,10 @@ aws configure
 
 ```bash
 terraform init
-```
-
-![image-20220425205950630](../../../images/image-20220425205950630.png)
-
-```bash
 terraform apply
 ```
 
-![image-20220425210019067](../../../images/image-20220425210019067.png)
-
-Subsequently typing yes will automatically build it, very fast
-
-![image-20220425210041960](../../../images/image-20220425210041960.png)
+Subsequently typing yes will automatically build it
 
 ## Get Flag
 
@@ -66,7 +55,5 @@ Upgrade-Insecure-Requests: 1
 ```bash
 terraform destroy
 ```
-
-![image-20220425210329402](../../../images/image-20220425210329402.png)
 
 Then type yes to destroy

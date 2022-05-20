@@ -16,13 +16,12 @@ Execute the following command in the container
 cd /TerraformGoat/tencentcloud/cos/bucket_acl_writable/
 ```
 
-Edit the `terraform.tfvars` file and write your `tencentcloud_app_id`,`tencentcloud_account_id`,`tencentcloud_secret_id`and`tencentcloud_secret_key` in the file
+Edit the `terraform.tfvars` file and write your `tencentcloud_secret_id`and`tencentcloud_secret_key` in the file
 
 ```shell
 vim terraform.tfvars
 ```
 
-> * You can see your account ID and APPID in the [account information](https://console.cloud.tencent.com/developer) of Tencent Cloud console.
 > * You can create and view your SecretKey on the [API Key Management](https://console.cloud.tencent.com/cam/capi) of the Tencent Cloud console
 
 Deploy Vulnerable Environment

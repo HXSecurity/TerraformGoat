@@ -16,13 +16,12 @@
 cd /TerraformGoat/tencentcloud/cos/bucket_acl_writable/
 ```
 
-编辑 `terraform.tfvars` 文件，在文件中填入你的`tencentcloud_app_id`、`tencentcloud_account_id`、`tencentcloud_secret_id`和`tencentcloud_secret_key`
+编辑 `terraform.tfvars` 文件，在文件中填入你的`tencentcloud_secret_id`和`tencentcloud_secret_key`
 
 ```shell
 vim terraform.tfvars
 ```
 
-> * 在腾讯云控制台的[账号信息](https://console.cloud.tencent.com/developer)处可以看到您的账号 ID 和 APPID
 > * 在腾讯云控制台的 [API 密钥管理](https://console.cloud.tencent.com/cam/capi)可以创建和查看您的 SecretID 和 SecretKey
 
 部署靶场
