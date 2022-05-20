@@ -1,17 +1,17 @@
-# 阿里云 OSS Bucket 服务端加密未使用 KMS 的场景
+# 阿里云 OSS Bucket 服务端 KMS 加密未使用 BYOK
 
 [English](./README.md) | 中文
 
 ## 描述信息
 
-这是一个用于构建阿里云 OSS Bucket 服务端加密未使用 KMS 的场景。
+这是一个用于构建阿里云 OSS Bucket 服务端 KMS 加密未使用 BYOK
 
 ## 环境搭建
 
 在容器中执行以下命令
 
 ```shell
-cd /TerraformGoat/aliyun/oss/server_side_encryption_no_kms_set
+cd /TerraformGoat/aliyun/oss/server_side_encryption_not_using_BYOK
 ```
 
 配置阿里云访问凭证
