@@ -27,8 +27,6 @@ terraform apply
 
 Check output, if there is no problem, enter yes.
 
-![image-20220424172657516](../../../images/UzJuMarkDownImageimage-20220424172657516.png)
-
 Now you can see that output shows the address of the storage bucket we created with the region, Now Go get flags
 
 ## Challenge to destroy
@@ -37,10 +35,4 @@ Now you can see that output shows the address of the storage bucket we created w
 terraform destory
 ```
 
-![image-20220429175750411](../../../images/image-20220429175750411.png)
-
 To verify that there is no problem, type Yes
-
-![image-20220424173018520](../../../images/UzJuMarkDownImageimage-20220424173018520.png)
-
-GooOOOOOOOOOOOd Bye~

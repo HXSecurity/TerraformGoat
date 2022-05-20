@@ -27,8 +27,6 @@ terraform apply
 
 检查输出，如果没有问题，输入Yes
 
-![image-20220424172657516](../../../images/UzJuMarkDownImageimage-20220424172657516.png)
-
 现在可以看到输出了存储桶的地址，现在可以去获取Flag了
 
 ## Challenge to destroy
@@ -37,10 +35,4 @@ terraform apply
 terraform destory
 ```
 
-![image-20220429175750411](../../../images/image-20220429175750411.png)
-
 如果确认没有问题，输入 yes 然后回车即可
-
-![image-20220424173018520](../../../images/UzJuMarkDownImageimage-20220424173018520.png)
-
-GooOOOOOOOOOOOd Bye~
