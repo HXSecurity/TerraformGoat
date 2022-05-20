@@ -4,15 +4,11 @@
 
 这是一个可以帮你快速构建存储桶对象ACL可读写场景的脚本
 
-虽然你在实际环境中可能不会遇到，玩的愉快
-
 ## 部署环境
 
 ```bash
 cd /TerraformGoat/aws/s3/object_acl_writable/
 ```
-
-![image-20220426152245856](../../../images/image-20220426152245856.png)
 
 配置 AWS 访问凭证
 
@@ -24,17 +20,8 @@ aws configure
 
 ```bash
 terraform init
-```
-
-![image-20220426152354009](../../../images/image-20220426152354009.png)
-
-```bash
 terraform apply
 ```
-
-![image-20220426152417710](../../../images/image-20220426152417710.png)
-
-![image-20220426152428214](../../../images/image-20220426152428214.png)
 
 输入yes之后，会自动的快速构建场景
 
@@ -83,8 +70,4 @@ Upgrade-Insecure-Requests: 1
 terraform destroy
 ```
 
-![image-20220426173539820](../../../images/image-20220426173539820.png)
-
 输入yes即可
-
-![image-20220426173554665](../../../images/image-20220426173554665.png)

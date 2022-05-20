@@ -11,8 +11,6 @@
 cd /TerraformGoat/aliyun/oss/special_bucket_policy/
 ```
 
-![image-20220425182349048](../../../images/image-20220425182349048.png)
-
 配置阿里云访问凭证
 
 ```shell
@@ -23,19 +21,10 @@ aliyun configure
 
 ```BASH
 terraform init
-```
-
-![image-20220425182407093](../../../images/image-20220425182407093.png)
-
-```bash
 terraform apply
 ```
 
-![image-20220425182434280](../../../images/image-20220425182434280.png)
-
 如果确认没有问题，输入yes即可
-
-![image-20220425182506076](../../../images/image-20220425182506076.png)
 
 ## Get Flag
 
@@ -68,8 +57,4 @@ Upgrade-Insecure-Requests: 1
 terraform destroy
 ```
 
-![image-20220425182951151](../../../images/image-20220425182951151.png)
-
 如果确认没有问题，输入yes等待即可
-
-![image-20220425183028857](../../../images/image-20220425183028857.png)

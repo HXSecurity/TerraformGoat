@@ -14,8 +14,6 @@ Although in actual use will not encounter this kind of scenario, but enjoy playi
 cd /TerraformGoat/aliyun/oss/special_bucket_policy/
 ```
 
-![image-20220425182349048](../../../images/image-20220425182349048.png)
-
 Configure Alibaba Cloud Access Credentials
 
 ```shell
@@ -26,19 +24,10 @@ aliyun configure
 
 ```BASH
 terraform init
-```
-
-![image-20220425182407093](../../../images/image-20220425182407093.png)
-
-```bash
 terraform apply
 ```
 
-![image-20220425182434280](../../../images/image-20220425182434280.png)
-
 If you confirm that there are no problems, just type yes
-
-![image-20220425182506076](../../../images/image-20220425182506076.png)
 
 ## Get Flag
 
@@ -71,8 +60,4 @@ When you see the file name, just visit that name **UkFrpYnoTbbQyhpx.html**
 terraform destroy
 ```
 
-![image-20220425182951151](../../../images/image-20220425182951151.png)
-
 If it is confirmed that there is no problem, just type yes and wait
-
-![image-20220425183028857](../../../images/image-20220425183028857.png)

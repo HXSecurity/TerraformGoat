@@ -5,11 +5,12 @@ provider "tencentcloud" {
 }
 
 resource "tencentcloud_cos_bucket" "huoxian_cos_bucket" {
-  bucket   = "houxian${random_string.random_suffix.result}-${var.tencentcloud_app_id}"
+  bucket = "houxian-${local.random_string_result}-${local.tencentcloud_app_id}"
+
   acl_body = <<EOF
 <AccessControlPolicy>
     <Owner>
-        <ID>qcs::cam::uin/${var.tencentcloud_account_id}:uin/${var.tencentcloud_account_id}</ID>
+        <ID>qcs::cam::uin/${local.tencentcloud_account_id}:uin/${local.tencentcloud_account_id}</ID>
     </Owner>
     <AccessControlList>
         <Grant>
@@ -26,8 +27,8 @@ resource "tencentcloud_cos_bucket" "huoxian_cos_bucket" {
         </Grant>
         <Grant>
             <Grantee xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CanonicalUser">
-                <ID>qcs::cam::uin/${var.tencentcloud_account_id}:uin/${var.tencentcloud_account_id}</ID>
-                <DisplayName>qcs::cam::uin/${var.tencentcloud_account_id}:uin/${var.tencentcloud_account_id}</DisplayName>
+                <ID>qcs::cam::uin/${local.tencentcloud_account_id}:uin/${local.tencentcloud_account_id}</ID>
+                <DisplayName>qcs::cam::uin/${local.tencentcloud_account_id}:uin/${local.tencentcloud_account_id}</DisplayName>
             </Grantee>
             <Permission>FULL_CONTROL</Permission>
         </Grant>
@@ -47,4 +48,12 @@ resource "random_string" "random_suffix" {
   length  = 5
   special = false
   upper   = false
+}
+
+data "tencentcloud_user_info" "foo" {}
+
+locals {
+  tencentcloud_account_id = data.tencentcloud_user_info.foo.owner_uin
+  tencentcloud_app_id     = data.tencentcloud_user_info.foo.app_id
+  random_string_result    = random_string.random_suffix.result
 }

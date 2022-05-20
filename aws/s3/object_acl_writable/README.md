@@ -12,8 +12,6 @@ Although you may not encounter it in a real environment, have fun playing
 cd /TerraformGoat/aws/s3/object_acl_writable/
 ```
 
-![image-20220426152245856](../../../images/image-20220426152245856.png)
-
 Configure AWS Access Credentials
 
 ```shell
@@ -24,17 +22,8 @@ aws configure
 
 ```bash
 terraform init
-```
-
-![image-20220426152354009](../../../images/image-20220426152354009.png)
-
-```bash
 terraform apply
 ```
-
-![image-20220426152417710](../../../images/image-20220426152417710.png)
-
-![image-20220426152428214](../../../images/image-20220426152428214.png)
 
 After typing yes, the scene will be built automatically and quickly
 
@@ -83,8 +72,4 @@ Afterwards, when you visit index.html, you successfully get the flags
 terraform destroy
 ```
 
-![image-20220426173539820](../../../images/image-20220426173539820.png)
-
 enter yes
-
-![image-20220426173554665](../../../images/image-20220426173554665.png)

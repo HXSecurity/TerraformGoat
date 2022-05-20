@@ -1,27 +1,13 @@
-# Author: UzJu
-# TIME: 2022-4-19
-variable "TenCentCloud_Cos_Region" {
-  description = "Value of the Name Tag for the TencentCos Region"
+variable "tencentcloud_secret_id" {
   type        = string
-  default     = "ap-nanjing"
-}
-
-variable "TenCentCloud_Cos_ID" {
-  type        = string
-  description = "Set TenCentCloud access key id."
+  description = "Set TencentCloud access key id."
   sensitive   = true
   nullable    = false
 }
 
-variable "TenCentCloud_Cos_Key" {
+variable "tencentcloud_secret_key" {
   type        = string
-  description = "Set TenCentCloud secret access key."
+  description = "Set TencentCloud secret access key."
   sensitive   = true
-  nullable    = false
-}
-
-variable "TenCentCloud_Cos_APPID" {
-  type        = string
-  description = "Set TenCentCloud User APPID."
   nullable    = false
 }

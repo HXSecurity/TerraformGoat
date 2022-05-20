@@ -10,33 +10,20 @@
 cd /TerraformGoat/tencentcloud/cos/unrestricted_file_upload/
 ```
 
-![image-20220425194621232](../../../images/image-20220425194621232.png)
+写入你的腾讯云账户AK与KEY
 
-```bash
+```shell
 vim terraform.tfvars
 ```
 
-写入你的腾讯云账户AK与KEY还有APPID
-
-![image-20220425195518630](../../../images/image-20220425195518630.png)
+部署环境
 
 ```bash
 terraform init
-```
-
-![image-20220425194722112](../../../images/image-20220425194722112.png)
-
-```bash
 terraform apply
 ```
 
-![image-20220425194755297](../../../images/image-20220425194755297.png)
-
-输入你想要创建的存储桶名称，然后回车，检查是否有问题，输入yes即可
-
-![image-20220425195010422](../../../images/image-20220425195010422.png)
-
-直接访问/hx.png
+访问/hx.png
 
 ![image-20220425195047346](../../../images/image-20220425195047346.png)
 
@@ -67,7 +54,5 @@ HxSecurityLab
 ```bash
 terraform destroy
 ```
-
-![image-20220425195226825](../../../images/image-20220425195226825.png)
 
 随后回车，输入yes等待销毁即可

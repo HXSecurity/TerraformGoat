@@ -22,21 +22,10 @@ aliyun configure
 
 ```BASH
 terraform init
-```
-
-![image-20220420183822046](../../../images/UzJuMarkDownImage20220420183822046_1.png)
-
-```bash
 terraform apply
 ```
 
-如果确认没有问题，按下回车即可
-
-![image-20220420184708033](../../../images/UzJuMarkDownImage20220420184331190_3.png)
-
-输入yes开始构建，然后您可以去冲一杯咖啡，因为它会在您回来之前完成，非常快!
-
-![image-20220420184734125](../../../images/UzJuMarkDownImage20220420184456968_4.png)
+如果确认没有问题，输入yes开始构建
 
 访问 hx-cloud-security-ctf-xxx.oss-cn-beijing.aliyuncs.com
 
@@ -60,8 +49,4 @@ terraform apply
 terraform destroy
 ```
 
-![image-20220420184456968](../../../images/UzJuMarkDownImage20220420184708033_5.png)
-
 确定没有问题之后，输入yes即可销毁
-
-![image-20220420184331190](../../../images/UzJuMarkDownImage20220420184734125_6.png)

@@ -22,19 +22,10 @@ aliyun configure
 
 ```bash
 terraform init
-```
-
-![image-20220425190538237](../../../images/image-20220425190538237.png)
-
-```bash
 terraform apply
 ```
 
-![image-20220425190558881](../../../images/image-20220425190558881.png)
-
 After confirming that there are no problems, type yes and enter to quickly build
-
-![image-20220425190632275](../../../images/image-20220425190632275.png)
 
 Access the /flag.txt of this bucket directly
 
@@ -81,5 +72,3 @@ terraform destroy
 ```
 
 Then just type yes and wait for the destruction
-
-![image-20220425191136549](../../../images/image-20220425191136549.png)
