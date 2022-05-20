@@ -95,7 +95,7 @@ docker rmi terraformgoat:v0.0.3
 
 ## :confetti_ball: 贡献
 
-我们非常欢迎并感谢你对 Terraform 项目进行贡献，在 [CONTRIBUTING.md](https://github.com/HuoCorp/TerraformGoat/blob/main/CONTRIBUTING.md) 中可以了解贡献流程的细节。
+我们非常欢迎并感谢你对 TerraformGoat 项目进行贡献，在 [CONTRIBUTING.md](https://github.com/HuoCorp/TerraformGoat/blob/main/CONTRIBUTING.md) 中可以了解贡献流程的细节。
 
 ## 🪪 许可证
 
