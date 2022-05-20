@@ -9,20 +9,10 @@ resource "tencentcloud_cos_bucket" "create_bucket" {
   acl    = "private"
 }
 
-resource "tencentcloud_cos_bucket_object" "index" {
-  bucket = tencentcloud_cos_bucket.create_bucket.bucket
-  key    = "index.html"
-  source = "./file/index.html"
-  acl    = "public-read"
-  depends_on = [
-    tencentcloud_cos_bucket.create_bucket,
-  ]
-}
-
 resource "tencentcloud_cos_bucket_object" "Flag" {
   bucket = tencentcloud_cos_bucket.create_bucket.bucket
   key    = "weflag.txt"
-  source = "./file/flag.txt"
+  source = "./flag.txt"
   acl    = "public-read"
   depends_on = [
     tencentcloud_cos_bucket.create_bucket,

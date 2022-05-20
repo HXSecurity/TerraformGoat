@@ -50,10 +50,6 @@ Connection: close
 Upgrade-Insecure-Requests: 1
 ```
 
-When you see the file name, just visit that name **UkFrpYnoTbbQyhpx.html**
-
-![image-20220425182853118](../../../images/image-20220425182853118.png)
-
 ## Destruction Challenge
 
 ```bash

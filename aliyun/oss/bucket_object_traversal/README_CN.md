@@ -29,19 +29,15 @@ terraform apply
 
 访问 hx-cloud-security-ctf-xxx.oss-cn-beijing.aliyuncs.com
 
-## Get Flag
+## 操作
 
-![image-20220425122303981](../../../images/UzJuMarkDownImageimage-20220425122303981.png)
+访问 bucket
 
-找到文件位置，在/index.png
+```shell
+hx-cloud-security-xxx.oss-cn-beijing.aliyuncs.com
+```
 
-![image-20220425122323577](../../../images/UzJuMarkDownImageimage-20220425122323577.png)
-
-但是并不是一张图片
-
-![image-20220425122347527](../../../images/UzJuMarkDownImageimage-20220425122347527.png)
-
-这是什么？也许可以去查询经纬度来判断这是位置是哪里！
+![image-20220425122303981](../../../images/1653026731.png)
 
 ## 销毁挑战
 

@@ -1,28 +1,18 @@
-terraform {
-  required_providers {
-    alicloud = {
-      source  = "aliyun/alicloud"
-      version = "1.163.0"
-    }
-  }
-}
-
 provider "alicloud" {
   profile = "default"
-  region  = var.AliyunCloud_Oss_Region
+  region  = "cn-beijing"
 }
 
 resource "alicloud_oss_bucket_object" "UploadObject" {
-  bucket       = alicloud_oss_bucket.Create_Bucket.bucket
-  acl          = "public-read-write"
-  key          = "index.png"
-  source       = "./file/index.html"
-  content_type = "inline"
+  bucket = alicloud_oss_bucket.Create_Bucket.bucket
+  acl    = "public-read"
+  key    = "flag"
+  source = "./flag"
 }
 
 resource "alicloud_oss_bucket" "Create_Bucket" {
-  bucket        = "hx-cloud-security-ctf-${random_string.random_suffix.result}"
-  acl           = "public-read-write"
+  bucket        = "hx-cloud-security-${random_string.random_suffix.result}"
+  acl           = "public-read"
   force_destroy = true
   policy        = <<POLICY
 {
@@ -73,11 +63,9 @@ resource "alicloud_oss_bucket" "Create_Bucket" {
 		}
 	}]
 }
-            POLICY
+POLICY
 }
 
-
-# Randomly generate a 5-digit random number
 resource "random_string" "random_suffix" {
   length  = 5
   special = false

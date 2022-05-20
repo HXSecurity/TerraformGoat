@@ -39,13 +39,11 @@ resource "aws_s3_bucket_policy" "CreateBucketPolicy" {
 EOF
 }
 
-resource "aws_s3_bucket_object" "PutObject" {
-  bucket       = aws_s3_bucket.CreateBucket.id
-  key          = "index.html"
-  source       = "./file/index.html"
-  content_type = "text/html"
+resource "aws_s3_object" "PutObject" {
+  bucket = aws_s3_bucket.CreateBucket.id
+  key    = "flag.txt"
+  source = "./flag.txt"
 }
-
 
 resource "random_string" "random_suffix" {
   length  = 5
