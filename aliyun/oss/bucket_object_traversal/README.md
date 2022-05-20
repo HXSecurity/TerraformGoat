@@ -25,19 +25,15 @@ If you confirm that there are no problems, Type “yes” to start the build
 
 Access to hx-cloud-security-ctf-xxx.oss-cn-beijing.aliyuncs.com
 
-## Get Flag
+## Steps
 
-![image-20220425122303981](../../../images/UzJuMarkDownImageimage-20220425122303981.png)
+access bucket
 
-Find File Location, in /index.png
+```shell
+hx-cloud-security-xxx.oss-cn-beijing.aliyuncs.com
+```
 
-![image-20220425122323577](../../../images/UzJuMarkDownImageimage-20220425122323577.png)
-
-But it is not a picture.
-
-![image-20220425122347527](../../../images/UzJuMarkDownImageimage-20220425122347527.png)
-
-What is this? Maybe you can check the latitude and longitude to determine where this is the location!
+![image-20220425122303981](../../../images/1653026731.png)
 
 ## Destruction Challenge
 

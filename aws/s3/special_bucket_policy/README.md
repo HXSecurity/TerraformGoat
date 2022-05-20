@@ -2,7 +2,7 @@
 
 English | [中文](./README_CN.md)
 
-This is a script that can help you quickly build a special bucket strategy, which you may not encounter in a real environment, and it is fun to play!
+This is a script that can help you quickly build a special bucket strategy
 
 ## Deployment Environment
 
@@ -23,25 +23,21 @@ terraform init
 terraform apply
 ```
 
-Subsequently typing yes will automatically build it
+typing yes
 
 ## Get Flag
 
-Accessing bucket addresses
+access flag
 
-![image-20220425210110601](../../../images/image-20220425210110601.png)
+![image-20220425210155805](../../../images/1653024665.png)
 
-Although the key is displayed here, we put back in will prompt`AccessDenied`
+Set the UserAgent to HxSecurityLab
 
-![image-20220425210155805](../../../images/image-20220425210155805.png)
-
-We just need to change the UserAgent to HxSecurityLab
-
-![image-20220425210230286](../../../images/image-20220425210230286.png)
+![image-20220425210230286](../../../images/1653024739.png)
 
 ```http
-GET /index.html HTTP/1.1
-Host: hx-sec-testansmj.s3.eu-west-1.amazonaws.com
+GET /flag.txt HTTP/1.1
+Host: hxseclabxxxxxx.s3.eu-west-1.amazonaws.com
 User-Agent: HxSecurityLab
 Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
 Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2

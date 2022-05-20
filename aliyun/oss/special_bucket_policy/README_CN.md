@@ -47,10 +47,6 @@ Connection: close
 Upgrade-Insecure-Requests: 1
 ```
 
-看到了文件名，访问该名称即可**UkFrpYnoTbbQyhpx.html**
-
-![image-20220425182853118](../../../images/image-20220425182853118.png)
-
 ## 销毁挑战
 
 ```bash

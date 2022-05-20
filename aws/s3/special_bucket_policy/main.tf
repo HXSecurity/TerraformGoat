@@ -41,18 +41,10 @@ resource "aws_s3_bucket_policy" "CreateBucketPolicy" {
 EOF
 }
 
-resource "aws_s3_bucket_object" "PutObject" {
+resource "aws_s3_object" "PutObject_Flag" {
   bucket       = aws_s3_bucket.CreateBucket.id
-  key          = "index.html"
-  source       = "./file/index.html"
-  content_type = "text/html"
-}
-
-resource "aws_s3_bucket_object" "PutObject_Flag" {
-  bucket       = aws_s3_bucket.CreateBucket.id
-  key          = "weflag.txt"
-  source       = "./file/flag.txt"
-  content_type = "text/html"
+  key          = "flag.txt"
+  source       = "./flag.txt"
 }
 
 
