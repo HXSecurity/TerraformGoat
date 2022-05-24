@@ -1,17 +1,17 @@
-# 腾讯云 COS Bucket 日志存储未开启场景
+# 腾讯云 COS Bucket 服务端加密未开启场景
 
 [English](./README.md) | 中文
 
 ## 描述信息
 
-这是一个用于构建腾讯云 COS Bucket 日志存储未开启的场景。
+这是一个用于构建腾讯云 COS Bucket 服务端加密未开启的场景。
 
 ## 场景搭建
 
 在容器中执行以下命令
 
 ```shell
-cd /TerraformGoat/tencentcloud/cos/bucket_logging_disable
+cd /TerraformGoat/tencentcloud/cos/server_side_encryption_disable
 ```
 
 编辑 `terraform.tfvars` 文件，在文件中填入你的`tencentcloud_secret_id`和`tencentcloud_secret_key`

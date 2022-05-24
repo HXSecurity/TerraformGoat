@@ -22,7 +22,7 @@ cd /TerraformGoat/tencentcloud/cos/bucket_acl_writable/
 vim terraform.tfvars
 ```
 
-> * 在腾讯云控制台的 [API 密钥管理](https://console.cloud.tencent.com/cam/capi)可以创建和查看您的 SecretID 和 SecretKey
+> 在腾讯云控制台的 [API 密钥管理](https://console.cloud.tencent.com/cam/capi)可以创建和查看您的 SecretID 和 SecretKey
 
 部署靶场
 

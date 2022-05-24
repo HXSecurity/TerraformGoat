@@ -1,17 +1,17 @@
-# Tencent Cloud COS Object Public Access Scenario
+# Tencent Cloud COS Bucket Server Side Encryption Disable Scenario
 
 English | [中文](./README_CN.md)
 
 ## Description
 
-This is the scenario in which the Tencent Cloud COS object public access.
+This is the scenario in which the Tencent Cloud COS bucket server side encryption disable.
 
 ## Deployment Environment
 
 Execute the following command in the container
 
 ```shell
-cd /TerraformGoat/tencentcloud/cos/object_public_access
+cd /TerraformGoat/tencentcloud/cos/server_side_encryption_disable
 ```
 
 Edit the `terraform.tfvars` file and write your `tencentcloud_secret_id`and`tencentcloud_secret_key` in the file
@@ -32,16 +32,6 @@ terraform apply
 > When the terminal prompts `Enter a value:`, enter `yes`
 
 After the environment is set up, you can see the created Bucket at Outputs.
-
-## Steps
-
-Access Object
-
-```shell
-> curl https://houxian-xxx-xxx.cos.ap-beijing.myqcloud.com/flag
-
-{Congratulations on getting flag}
-```
 
 ## Destroy the environment
 
