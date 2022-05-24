@@ -20,7 +20,7 @@ Edit the `terraform.tfvars` file and write your `tencentcloud_secret_id`and`tenc
 vim terraform.tfvars
 ```
 
-> * You can create and view your SecretKey on the [API Key Management](https://console.cloud.tencent.com/cam/capi) of the Tencent Cloud console
+> You can create and view your SecretKey on the [API Key Management](https://console.cloud.tencent.com/cam/capi) of the Tencent Cloud console
 
 Deploy Vulnerable Environment
 
