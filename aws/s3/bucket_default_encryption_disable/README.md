@@ -4,7 +4,7 @@ English | [中文](./README_CN.md)
 
 ## Description
 
-This is the scenario in which the AWS S3 bucket server-side encryption disable scenario.
+This is the scenario in which the AWS S3 bucket server-side encryption disable.
 
 ## Deployment Environment
 
