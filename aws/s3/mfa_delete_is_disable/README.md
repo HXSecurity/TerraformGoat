@@ -1,17 +1,17 @@
-# AWS S3 Bucket server-side encryption disable scenario
+# AWS S3 Bucket MFA Delete is Disable
 
 English | [中文](./README_CN.md)
 
 ## Description
 
-This is the scenario in which the AWS S3 bucket server-side encryption disable.
+This is the scenario in which the AWS S3 bucket MFA Delete is Disable.
 
 ## Deployment Environment
 
 Execute the following command in the container
 
 ```shell
-cd /TerraformGoat/aws/s3/bucket_default_encryption_disable
+cd /TerraformGoat/aws/s3/mfa_delete_is_disable
 ```
 
 Configure AWS Access Credentials
@@ -35,12 +35,15 @@ After the environment is set up, you can see the created Bucket at Outputs.
 
 ## Steps
 
-Get the encryption method of the Bucket, if the return content is as follows, then the Bucket encryption is not enabled.
+Get the MFADelete status of the Bucket.
 
 ```shell
-> aws s3api get-bucket-encryption --bucket houxian-xxx
+> aws s3api get-bucket-versioning --bucket houxian-xxx
 
-An error occurred (ServerSideEncryptionConfigurationNotFoundError) when calling the GetBucketEncryption operation: The server side encryption configuration was not found
+{
+    "Status": "Enabled",
+    "MFADelete": "Disabled"
+}
 ```
 
 ## Destroy the environment
