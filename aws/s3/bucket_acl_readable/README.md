@@ -64,7 +64,6 @@ Get Bucket ACL policy.
 </AccessControlPolicy>
 ```
 
-
 ## Destroy the environment
 
 ```shell

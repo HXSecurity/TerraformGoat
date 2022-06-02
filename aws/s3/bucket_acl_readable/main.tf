@@ -8,7 +8,7 @@ resource "aws_s3_bucket" "huoxian_bucket" {
 }
 
 resource "aws_s3_bucket_acl" "huoxian_bucket_acl" {
-  bucket     = aws_s3_bucket.huoxian_bucket.id
+  bucket = aws_s3_bucket.huoxian_bucket.id
   access_control_policy {
     grant {
       grantee {
