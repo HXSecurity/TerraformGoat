@@ -51,7 +51,7 @@ Currently supported cloud vendors include Alibaba Cloud, Tencent Cloud, Huawei C
 |  37  |  Amazon  Web Services  |      Object Storage       | [Bucket Allow HTTP Access](https://github.com/HuoCorp/TerraformGoat/tree/main/aws/s3/bucket_allow_http_access) |
 |  38  |  Amazon  Web Services  |      Object Storage       | [Bucket Default Encryption Disable](https://github.com/HuoCorp/TerraformGoat/tree/main/aws/s3/bucket_default_encryption_disable) |
 |  39  |  Amazon  Web Services  | Elastic Computing Service | [EC2 SSRF](https://github.com/HuoCorp/TerraformGoat/tree/main/aws/ec2/ec2_ssrf) |
-|  39  |  Amazon  Web Services  | Elastic Computing Service | [Console Takeover](https://github.com/HuoCorp/TerraformGoat/tree/main/aws/ec2/console_takeover) |
+|  40  |  Amazon  Web Services  | Elastic Computing Service | [Console Takeover](https://github.com/HuoCorp/TerraformGoat/tree/main/aws/ec2/console_takeover) |
 |  41  |  Amazon  Web Services  | Identity and Access Management | [IAM Privilege Escalation](https://github.com/HuoCorp/TerraformGoat/tree/main/aws/iam/privilege_escalation) |
 |  42  | Google  Cloud Platform |      Object Storage       | [Object ACL Writable](https://github.com/HuoCorp/TerraformGoat/tree/main/gcp/cs/object_acl_writable) |
 |  43  | Google  Cloud Platform |      Object Storage       | [Bucket ACL Writable](https://github.com/HuoCorp/TerraformGoat/tree/main/gcp/cs/bucket_acl_writable) |
