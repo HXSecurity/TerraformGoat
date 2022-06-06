@@ -37,8 +37,6 @@ terraform apply
 hx-cloud-security-xxx.oss-cn-beijing.aliyuncs.com
 ```
 
-![image-20220425122303981](../../../images/1653026731.png)
-
 ## 销毁挑战
 
 ```bash

@@ -1,5 +1,7 @@
 # 华为云 RDS Mysql基线检查环境快速构建
 
+[English](./README.md) | 中文
+
 ## 描述
 
 这是一个可以帮你快速创建华为云RDS Mysql的脚本，可用于基线检测的样例
@@ -40,8 +42,6 @@ terraform apply
 ```
 
 > 在终端提示 `Enter a value:` 时，输入 `yes` 即可
-
-![image-20220602161104980](../../../images/image-20220602161104980.png)
 
 ## 销毁环境
 
