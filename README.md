@@ -87,7 +87,7 @@ When entering the container, you need to select the cloud service to run
 
 After selecting the cloud service you want to use, the relevant dependencies will be installed. After the relevant dependencies are installed, you can use TerraformGoat.
 
-Using the build of the [Alibaba Cloud ECS SSRF](https://github.com/HuoCorp/TerraformGoat/tree/main/aliyun/elastic_computing_service/ecs_ssrf) vulnerability scenario as a demo:
+Using the build of the [Alibaba Cloud ECS SSRF](https://github.com/HuoCorp/TerraformGoat/tree/main/aliyun/ecs/ecs_ssrf) vulnerability scenario as a demo:
 
 [![asciicast](https://asciinema.org/a/493554.svg)](https://asciinema.org/a/493554)
 

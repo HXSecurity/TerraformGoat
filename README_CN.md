@@ -86,7 +86,7 @@ docker exec -it terraformgoat /bin/bash
 
 选择你要用的云服务后会安装相关依赖，等相关依赖安装完后，就可以使用 TerraformGoat 了
 
-这里以[阿里云 ECS SSRF](https://github.com/HuoCorp/TerraformGoat/tree/main/aliyun/elastic_computing_service/ecs_ssrf) 漏洞场景的搭建进行演示：
+这里以[阿里云 ECS SSRF](https://github.com/HuoCorp/TerraformGoat/tree/main/aliyun/ecs/ecs_ssrf) 漏洞场景的搭建进行演示：
 
 [![asciicast](https://asciinema.org/a/493554.svg)](https://asciinema.org/a/493554)
 
