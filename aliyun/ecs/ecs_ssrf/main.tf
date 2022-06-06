@@ -3,13 +3,12 @@ provider "alicloud" {
   region  = "cn-beijing"
 }
 
-
 resource "alicloud_instance" "instance" {
   availability_zone          = "cn-beijing-b"
   security_groups            = alicloud_security_group.group.*.id
   instance_type              = data.alicloud_instance_types.types_ds.instance_types.0.id
   image_id                   = "ubuntu_18_04_64_20G_alibase_20190624.vhd"
-  instance_name              = "huoxian_terraform_test_instance"
+  instance_name              = "huocorp_terraform_goat_instance"
   vswitch_id                 = alicloud_vswitch.vswitch.id
   internet_max_bandwidth_out = 100
   user_data                  = <<EOF
@@ -33,15 +32,13 @@ EOF
   ]
 }
 
-
 resource "alicloud_security_group" "group" {
-  name   = "huoxian_terraform_test_security_group"
+  name   = "huocorp_terraform_goat_security_group"
   vpc_id = alicloud_vpc.vpc.id
   depends_on = [
     alicloud_vpc.vpc
   ]
 }
-
 
 resource "alicloud_security_group_rule" "allow_all_tcp" {
   type              = "ingress"
@@ -57,23 +54,69 @@ resource "alicloud_security_group_rule" "allow_all_tcp" {
   ]
 }
 
-
 resource "alicloud_vpc" "vpc" {
-  vpc_name   = "huoxian_terraform_test_vpc"
+  vpc_name   = "huocorp_terraform_goat_vpc"
   cidr_block = "172.16.0.0/16"
 }
-
 
 resource "alicloud_vswitch" "vswitch" {
   vpc_id       = alicloud_vpc.vpc.id
   cidr_block   = "172.16.0.0/24"
   zone_id      = "cn-beijing-b"
-  vswitch_name = "huoxian_terraform_test_vswitch"
+  vswitch_name = "huocorp_terraform_goat_vswitch"
   depends_on = [
     alicloud_vpc.vpc
   ]
 }
 
+resource "alicloud_ram_role" "role" {
+  name     = "huocorp_terraform_goat_role"
+  force    = true
+  document = <<EOF
+  {
+  "Statement": [
+    {
+      "Action": "sts:AssumeRole",
+      "Effect": "Allow",
+      "Principal": {
+        "Service": [
+          "ecs.aliyuncs.com"
+        ]
+      }
+    }
+  ],
+  "Version": "1"
+  }
+  EOF
+}
+
+resource "alicloud_ram_policy" "policy" {
+  policy_name     = "AdministratorAccess"
+  force           = true
+  policy_document = <<EOF
+  {
+    "Statement": [
+        {
+            "Action": "*",
+            "Effect": "Allow",
+            "Resource": "*"
+        }
+    ],
+    "Version": "1"
+  }
+  EOF 
+}
+
+resource "alicloud_ram_role_attachment" "attach" {
+  role_name    = alicloud_ram_role.role.name
+  instance_ids = alicloud_instance.instance.*.id
+}
+
+resource "alicloud_ram_role_policy_attachment" "attach" {
+  policy_name = alicloud_ram_policy.policy.name
+  policy_type = alicloud_ram_policy.policy.type
+  role_name   = alicloud_ram_role.role.name
+}
 
 data "alicloud_instance_types" "types_ds" {
   cpu_core_count = 1

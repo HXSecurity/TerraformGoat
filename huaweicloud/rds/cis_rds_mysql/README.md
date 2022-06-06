@@ -1,5 +1,7 @@
 ## Huawei Cloud RDS Mysql Baseline Checking Environment Quick Build
 
+English | [中文](./README_CN.md)
+
 ## Description
 
 This is a sample script that helps you quickly create Huawei Cloud RDS Mysql that can be used for baseline inspection
@@ -40,8 +42,6 @@ terraform apply
 ```
 
 > When prompted with `Enter a value:`, type `yes` at the terminal
-
-![image-20220602161104980](../../../images/image-20220602161104980.png)
 
 ## Destroy the environment
 

@@ -33,8 +33,6 @@ access bucket
 hx-cloud-security-xxx.oss-cn-beijing.aliyuncs.com
 ```
 
-![image-20220425122303981](../../../images/1653026731.png)
-
 ## Destruction Challenge
 
 ```bash

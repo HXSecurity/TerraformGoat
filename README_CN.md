@@ -38,9 +38,9 @@ Cloud Platform、Microsoft Azure 六个云厂商的云场景漏洞搭建。
 |  25  |         华为云         |   对象存储   | [Bucket 对象遍历](https://github.com/HuoCorp/TerraformGoat/tree/main/huaweicloud/obs/bucket_object_traversal) |
 |  26  |         华为云         |   对象存储   | [特殊的 Bucket 策略](https://github.com/HuoCorp/TerraformGoat/tree/main/huaweicloud/obs/special_bucket_policy) |
 |  27  |         华为云         | 弹性计算服务 | [ECS SSRF 漏洞环境](https://github.com/HuoCorp/TerraformGoat/tree/main/huaweicloud/ecs/ecs_ssrf) |
-|  28  |         华为云         | RDS(云数据库) | [RDS Mysql基线检查环境](https://github.com/HuoCorp/TerraformGoat/tree/main/huaweicloud/rds/cis_rds_mysql) |
+|  28  |         华为云         | 关系型数据库 | [RDS Mysql基线检查环境](https://github.com/HuoCorp/TerraformGoat/tree/main/huaweicloud/rds/cis_rds_mysql) |
 |  29  |  Amazon  Web Services  |   对象存储   | [任意文件上传](https://github.com/HuoCorp/TerraformGoat/tree/main/aws/s3/unrestricted_file_upload) |
-|  39  |  Amazon  Web Services  |   对象存储   | [Object ACL 可写](https://github.com/HuoCorp/TerraformGoat/tree/main/aws/s3/object_acl_writable) |
+|  30  |  Amazon  Web Services  |   对象存储   | [Object ACL 可写](https://github.com/HuoCorp/TerraformGoat/tree/main/aws/s3/object_acl_writable) |
 |  31  |  Amazon  Web Services  |   对象存储   | [Bucket ACL 可写](https://github.com/HuoCorp/TerraformGoat/tree/main/aws/s3/bucket_acl_writable) |
 |  32  |  Amazon  Web Services  |   对象存储   | [Bucket ACL 可读](https://github.com/HuoCorp/TerraformGoat/tree/main/aws/s3/bucket_acl_readable) |
 |  33  |  Amazon  Web Services  |   对象存储   | [Bucket 对象遍历](https://github.com/HuoCorp/TerraformGoat/tree/main/aws/s3/bucket_object_traversal) |
@@ -86,7 +86,7 @@ docker exec -it terraformgoat /bin/bash
 
 选择你要用的云服务后会安装相关依赖，等相关依赖安装完后，就可以使用 TerraformGoat 了
 
-这里以[阿里云 ECS SSRF](https://github.com/HuoCorp/TerraformGoat/tree/main/aliyun/elastic_computing_service/ecs_ssrf) 漏洞场景的搭建进行演示：
+这里以[阿里云 ECS SSRF](https://github.com/HuoCorp/TerraformGoat/tree/main/aliyun/ecs/ecs_ssrf) 漏洞场景的搭建进行演示：
 
 [![asciicast](https://asciinema.org/a/493554.svg)](https://asciinema.org/a/493554)
 
