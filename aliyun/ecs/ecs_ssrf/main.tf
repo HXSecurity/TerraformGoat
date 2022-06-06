@@ -70,7 +70,7 @@ resource "alicloud_vswitch" "vswitch" {
 }
 
 resource "alicloud_ram_role" "role" {
-  name     = "huocorp_terraform_goat_role"
+  name     = "huocorp-terraform-goat-role"
   force    = true
   document = <<EOF
   {
@@ -110,12 +110,19 @@ resource "alicloud_ram_policy" "policy" {
 resource "alicloud_ram_role_attachment" "attach" {
   role_name    = alicloud_ram_role.role.name
   instance_ids = alicloud_instance.instance.*.id
+  depends_on = [
+    alicloud_instance.instance
+  ]
 }
 
 resource "alicloud_ram_role_policy_attachment" "attach" {
   policy_name = alicloud_ram_policy.policy.name
   policy_type = alicloud_ram_policy.policy.type
   role_name   = alicloud_ram_role.role.name
+  depends_on = [
+    alicloud_ram_policy.policy,
+    alicloud_ram_role.role
+  ]
 }
 
 data "alicloud_instance_types" "types_ds" {
