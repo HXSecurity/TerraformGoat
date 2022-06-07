@@ -8,7 +8,7 @@ This is a vulnerability environment firing range for building Huawei Cloud Objec
 
 After building the environment with Terraform, users can upload arbitrary files in the vulnerable Bucket.
 
-Tips: 
+Tips:
 
 What is the difference between this vulnerability environment and `/TerraformGoat/huaweicloud/obs/unrestricted_file_upload/`?
 
