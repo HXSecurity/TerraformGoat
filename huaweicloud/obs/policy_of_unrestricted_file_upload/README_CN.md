@@ -8,7 +8,7 @@
 
 使用 Terraform 构建环境后，用户可以在存在漏洞的 Bucket 中上传任意文件。
 
-Tips: 
+Tips:
 
 该漏洞环境与`/TerraformGoat/huaweicloud/obs/unrestricted_file_upload/`有什么区别？
 
