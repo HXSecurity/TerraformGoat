@@ -9,6 +9,7 @@ English | [中文](./README_CN.md)
 This is a firing range for building an insecure ECS security group configuration for Huawei Cloud ECS
 
 Insecure security group configurations can lead to malicious attackers accessing the ECS
+
 ## Deployment Environment
 
 Execute the following command in the container
