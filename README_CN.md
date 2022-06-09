@@ -9,64 +9,65 @@ Cloud Platform、Microsoft Azure 六个云厂商的云场景漏洞搭建。
 
 ## :dart: 目前所支持的场景
 
-| 序号 |         云厂商         |   云服务类型   |                           漏洞环境                           |
-| :--: | :--------------------: | :------------: | :----------------------------------------------------------: |
-|  1   |         腾讯云         |    对象存储    | [任意文件上传](https://github.com/HuoCorp/TerraformGoat/tree/main/tencentcloud/cos/unrestricted_file_upload) |
-|  2   |         腾讯云         |    对象存储    | [Bucket 对象遍历](https://github.com/HuoCorp/TerraformGoat/tree/main/tencentcloud/cos/bucket_object_traversal) |
-|  3   |         腾讯云         |    对象存储    | [Bucket 公开访问](https://github.com/HuoCorp/TerraformGoat/tree/main/tencentcloud/cos/bucket_public_access) |
-|  4   |         腾讯云         |    对象存储    | [Object 公开访问](https://github.com/HuoCorp/TerraformGoat/tree/main/tencentcloud/cos/object_public_access) |
-|  5   |         腾讯云         |    对象存储    | [Bucket ACL 可写](https://github.com/HuoCorp/TerraformGoat/tree/main/tencentcloud/cos/bucket_acl_writable) |
-|  6   |         腾讯云         |    对象存储    | [Bucket ACL 可读](https://github.com/HuoCorp/TerraformGoat/tree/main/tencentcloud/cos/bucket_acl_readable) |
-|  7   |         腾讯云         |    对象存储    | [服务端加密未开启](https://github.com/HuoCorp/TerraformGoat/tree/main/tencentcloud/cos/server_side_encryption_disable) |
-|  8   |         腾讯云         |    对象存储    | [Bucket 日志存储未开启](https://github.com/HuoCorp/TerraformGoat/tree/main/tencentcloud/cos/bucket_logging_disable) |
-|  9   |         腾讯云         |  弹性计算服务  | [CVM SSRF 漏洞环境](https://github.com/HuoCorp/TerraformGoat/tree/main/tencentcloud/cvm/cvm_ssrf) |
-|  10  |         腾讯云         |  弹性计算服务  | [CVM 虚拟机的磁盘未开启加密](https://github.com/HuoCorp/TerraformGoat/tree/main/tencentcloud/cvm/cvm_virtual_machine_disks_are_unencrypted) |
-|  11  |         阿里云         |    对象存储    | [任意文件上传](https://github.com/HuoCorp/TerraformGoat/tree/main/aliyun/oss/unrestricted_file_upload) |
-|  12  |         阿里云         |    对象存储    | [Bucket 对象遍历](https://github.com/HuoCorp/TerraformGoat/tree/main/aliyun/oss/bucket_object_traversal) |
-|  13  |         阿里云         |    对象存储    | [Object ACL 可写](https://github.com/HuoCorp/TerraformGoat/tree/main/aliyun/oss/object_acl_writable) |
-|  14  |         阿里云         |    对象存储    | [Object ACL 可读](https://github.com/HuoCorp/TerraformGoat/tree/main/aliyun/oss/object_acl_readable) |
-|  15  |         阿里云         |    对象存储    | [Bucket 公开访问](https://github.com/HuoCorp/TerraformGoat/tree/main/aliyun/oss/bucket_public_access) |
-|  16  |         阿里云         |    对象存储    | [Object 公开访问](https://github.com/HuoCorp/TerraformGoat/tree/main/aliyun/oss/object_public_access) |
-|  17  |         阿里云         |    对象存储    | [Bucket 策略可读](https://github.com/HuoCorp/TerraformGoat/tree/main/aliyun/oss/bucket_policy_readable) |
-|  18  |         阿里云         |    对象存储    | [Bucket HTTP 开启](https://github.com/HuoCorp/TerraformGoat/tree/main/aliyun/oss/bucket_http_enable) |
-|  19  |         阿里云         |    对象存储    | [特殊的 Bucket 策略](https://github.com/HuoCorp/TerraformGoat/tree/main/aliyun/oss/special_bucket_policy) |
-|  20  |         阿里云         |    对象存储    | [Bucket 日志转存未开启](https://github.com/HuoCorp/TerraformGoat/tree/main/aliyun/oss/bucket_logging_disable) |
-|  21  |         阿里云         |    对象存储    | [Bucket 服务端加密未使用 KMS](https://github.com/HuoCorp/TerraformGoat/tree/main/aliyun/oss/server_side_encryption_no_kms_set) |
-|  22  |         阿里云         |    对象存储    | [Bucket 服务端加密未使用 BYOK](https://github.com/HuoCorp/TerraformGoat/tree/main/aliyun/oss/server_side_encryption_not_using_BYOK) |
-|  23  |         阿里云         |  弹性计算服务  | [ECS SSRF 漏洞环境](https://github.com/HuoCorp/TerraformGoat/tree/main/aliyun/ecs/ecs_ssrf) |
-|  24  |         阿里云         |  弹性计算服务  | [ECS 未连接的磁盘未开启加密](https://github.com/HuoCorp/TerraformGoat/tree/main/aliyun/ecs/ecs_unattached_disks_are_unencrypted) |
-|  25  |         阿里云         |  弹性计算服务  | [ECS 虚拟机的磁盘未开启加密](https://github.com/HuoCorp/TerraformGoat/tree/main/aliyun/ecs/ecs_virtual_machine_disks_are_unencrypted) |
-|  26  |         阿里云         |  弹性计算服务  | [ECS 安全组允许所有端口访问](https://github.com/HuoCorp/TerraformGoat/tree/main/aliyun/ecs/ecs_security_group_open_all_port) |
-|  27  |         阿里云         |  弹性计算服务  | [ECS 安全组允许常见端口访问](https://github.com/HuoCorp/TerraformGoat/tree/main/aliyun/ecs/ecs_security_group_open_common_port) |
-|  28  |         华为云         |    对象存储    | [任意文件上传](https://github.com/HuoCorp/TerraformGoat/tree/main/huaweicloud/obs/unrestricted_file_upload) |
-|  29  |         华为云         |    对象存储    | [Object ACL 可写](https://github.com/HuoCorp/TerraformGoat/tree/main/huaweicloud/obs/object_acl_writable) |
-|  30  |         华为云         |    对象存储    | [Bucket 对象遍历](https://github.com/HuoCorp/TerraformGoat/tree/main/huaweicloud/obs/bucket_object_traversal) |
-|  31  |         华为云         |    对象存储    | [特殊的 Bucket 策略](https://github.com/HuoCorp/TerraformGoat/tree/main/huaweicloud/obs/special_bucket_policy) |
-|  32  |         华为云         |    对象存储    | [错误的Policy策略导致任意文件上传](https://github.com/HuoCorp/TerraformGoat/tree/main/huaweicloud/obs/policy_of_unrestricted_file_upload) |
-|  33  |         华为云         |  弹性计算服务  | [ECS SSRF 漏洞环境](https://github.com/HuoCorp/TerraformGoat/tree/main/huaweicloud/ecs/ecs_ssrf) |
-|  34  |         华为云         |  弹性计算服务  | [ECS 不安全的安全组配置](https://github.com/HuoCorp/TerraformGoat/tree/main/huaweicloud/ecs/cis_unsafe_secgroup) |
-|  35  |         华为云         |  关系型数据库  | [RDS Mysql基线检查环境](https://github.com/HuoCorp/TerraformGoat/tree/main/huaweicloud/rds/cis_rds_mysql) |
-|  36  |  Amazon  Web Services  |    对象存储    | [任意文件上传](https://github.com/HuoCorp/TerraformGoat/tree/main/aws/s3/unrestricted_file_upload) |
-|  37  |  Amazon  Web Services  |    对象存储    | [Object ACL 可写](https://github.com/HuoCorp/TerraformGoat/tree/main/aws/s3/object_acl_writable) |
-|  38  |  Amazon  Web Services  |    对象存储    | [Bucket ACL 可写](https://github.com/HuoCorp/TerraformGoat/tree/main/aws/s3/bucket_acl_writable) |
-|  39  |  Amazon  Web Services  |    对象存储    | [Bucket ACL 可读](https://github.com/HuoCorp/TerraformGoat/tree/main/aws/s3/bucket_acl_readable) |
-|  40  |  Amazon  Web Services  |    对象存储    | [Bucket 对象遍历](https://github.com/HuoCorp/TerraformGoat/tree/main/aws/s3/bucket_object_traversal) |
-|  41  |  Amazon  Web Services  |    对象存储    | [特殊的 Bucket 策略](https://github.com/HuoCorp/TerraformGoat/tree/main/aws/s3/special_bucket_policy) |
-|  42  |  Amazon  Web Services  |    对象存储    | [Bucket 允许 HTTP 访问](https://github.com/HuoCorp/TerraformGoat/tree/main/aws/s3/bucket_allow_http_access) |
-|  43  |  Amazon  Web Services  |    对象存储    | [Bucket 默认加密未开启](https://github.com/HuoCorp/TerraformGoat/tree/main/aws/s3/bucket_default_encryption_disable) |
-|  44  |  Amazon  Web Services  |    对象存储    | [Bucket 日志转存未开启](https://github.com/HuoCorp/TerraformGoat/tree/main/aws/s3/bucket_logging_disable) |
-|  45  |  Amazon  Web Services  |    对象存储    | [Bucket 删除未开启 MFA](https://github.com/HuoCorp/TerraformGoat/tree/main/aws/s3/mfa_delete_is_disable) |
-|  46  |  Amazon  Web Services  |  弹性计算服务  | [EC2 SSRF 漏洞环境](https://github.com/HuoCorp/TerraformGoat/tree/main/aws/ec2/ec2_ssrf) |
-|  47  |  Amazon  Web Services  |  弹性计算服务  | [控制台接管漏洞环境](https://github.com/HuoCorp/TerraformGoat/tree/main/aws/ec2/console_takeover) |
-|  48  |  Amazon  Web Services  | 身份和访问管理 | [IAM 提权环境](https://github.com/HuoCorp/TerraformGoat/tree/main/aws/iam/privilege_escalation) |
-|  49  | Google  Cloud Platform |    对象存储    | [任意文件上传](https://github.com/HuoCorp/TerraformGoat/tree/main/gcp/cs/unrestricted_file_upload) |
-|  50  | Google  Cloud Platform |    对象存储    | [Object ACL 可写](https://github.com/HuoCorp/TerraformGoat/tree/main/gcp/cs/object_acl_writable) |
-|  51  | Google  Cloud Platform |    对象存储    | [Bucket ACL 可写](https://github.com/HuoCorp/TerraformGoat/tree/main/gcp/cs/bucket_acl_writable) |
-|  52  | Google  Cloud Platform |    对象存储    | [Bucket 对象遍历](https://github.com/HuoCorp/TerraformGoat/tree/main/gcp/cs/bucket_object_traversal) |
-|  53  | Google  Cloud Platform |  弹性计算服务  | [VM 命令执行漏洞环境](https://github.com/HuoCorp/TerraformGoat/tree/main/gcp/vm/vm_command_execution) |
-|  54  |    Microsoft  Azure    |    对象存储    | [Blob 公开访问](https://github.com/HuoCorp/TerraformGoat/tree/main/azure/blob/blob_public_access/) |
-|  55  |    Microsoft  Azure    |    对象存储    | [Container Blob 遍历](https://github.com/HuoCorp/TerraformGoat/tree/main/azure/blob/container_blob_traversal/) |
-|  56  |    Microsoft  Azure    |  弹性计算服务  | [VM 命令执行漏洞环境](https://github.com/HuoCorp/TerraformGoat/tree/main/azure/vm/vm_command_execution) |
+| 序号 |        云厂商         |   云服务类型   |                           漏洞环境                           |
+| :--: | :-------------------: | :------------: | :----------------------------------------------------------: |
+|  1   |        腾讯云         |    对象存储    | [任意文件上传](https://github.com/HuoCorp/TerraformGoat/tree/main/tencentcloud/cos/unrestricted_file_upload) |
+|  2   |        腾讯云         |    对象存储    | [Bucket 对象遍历](https://github.com/HuoCorp/TerraformGoat/tree/main/tencentcloud/cos/bucket_object_traversal) |
+|  3   |        腾讯云         |    对象存储    | [Bucket 公开访问](https://github.com/HuoCorp/TerraformGoat/tree/main/tencentcloud/cos/bucket_public_access) |
+|  4   |        腾讯云         |    对象存储    | [Object 公开访问](https://github.com/HuoCorp/TerraformGoat/tree/main/tencentcloud/cos/object_public_access) |
+|  5   |        腾讯云         |    对象存储    | [Bucket ACL 可写](https://github.com/HuoCorp/TerraformGoat/tree/main/tencentcloud/cos/bucket_acl_writable) |
+|  6   |        腾讯云         |    对象存储    | [Bucket ACL 可读](https://github.com/HuoCorp/TerraformGoat/tree/main/tencentcloud/cos/bucket_acl_readable) |
+|  7   |        腾讯云         |    对象存储    | [服务端加密未开启](https://github.com/HuoCorp/TerraformGoat/tree/main/tencentcloud/cos/server_side_encryption_disable) |
+|  8   |        腾讯云         |    对象存储    | [Bucket 日志存储未开启](https://github.com/HuoCorp/TerraformGoat/tree/main/tencentcloud/cos/bucket_logging_disable) |
+|  9   |        腾讯云         |  弹性计算服务  | [CVM SSRF 漏洞环境](https://github.com/HuoCorp/TerraformGoat/tree/main/tencentcloud/cvm/cvm_ssrf) |
+|  10  |        腾讯云         |  弹性计算服务  | [CVM 虚拟机的磁盘未开启加密](https://github.com/HuoCorp/TerraformGoat/tree/main/tencentcloud/cvm/cvm_virtual_machine_disks_are_unencrypted) |
+|  11  |        腾讯云         |  弹性计算服务  | [CVM 安全组允许所有端口访问](https://github.com/HuoCorp/TerraformGoat/tree/main/tencentcloud/cvm/cvm_security_group_open_all_port) |
+|  12  |        阿里云         |    对象存储    | [任意文件上传](https://github.com/HuoCorp/TerraformGoat/tree/main/aliyun/oss/unrestricted_file_upload) |
+|  13  |        阿里云         |    对象存储    | [Bucket 对象遍历](https://github.com/HuoCorp/TerraformGoat/tree/main/aliyun/oss/bucket_object_traversal) |
+|  14  |        阿里云         |    对象存储    | [Object ACL 可写](https://github.com/HuoCorp/TerraformGoat/tree/main/aliyun/oss/object_acl_writable) |
+|  15  |        阿里云         |    对象存储    | [Object ACL 可读](https://github.com/HuoCorp/TerraformGoat/tree/main/aliyun/oss/object_acl_readable) |
+|  16  |        阿里云         |    对象存储    | [Bucket 公开访问](https://github.com/HuoCorp/TerraformGoat/tree/main/aliyun/oss/bucket_public_access) |
+|  17  |        阿里云         |    对象存储    | [Object 公开访问](https://github.com/HuoCorp/TerraformGoat/tree/main/aliyun/oss/object_public_access) |
+|  18  |        阿里云         |    对象存储    | [Bucket 策略可读](https://github.com/HuoCorp/TerraformGoat/tree/main/aliyun/oss/bucket_policy_readable) |
+|  19  |        阿里云         |    对象存储    | [Bucket HTTP 开启](https://github.com/HuoCorp/TerraformGoat/tree/main/aliyun/oss/bucket_http_enable) |
+|  20  |        阿里云         |    对象存储    | [特殊的 Bucket 策略](https://github.com/HuoCorp/TerraformGoat/tree/main/aliyun/oss/special_bucket_policy) |
+|  21  |        阿里云         |    对象存储    | [Bucket 日志转存未开启](https://github.com/HuoCorp/TerraformGoat/tree/main/aliyun/oss/bucket_logging_disable) |
+|  22  |        阿里云         |    对象存储    | [Bucket 服务端加密未使用 KMS](https://github.com/HuoCorp/TerraformGoat/tree/main/aliyun/oss/server_side_encryption_no_kms_set) |
+|  23  |        阿里云         |    对象存储    | [Bucket 服务端加密未使用 BYOK](https://github.com/HuoCorp/TerraformGoat/tree/main/aliyun/oss/server_side_encryption_not_using_BYOK) |
+|  24  |        阿里云         |  弹性计算服务  | [ECS SSRF 漏洞环境](https://github.com/HuoCorp/TerraformGoat/tree/main/aliyun/ecs/ecs_ssrf) |
+|  25  |        阿里云         |  弹性计算服务  | [ECS 未连接的磁盘未开启加密](https://github.com/HuoCorp/TerraformGoat/tree/main/aliyun/ecs/ecs_unattached_disks_are_unencrypted) |
+|  26  |        阿里云         |  弹性计算服务  | [ECS 虚拟机的磁盘未开启加密](https://github.com/HuoCorp/TerraformGoat/tree/main/aliyun/ecs/ecs_virtual_machine_disks_are_unencrypted) |
+|  27  |        阿里云         |  弹性计算服务  | [ECS 安全组允许所有端口访问](https://github.com/HuoCorp/TerraformGoat/tree/main/aliyun/ecs/ecs_security_group_open_all_port) |
+|  28  |        阿里云         |  弹性计算服务  | [ECS 安全组允许常见端口访问](https://github.com/HuoCorp/TerraformGoat/tree/main/aliyun/ecs/ecs_security_group_open_common_port) |
+|  29  |        华为云         |    对象存储    | [任意文件上传](https://github.com/HuoCorp/TerraformGoat/tree/main/huaweicloud/obs/unrestricted_file_upload) |
+|  30  |        华为云         |    对象存储    | [Object ACL 可写](https://github.com/HuoCorp/TerraformGoat/tree/main/huaweicloud/obs/object_acl_writable) |
+|  31  |        华为云         |    对象存储    | [Bucket 对象遍历](https://github.com/HuoCorp/TerraformGoat/tree/main/huaweicloud/obs/bucket_object_traversal) |
+|  32  |        华为云         |    对象存储    | [特殊的 Bucket 策略](https://github.com/HuoCorp/TerraformGoat/tree/main/huaweicloud/obs/special_bucket_policy) |
+|  33  |        华为云         |    对象存储    | [错误的Policy策略导致任意文件上传](https://github.com/HuoCorp/TerraformGoat/tree/main/huaweicloud/obs/policy_of_unrestricted_file_upload) |
+|  34  |        华为云         |  弹性计算服务  | [ECS SSRF 漏洞环境](https://github.com/HuoCorp/TerraformGoat/tree/main/huaweicloud/ecs/ecs_ssrf) |
+|  35  |        华为云         |  弹性计算服务  | [ECS 不安全的安全组配置](https://github.com/HuoCorp/TerraformGoat/tree/main/huaweicloud/ecs/cis_unsafe_secgroup) |
+|  36  |        华为云         |  关系型数据库  | [RDS Mysql基线检查环境](https://github.com/HuoCorp/TerraformGoat/tree/main/huaweicloud/rds/cis_rds_mysql) |
+|  37  |  Amazon Web Services  |    对象存储    | [任意文件上传](https://github.com/HuoCorp/TerraformGoat/tree/main/aws/s3/unrestricted_file_upload) |
+|  38  |  Amazon Web Services  |    对象存储    | [Object ACL 可写](https://github.com/HuoCorp/TerraformGoat/tree/main/aws/s3/object_acl_writable) |
+|  39  |  Amazon Web Services  |    对象存储    | [Bucket ACL 可写](https://github.com/HuoCorp/TerraformGoat/tree/main/aws/s3/bucket_acl_writable) |
+|  40  |  Amazon Web Services  |    对象存储    | [Bucket ACL 可读](https://github.com/HuoCorp/TerraformGoat/tree/main/aws/s3/bucket_acl_readable) |
+|  41  |  Amazon Web Services  |    对象存储    | [Bucket 对象遍历](https://github.com/HuoCorp/TerraformGoat/tree/main/aws/s3/bucket_object_traversal) |
+|  42  |  Amazon Web Services  |    对象存储    | [特殊的 Bucket 策略](https://github.com/HuoCorp/TerraformGoat/tree/main/aws/s3/special_bucket_policy) |
+|  43  |  Amazon Web Services  |    对象存储    | [Bucket 允许 HTTP 访问](https://github.com/HuoCorp/TerraformGoat/tree/main/aws/s3/bucket_allow_http_access) |
+|  44  |  Amazon Web Services  |    对象存储    | [Bucket 默认加密未开启](https://github.com/HuoCorp/TerraformGoat/tree/main/aws/s3/bucket_default_encryption_disable) |
+|  45  |  Amazon Web Services  |    对象存储    | [Bucket 日志转存未开启](https://github.com/HuoCorp/TerraformGoat/tree/main/aws/s3/bucket_logging_disable) |
+|  46  |  Amazon Web Services  |    对象存储    | [Bucket 删除未开启 MFA](https://github.com/HuoCorp/TerraformGoat/tree/main/aws/s3/mfa_delete_is_disable) |
+|  47  |  Amazon Web Services  |  弹性计算服务  | [EC2 SSRF 漏洞环境](https://github.com/HuoCorp/TerraformGoat/tree/main/aws/ec2/ec2_ssrf) |
+|  48  |  Amazon Web Services  |  弹性计算服务  | [控制台接管漏洞环境](https://github.com/HuoCorp/TerraformGoat/tree/main/aws/ec2/console_takeover) |
+|  49  |  Amazon Web Services  | 身份和访问管理 | [IAM 提权环境](https://github.com/HuoCorp/TerraformGoat/tree/main/aws/iam/privilege_escalation) |
+|  50  | Google Cloud Platform |    对象存储    | [任意文件上传](https://github.com/HuoCorp/TerraformGoat/tree/main/gcp/cs/unrestricted_file_upload) |
+|  51  | Google Cloud Platform |    对象存储    | [Object ACL 可写](https://github.com/HuoCorp/TerraformGoat/tree/main/gcp/cs/object_acl_writable) |
+|  52  | Google Cloud Platform |    对象存储    | [Bucket ACL 可写](https://github.com/HuoCorp/TerraformGoat/tree/main/gcp/cs/bucket_acl_writable) |
+|  53  | Google Cloud Platform |    对象存储    | [Bucket 对象遍历](https://github.com/HuoCorp/TerraformGoat/tree/main/gcp/cs/bucket_object_traversal) |
+|  54  | Google Cloud Platform |  弹性计算服务  | [VM 命令执行漏洞环境](https://github.com/HuoCorp/TerraformGoat/tree/main/gcp/vm/vm_command_execution) |
+|  55  |    Microsoft Azure    |    对象存储    | [Blob 公开访问](https://github.com/HuoCorp/TerraformGoat/tree/main/azure/blob/blob_public_access/) |
+|  56  |    Microsoft Azure    |    对象存储    | [Container Blob 遍历](https://github.com/HuoCorp/TerraformGoat/tree/main/azure/blob/container_blob_traversal/) |
+|  57  |    Microsoft Azure    |  弹性计算服务  | [VM 命令执行漏洞环境](https://github.com/HuoCorp/TerraformGoat/tree/main/azure/vm/vm_command_execution) |
 
 ## :dizzy: 安装
 
