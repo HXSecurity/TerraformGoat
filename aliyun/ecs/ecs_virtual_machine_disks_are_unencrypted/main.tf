@@ -1,15 +1,10 @@
-provider "alicloud" {
-  profile = "default"
-  region  = "cn-beijing"
-}
-
 resource "alicloud_instance" "instance" {
-  availability_zone = "cn-beijing-b"
-  security_groups   = alicloud_security_group.group.*.id
-  instance_type     = data.alicloud_instance_types.types_ds.instance_types.0.id
-  image_id          = "ubuntu_18_04_64_20G_alibase_20190624.vhd"
-  vswitch_id        = alicloud_vswitch.vswitch.id
-  instance_name     = "huocorp_terraform_goat_instance"
+  security_groups  = alicloud_security_group.group.*.id
+  instance_type    = data.alicloud_instance_types.types_ds.instance_types.0.id
+  image_id         = "ubuntu_18_04_64_20G_alibase_20190624.vhd"
+  vswitch_id       = alicloud_vswitch.vswitch.id
+  system_disk_size = 20
+  instance_name    = "huocorp_terraform_goat_instance"
   depends_on = [
     alicloud_security_group.group,
     alicloud_vswitch.vswitch
@@ -27,7 +22,7 @@ resource "alicloud_security_group" "group" {
 resource "alicloud_vswitch" "vswitch" {
   vpc_id       = alicloud_vpc.vpc.id
   cidr_block   = "172.16.0.0/24"
-  zone_id      = "cn-beijing-b"
+  zone_id      = "cn-beijing-h"
   vswitch_name = "huocorp_terraform_goat_vswitch"
   depends_on = [
     alicloud_vpc.vpc
