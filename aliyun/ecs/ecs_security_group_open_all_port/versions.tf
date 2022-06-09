@@ -6,3 +6,8 @@ terraform {
     }
   }
 }
+
+provider "alicloud" {
+  profile = "default"
+  region  = "cn-beijing"
+}
