@@ -34,8 +34,8 @@ If you want to install command line tools from other cloud service provider, you
 \033[0m"
 elif [ $cloudcli -eq 1 ];then
     # Tencent Cloud Cli
-    # apt install -qy python3-pip
-    # pip install tccli -i http://mirrors.aliyun.com/pypi/simple/ --trusted-host mirrors.aliyun.com
+    apt install -qy python3-pip
+    pip install tccli -i http://mirrors.aliyun.com/pypi/simple/ --trusted-host mirrors.aliyun.com
     echo -e "\e[32m
 Dependency installation is complete.\033[0m"
 elif [ $cloudcli -eq 2 ];then
