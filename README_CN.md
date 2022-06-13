@@ -72,39 +72,89 @@ Cloud Platform、Microsoft Azure 六个云厂商的云场景漏洞搭建。
 
 ## :dizzy: 安装
 
-TerraformGoat 使用 Dockerfile 构建，因此需要先安装 Docker 环境，Docker 安装方法可以参考：[https://docs.docker.com/get-docker/](https://docs.docker.com/get-docker/)
+根据你使用到的云服务提供商，选择对应的安装命令。
 
-```shell
-git clone https://github.com/HuoCorp/TerraformGoat.git --depth 1
-cd TerraformGoat
-docker build . -t terraformgoat:v0.0.3
+阿里云
+
+```bash
+docker pull registry.cn-beijing.aliyuncs.com/huoxian_pub/terraformgoat_aliyun:0.0.4
+docker run -itd --name terraformgoat_aliyun_0.0.4 registry.cn-beijing.aliyuncs.com/huoxian_pub/terraformgoat_aliyun:0.0.4
+docker exec -it terraformgoat_aliyun_0.0.4 /bin/bash
 ```
 
-![img](./images/1653031694.png)
+腾讯云
 
-docker build 完成后，启动并进入容器
-
-```shell
-docker run -itd --name terraformgoat terraformgoat:v0.0.3
-docker exec -it terraformgoat /bin/bash
+```bash
+docker pull registry.cn-beijing.aliyuncs.com/huoxian_pub/terraformgoat_tencentcloud:0.0.4
+docker run -itd --name terraformgoat_tencentcloud_0.0.4 registry.cn-beijing.aliyuncs.com/huoxian_pub/terraformgoat_tencentcloud:0.0.4
+docker exec -it terraformgoat_tencentcloud.0.4 /bin/bash
 ```
 
-在进入容器时需要选择要使用到的云服务
+华为云
 
-![img](./images/1653035756.png)
+```bash
+docker pull registry.cn-beijing.aliyuncs.com/huoxian_pub/terraformgoat_huaweicloud:0.0.4
+docker run -itd --name terraformgoat_huaweicloud_0.0.4 registry.cn-beijing.aliyuncs.com/huoxian_pub/terraformgoat_huaweicloud:0.0.4
+docker exec -it terraformgoat_huaweicloud_0.0.4 /bin/bash
+```
 
-选择你要用的云服务后会安装相关依赖，等相关依赖安装完后，就可以使用 TerraformGoat 了
+Amazon Web Services
 
-这里以[阿里云 ECS SSRF](https://github.com/HuoCorp/TerraformGoat/tree/main/aliyun/ecs/ecs_ssrf) 漏洞场景的搭建进行演示：
+```bash
+docker pull registry.cn-beijing.aliyuncs.com/huoxian_pub/terraformgoat_aws:0.0.4
+docker run -itd --name terraformgoat_aws_0.0.4 registry.cn-beijing.aliyuncs.com/huoxian_pub/terraformgoat_aws:0.0.4
+docker exec -it terraformgoat_aws_0.0.4 /bin/bash
+```
 
-[![asciicast](https://asciinema.org/a/493554.svg)](https://asciinema.org/a/493554)
+Google Cloud Platform
+
+```bash
+docker pull registry.cn-beijing.aliyuncs.com/huoxian_pub/terraformgoat_gcp:0.0.4
+docker run -itd --name terraformgoat_gcp_0.0.4 registry.cn-beijing.aliyuncs.com/huoxian_pub/terraformgoat_gcp:0.0.4
+docker exec -it terraformgoat_gcp_0.0.4 /bin/bash
+```
+
+Microsoft Azure
+
+```bash
+docker pull registry.cn-beijing.aliyuncs.com/huoxian_pub/terraformgoat_azure:0.0.4
+docker run -itd --name terraformgoat_azure_0.0.4 registry.cn-beijing.aliyuncs.com/huoxian_pub/terraformgoat_azure:0.0.4
+docker exec -it terraformgoat_azure_0.0.4 /bin/bash
+```
+
+## :page_facing_up: 演示
+
+进入到容器后，cd 到对应的场景目录，就可以开始部署靶场了，这里以 [阿里云 Bucket 对象遍历](https://github.com/HuoCorp/TerraformGoat/tree/main/aliyun/oss/bucket_object_traversal) 漏洞场景的搭建进行演示：
+
+```bash
+docker pull registry.cn-beijing.aliyuncs.com/huoxian_pub/terraformgoat_aliyun:0.0.4
+docker run -itd --name terraformgoat_aliyun_0.0.4 registry.cn-beijing.aliyuncs.com/huoxian_pub/terraformgoat_aliyun:0.0.4
+docker exec -it terraformgoat_aliyun_0.0.4 /bin/bash
+```
+
+![img](./images/1655118629.png)
+
+```bash
+cd /TerraformGoat/aliyun/oss/bucket_object_traversal/
+aliyun configure
+terraform init
+terraform apply
+```
+
+![img](./images/1655118969.png)
+
+提示`Enter a value:`，输入 `yes` 并回车，使用 curl 访问该 bucket，可以看到遍历到的对象。
+
+![img](./images/1655119171.png)
 
 ## :rocket: 卸载
 
+如果在容器中，先执行 `exit` 命令退出容器，然后在宿主机下执行以下命令。
+
 ```shell
-docker stop terraformgoat
-docker rm terraformgoat
-docker rmi terraformgoat:v0.0.3
+docker stop $(docker ps -a -q -f "name=terraformgoat*")
+docker rm $(docker ps -a -q -f "name=terraformgoat*")
+docker rmi $(docker images -a -q -f "reference=registry.cn-beijing.aliyuncs.com/huoxian_pub/terraformgoat*")
 ```
 
 ## ⚠️ 注意事项
