@@ -1,0 +1,43 @@
+name: dockerfile_ci
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "Dockerfile"
+      - ".github/workflows/dockerfile_ci.yml"
+  pull_request:
+    branches: [main]
+    paths:
+      - "Dockerfile"
+      - ".github/workflows/dockerfile_ci.yml"
+
+env:
+  DOCKER_LOGIN_NAME: ${{ secrets.DOCKER_LOGIN_NAME }}
+  DOCKER_LOGIN_PASS: ${{ secrets.DOCKER_LOGIN_PASS }}
+  DOCKER_TAG: "0.0.4"
+jobs:
+  docker:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: checkout code
+        uses: actions/checkout@v2
+      - name: login aliyun docker hub
+        run: echo "${{ env.DOCKER_LOGIN_PASS }}" | docker login registry.cn-beijing.aliyuncs.com -u "${{ env.DOCKER_LOGIN_NAME }}" --password-stdin
+      - name: build
+        run: |
+            docker build -t registry.cn-beijing.aliyuncs.com/huoxian_pub/terraformgoat_aliyun:${{ env.DOCKER_TAG }} --target aliyun .
+            docker build -t registry.cn-beijing.aliyuncs.com/huoxian_pub/terraformgoat_tencentcloud:${{ env.DOCKER_TAG }} --target tencentcloud .
+            docker build -t registry.cn-beijing.aliyuncs.com/huoxian_pub/terraformgoat_huaweicloud:${{ env.DOCKER_TAG }} --target huaweicloud .
+            docker build -t registry.cn-beijing.aliyuncs.com/huoxian_pub/terraformgoat_aws:${{ env.DOCKER_TAG }} --target aws .
+            docker build -t registry.cn-beijing.aliyuncs.com/huoxian_pub/terraformgoat_gcp:${{ env.DOCKER_TAG }} --target gcp .
+            docker build -t registry.cn-beijing.aliyuncs.com/huoxian_pub/terraformgoat_azure:${{ env.DOCKER_TAG }} --target azure .
+      - name: push
+        run: |
+            docker push registry.cn-beijing.aliyuncs.com/huoxian_pub/terraformgoat_aliyun:${{ env.DOCKER_TAG }}
+            docker push registry.cn-beijing.aliyuncs.com/huoxian_pub/terraformgoat_tencentcloud:${{ env.DOCKER_TAG }}
+            docker push registry.cn-beijing.aliyuncs.com/huoxian_pub/terraformgoat_huaweicloud:${{ env.DOCKER_TAG }}
+            docker push registry.cn-beijing.aliyuncs.com/huoxian_pub/terraformgoat_aws:${{ env.DOCKER_TAG }}
+            docker push registry.cn-beijing.aliyuncs.com/huoxian_pub/terraformgoat_gcp:${{ env.DOCKER_TAG }}
+            docker push registry.cn-beijing.aliyuncs.com/huoxian_pub/terraformgoat_azure:${{ env.DOCKER_TAG }}
