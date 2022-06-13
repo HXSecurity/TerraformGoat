@@ -88,7 +88,7 @@ Tencent Cloud
 ```bash
 docker pull registry.cn-beijing.aliyuncs.com/huoxian_pub/terraformgoat_tencentcloud:0.0.4
 docker run -itd --name terraformgoat_tencentcloud_0.0.4 registry.cn-beijing.aliyuncs.com/huoxian_pub/terraformgoat_tencentcloud:0.0.4
-docker exec -it terraformgoat_tencentcloud.0.4 /bin/bash
+docker exec -it terraformgoat_tencentcloud_0.0.4 /bin/bash
 ```
 
 Huawei Cloud
