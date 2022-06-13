@@ -135,7 +135,7 @@ docker run -itd --name terraformgoat_aliyun_0.0.4 registry.cn-beijing.aliyuncs.c
 docker exec -it terraformgoat_aliyun_0.0.4 /bin/bash
 ```
 
-![img](/Volumes/HX相关/研究/Terraform/TerraformGoat/images/1655118629.png)
+![img](./images/1655118629.png)
 
 ```bash
 cd /TerraformGoat/aliyun/oss/bucket_object_traversal/
@@ -144,11 +144,11 @@ terraform init
 terraform apply
 ```
 
-![img](/Volumes/HX相关/研究/Terraform/TerraformGoat/images/1655118969.png)
+![img](./images/1655118969.png)
 
 The program prompts `Enter a value:`, type `yes` and enter, use curl to access the bucket, you can see the object traversed.
 
-![img](/Volumes/HX相关/研究/Terraform/TerraformGoat/images/1655119171.png)
+![img](./images/1655119171.png)
 
 ## :rocket: Uninstall
 
