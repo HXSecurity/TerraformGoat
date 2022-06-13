@@ -73,39 +73,91 @@ Currently supported cloud vendors include Alibaba Cloud, Tencent Cloud, Huawei C
 
 ## :dizzy: Install
 
-TerraformGoat is built using Dockerfile, so you need to install the Docker environment first. For the Docker installation method, please refer to: [https://docs.docker.com/get-docker/](https://docs.docker.com/get-docker/)
+Depending on the cloud service provider you are using, choose the corresponding installation command.
 
-```shell
-git clone https://github.com/HuoCorp/TerraformGoat.git --depth 1
-cd TerraformGoat
-docker build . -t terraformgoat:v0.0.3
+Alibaba Cloud
+
+```bash
+docker pull registry.cn-beijing.aliyuncs.com/huoxian_pub/terraformgoat_aliyun:0.0.4
+docker run -itd --name terraformgoat_aliyun_0.0.4 registry.cn-beijing.aliyuncs.com/huoxian_pub/terraformgoat_aliyun:0.0.4
+docker exec -it terraformgoat_aliyun_0.0.4 /bin/bash
 ```
 
-![img](./images/1653031694.png)
+Tencent Cloud
 
-After docker build is complete, start and enter the container
-
-```shell
-docker run -itd --name terraformgoat terraformgoat:v0.0.3
-docker exec -it terraformgoat /bin/bash
+```bash
+docker pull registry.cn-beijing.aliyuncs.com/huoxian_pub/terraformgoat_tencentcloud:0.0.4
+docker run -itd --name terraformgoat_tencentcloud_0.0.4 registry.cn-beijing.aliyuncs.com/huoxian_pub/terraformgoat_tencentcloud:0.0.4
+docker exec -it terraformgoat_tencentcloud.0.4 /bin/bash
 ```
 
-When entering the container, you need to select the cloud service to run
+Huawei Cloud
 
-![img](./images/1653035756.png)
+```bash
+docker pull registry.cn-beijing.aliyuncs.com/huoxian_pub/terraformgoat_huaweicloud:0.0.4
+docker run -itd --name terraformgoat_huaweicloud_0.0.4 registry.cn-beijing.aliyuncs.com/huoxian_pub/terraformgoat_huaweicloud:0.0.4
+docker exec -it terraformgoat_huaweicloud_0.0.4 /bin/bash
+```
 
-After selecting the cloud service you want to use, the relevant dependencies will be installed. After the relevant dependencies are installed, you can use TerraformGoat.
+Amazon Web Services
 
-Using the build of the [Alibaba Cloud ECS SSRF](https://github.com/HuoCorp/TerraformGoat/tree/main/aliyun/ecs/ecs_ssrf) vulnerability scenario as a demo:
+```bash
+docker pull registry.cn-beijing.aliyuncs.com/huoxian_pub/terraformgoat_aws:0.0.4
+docker run -itd --name terraformgoat_aws_0.0.4 registry.cn-beijing.aliyuncs.com/huoxian_pub/terraformgoat_aws:0.0.4
+docker exec -it terraformgoat_aws_0.0.4 /bin/bash
+```
 
-[![asciicast](https://asciinema.org/a/493554.svg)](https://asciinema.org/a/493554)
+Google Cloud Platform
+
+```bash
+docker pull registry.cn-beijing.aliyuncs.com/huoxian_pub/terraformgoat_gcp:0.0.4
+docker run -itd --name terraformgoat_gcp_0.0.4 registry.cn-beijing.aliyuncs.com/huoxian_pub/terraformgoat_gcp:0.0.4
+docker exec -it terraformgoat_gcp_0.0.4 /bin/bash
+```
+
+Microsoft Azure
+
+```bash
+docker pull registry.cn-beijing.aliyuncs.com/huoxian_pub/terraformgoat_azure:0.0.4
+docker run -itd --name terraformgoat_azure_0.0.4 registry.cn-beijing.aliyuncs.com/huoxian_pub/terraformgoat_azure:0.0.4
+docker exec -it terraformgoat_azure_0.0.4 /bin/bash
+```
+
+## :page_facing_up: Demo
+
+After entering the container, cd to the corresponding scenario directory and you can start deploying the scenario.
+
+Here is a demonstration of the  [Alibaba Cloud Bucket Object Traversal](https://github.com/HuoCorp/TerraformGoat/tree/main/aliyun/oss/bucket_object_traversal) scenario build.
+
+```bash
+docker pull registry.cn-beijing.aliyuncs.com/huoxian_pub/terraformgoat_aliyun:0.0.4
+docker run -itd --name terraformgoat_aliyun_0.0.4 registry.cn-beijing.aliyuncs.com/huoxian_pub/terraformgoat_aliyun:0.0.4
+docker exec -it terraformgoat_aliyun_0.0.4 /bin/bash
+```
+
+![img](/Volumes/HX相关/研究/Terraform/TerraformGoat/images/1655118629.png)
+
+```bash
+cd /TerraformGoat/aliyun/oss/bucket_object_traversal/
+aliyun configure
+terraform init
+terraform apply
+```
+
+![img](/Volumes/HX相关/研究/Terraform/TerraformGoat/images/1655118969.png)
+
+The program prompts `Enter a value:`, type `yes` and enter, use curl to access the bucket, you can see the object traversed.
+
+![img](/Volumes/HX相关/研究/Terraform/TerraformGoat/images/1655119171.png)
 
 ## :rocket: Uninstall
 
+If you are in a container, first execute the `exit` command to exit the container, and then execute the following command under the host.
+
 ```shell
-docker stop terraformgoat
-docker rm terraformgoat
-docker rmi terraformgoat:v0.0.3
+docker stop $(docker ps -a -q -f "name=terraformgoat*")
+docker rm $(docker ps -a -q -f "name=terraformgoat*")
+docker rmi $(docker images -a -q -f "reference=registry.cn-beijing.aliyuncs.com/huoxian_pub/terraformgoat*")
 ```
 
 ## ⚠️ Notice
