@@ -1,41 +1,41 @@
-# Tencent Cloud CVM security group open all ports
+# 腾讯云 VPC 安全组允许所有端口访问
 
-English | [中文](./README_CN.md)
+[English](./README.md) | 中文
 
-## Description
+## 描述信息
 
-This is a scenario used to build the Tencent Cloud CVM security group open all ports.
+这是一个用于构建腾讯云 VPC 安全组允许所有端口访问的场景。
 
-## Deployment Environment
+## 环境搭建
 
-Execute the following command in the container
+在容器中执行以下命令
 
 ```shell
-cd /TerraformGoat/tencentcloud/networking/cvm_security_group_open_all_ports
+cd /TerraformGoat/tencentcloud/networking/vpc_security_group_open_all_ports
 ```
 
-Edit the `terraform.tfvars` file and write your `tencentcloud_secret_id` and `tencentcloud_secret_key` in the file
+编辑 `terraform.tfvars` 文件，在文件中填入你的 `tencentcloud_secret_id` 和 `tencentcloud_secret_key`
 
 ```shell
 vim terraform.tfvars
 ```
 
-> You can create and view your SecretKey on the [API Key Management](https://console.cloud.tencent.com/cam/capi) of the Tencent Cloud console
+> 在腾讯云控制台的 [API 密钥管理](https://console.cloud.tencent.com/cam/capi) 可以创建和查看您的 SecretKey
 
-Deploy Vulnerable Environment
+部署靶场
 
 ```shell
 terraform init
 terraform apply
 ```
 
-> When the terminal prompts `Enter a value:`, enter `yes`
+> 在终端提示 `Enter a value:` 时，输入 `yes` 即可
 
-After the environment is set up, you can see the instance and security group IDs at Outputs
+环境搭建完后，在 Outputs 处可以看到实例和安全组的 ID
 
-## Steps
+## 步骤
 
-Use the Tencent Cloud command line tool to view the rules of the security group.
+使用腾讯云命令行工具查看安全组的规则。
 
 ```bash
 > tccli vpc DescribeSecurityGroupPolicies --SecurityGroupId sg-bitg1oeb
@@ -70,7 +70,9 @@ Use the Tencent Cloud command line tool to view the rules of the security group.
 }
 ```
 
-## Destroy the environment
+通过返回的内容可以看到当前安全组允许所有端口访问。
+
+## 销毁环境
 
 ```shell
 terraform destroy

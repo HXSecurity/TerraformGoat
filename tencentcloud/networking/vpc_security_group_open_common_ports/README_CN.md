@@ -1,17 +1,17 @@
-# 腾讯云 CVM 安全组允许常见端口访问
+# 腾讯云 VPC 安全组允许常见端口访问
 
 [English](./README.md) | 中文
 
 ## 描述信息
 
-这是一个用于构建腾讯云 CVM 安全组允许常见端口访问的场景。
+这是一个用于构建腾讯云 VPC 安全组允许常见端口访问的场景。
 
 ## 环境搭建
 
 在容器中执行以下命令
 
 ```shell
-cd /TerraformGoat/tencentcloud/networking/cvm_security_group_open_common_ports
+cd /TerraformGoat/tencentcloud/networking/vpc_security_group_open_common_ports
 ```
 
 编辑 `terraform.tfvars` 文件，在文件中填入你的 `tencentcloud_secret_id` 和 `tencentcloud_secret_key`

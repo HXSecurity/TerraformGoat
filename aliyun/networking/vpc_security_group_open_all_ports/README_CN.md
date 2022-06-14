@@ -1,41 +1,41 @@
-# Alibaba Cloud ECS Security group open all ports
+# 阿里云 VPC 安全组允许所有端口访问
 
-English | [中文](./README_CN.md)
+[English](./README.md) | 中文
 
-## Description
+## 描述信息
 
-This is a scenario used to build the Alibaba Cloud ECS security group open all ports.
+这是一个用于构建阿里云 VPC 安全组开放所有端口的场景。
 
-## Deployment Environment
+## 环境搭建
 
-Execute the following command in the container
+在容器中执行以下命令
 
 ```shell
-cd /TerraformGoat/aliyun/networking/ecs_security_group_open_all_ports
+cd /TerraformGoat/aliyun/networking/vpc_security_group_open_all_ports
 ```
 
-Configure Alibaba Cloud Access Credentials
+配置阿里云访问凭证
 
 ```shell
 aliyun configure
 ```
 
-> You can create and view your AccessKey on the [AccessKey page](https://ram.console.aliyun.com/manage/ak) of the Alibaba Cloud console
+> 在阿里云控制台的 [AccessKey 页面](https://ram.console.aliyun.com/manage/ak) 可以创建和查看您的 AccessKey
 
-Deploy Vulnerable Environment
+部署靶场
 
 ```shell
 terraform init
 terraform apply
 ```
 
-> When the terminal prompts `Enter a value:`, enter `yes`
+> 在终端提示 `Enter a value:` 时，输入 `yes` 即可
 
-After the environment is set up, you can see the ID of the security group at Outputs.
+环境搭建完后，在 Outputs 处可以看到安全组的 ID
 
-## Steps
+## 操作
 
-View the rules for the security group via the aliyun command line tool.
+通过 aliyun 命令行工具查看安全组的规则。
 
 ```bash
 > aliyun ecs DescribeSecurityGroupAttribute --SecurityGroupId sg-2zebb34geaa1x63gtkor
@@ -80,9 +80,9 @@ View the rules for the security group via the aliyun command line tool.
 }
 ```
 
-From the returned result, you can know that the current security group allows IPs from 0.0.0.0/0 to access port 1/65535, which means that everyone is allowed to access all ports.
+从返回的结果可以看到当前安全组允许来自 0.0.0.0/0 的 IP 访问 1/65535 端口，即表示允许所有人访问所有端口。
 
-## Destroy the environment
+## 销毁环境
 
 ```shell
 terraform destroy
