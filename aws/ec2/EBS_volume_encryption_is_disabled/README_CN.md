@@ -4,7 +4,7 @@
 
 ## 描述信息
 
-这是一个用于构建 AWS EBS 卷加密默认未开启。
+这是一个用于构建 AWS EBS 卷加密默认未开启的场景。
 
 ## 环境搭建
 
@@ -37,6 +37,7 @@ terraform apply
 
 ```bash
 > aws --region us-east-1 ec2 get-ebs-encryption-by-default
+
 {
     "EbsEncryptionByDefault": false
 }
