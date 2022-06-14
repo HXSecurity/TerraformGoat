@@ -11,7 +11,7 @@
 在容器中执行以下命令
 
 ```shell
-cd /TerraformGoat/aliyun/ecs/ecs_security_group_open_common_port
+cd /TerraformGoat/aliyun/networking/ecs_security_group_open_common_port
 ```
 
 配置阿里云访问凭证
