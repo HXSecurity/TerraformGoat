@@ -15,7 +15,7 @@ Insecure security group configurations can lead to malicious attackers accessing
 Execute the following command in the container
 
 ```shell
-cd /TerraformGoat/huaweicloud/ecs/cis_unsafe_secgroup/
+cd /TerraformGoat/huaweicloud/networking/cis_unsafe_secgroup/
 ```
 
 Edit the `terraform.tfvars` file and fill in the file with your `huaweicloud_access_key` and `huaweicloud_secret_key`.

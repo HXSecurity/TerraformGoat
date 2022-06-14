@@ -15,7 +15,7 @@
 在容器中执行以下命令
 
 ```shell
-cd /TerraformGoat/huaweicloud/ecs/cis_unsafe_secgroup/
+cd /TerraformGoat/huaweicloud/networking/cis_unsafe_secgroup/
 ```
 
 编辑 `terraform.tfvars` 文件，在文件中填入你的 `huaweicloud_access_key` 和 `huaweicloud_secret_key`

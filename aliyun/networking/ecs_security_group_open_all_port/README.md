@@ -11,7 +11,7 @@ This is a scenario used to build the Alibaba Cloud ECS security group open all p
 Execute the following command in the container
 
 ```shell
-cd /TerraformGoat/aliyun/ecs/ecs_security_group_open_all_port
+cd /TerraformGoat/aliyun/networking/ecs_security_group_open_all_port
 ```
 
 Configure Alibaba Cloud Access Credentials

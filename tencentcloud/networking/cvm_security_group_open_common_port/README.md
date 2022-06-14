@@ -11,7 +11,7 @@ This is a scenario used to build the Tencent Cloud CVM security group open commo
 Execute the following command in the container
 
 ```shell
-cd /TerraformGoat/tencentcloud/cvm/cvm_security_group_open_common_port
+cd /TerraformGoat/tencentcloud/networking/cvm_security_group_open_common_port
 ```
 
 Edit the `terraform.tfvars` file and write your `tencentcloud_secret_id` and `tencentcloud_secret_key` in the file
