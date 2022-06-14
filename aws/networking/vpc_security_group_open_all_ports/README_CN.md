@@ -11,7 +11,7 @@
 在容器中执行以下命令
 
 ```shell
-cd /TerraformGoat/aws/networking/vpc_security_group_open_all_port
+cd /TerraformGoat/aws/networking/vpc_security_group_open_all_ports
 ```
 
 配置 AWS 访问凭证

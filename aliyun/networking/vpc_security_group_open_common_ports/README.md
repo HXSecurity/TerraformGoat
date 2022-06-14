@@ -1,41 +1,41 @@
-# 阿里云 ECS 安全组允许常见端口访问
+# Alibaba Cloud VPC Security group open common ports
 
-[English](./README.md) | 中文
+English | [中文](./README_CN.md)
 
-## 描述信息
+## Description
 
-这是一个用于构建阿里云 ECS 安全组常见端口访问的场景。
+This is a scenario used to build the Alibaba Cloud VPC security group open common ports.
 
-## 环境搭建
+## Deployment Environment
 
-在容器中执行以下命令
+Execute the following command in the container
 
 ```shell
-cd /TerraformGoat/aliyun/networking/ecs_security_group_open_common_port
+cd /TerraformGoat/aliyun/networking/vpc_security_group_open_common_ports
 ```
 
-配置阿里云访问凭证
+Configure Alibaba Cloud Access Credentials
 
 ```shell
 aliyun configure
 ```
 
-> 在阿里云控制台的 [AccessKey 页面](https://ram.console.aliyun.com/manage/ak) 可以创建和查看您的 AccessKey
+> You can create and view your AccessKey on the [AccessKey page](https://ram.console.aliyun.com/manage/ak) of the Alibaba Cloud console
 
-部署靶场
+Deploy Vulnerable Environment
 
 ```shell
 terraform init
 terraform apply
 ```
 
-> 在终端提示 `Enter a value:` 时，输入 `yes` 即可
+> When the terminal prompts `Enter a value:`, enter `yes`
 
-环境搭建完后，在 Outputs 处可以看到安全组的 ID
+After the environment is set up, you can see the ID of the security group at Outputs.
 
-## 操作
+## Steps
 
-通过 aliyun 命令行工具查看安全组中允许所有人访问的端口。
+View the ports in the security group that everyone is allowed to access via the aliyun command line tool.
 
 ```bash
 apt-get install jq -y
@@ -74,7 +74,7 @@ aliyun ecs DescribeSecurityGroupAttribute --SecurityGroupId sg-1zeffzf4e3akdwkle
 "22/22"
 ```
 
-## 销毁环境
+## Destroy the environment
 
 ```shell
 terraform destroy

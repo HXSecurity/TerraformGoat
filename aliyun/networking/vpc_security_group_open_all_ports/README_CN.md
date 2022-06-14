@@ -1,17 +1,17 @@
-# 阿里云 ECS 安全组允许所有端口访问
+# 阿里云 VPC 安全组允许所有端口访问
 
 [English](./README.md) | 中文
 
 ## 描述信息
 
-这是一个用于构建阿里云 ECS 安全组开放所有端口的场景。
+这是一个用于构建阿里云 VPC 安全组开放所有端口的场景。
 
 ## 环境搭建
 
 在容器中执行以下命令
 
 ```shell
-cd /TerraformGoat/aliyun/networking/ecs_security_group_open_all_port
+cd /TerraformGoat/aliyun/networking/vpc_security_group_open_all_ports
 ```
 
 配置阿里云访问凭证

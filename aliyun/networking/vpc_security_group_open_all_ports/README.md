@@ -1,17 +1,17 @@
-# Alibaba Cloud ECS Security group open all ports
+# Alibaba Cloud VPC Security group open all ports
 
 English | [中文](./README_CN.md)
 
 ## Description
 
-This is a scenario used to build the Alibaba Cloud ECS security group open all ports.
+This is a scenario used to build the Alibaba Cloud VPC security group open all ports.
 
 ## Deployment Environment
 
 Execute the following command in the container
 
 ```shell
-cd /TerraformGoat/aliyun/networking/ecs_security_group_open_all_port
+cd /TerraformGoat/aliyun/networking/vpc_security_group_open_all_ports
 ```
 
 Configure Alibaba Cloud Access Credentials
