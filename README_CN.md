@@ -149,6 +149,12 @@ terraform apply
 
 ![img](./images/1655119171.png)
 
+为避免云服务继续产生费用，请在复现完后，及时销毁靶场，销毁靶场命令如下：
+
+```bash
+terraform destroy
+```
+
 ## :rocket: 卸载
 
 如果在容器中，先执行 `exit` 命令退出容器，然后在宿主机下执行以下命令。

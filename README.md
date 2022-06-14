@@ -152,6 +152,12 @@ The program prompts `Enter a value:`, type `yes` and enter, use curl to access t
 
 ![img](./images/1655119171.png)
 
+To avoid the cloud service from continuing to incur charges, remember to destroy the scenario in time after using it.
+
+```bash
+terraform destroy
+```
+
 ## :rocket: Uninstall
 
 If you are in a container, first execute the `exit` command to exit the container, and then execute the following command under the host.
