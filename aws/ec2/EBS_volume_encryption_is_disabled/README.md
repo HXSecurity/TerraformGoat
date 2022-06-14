@@ -37,6 +37,7 @@ Get EBS encryption by default.
 
 ```bash
 > aws --region us-east-1 ec2 get-ebs-encryption-by-default
+
 {
     "EbsEncryptionByDefault": false
 }
