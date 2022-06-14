@@ -12,8 +12,8 @@ Currently supported cloud vendors include Alibaba Cloud, Tencent Cloud, Huawei C
 
 |  ID  | Cloud Service Company |    Types Of Cloud Services     |                    Vulnerable Environment                    |
 | :--: | :-------------------: | :----------------------------: | :----------------------------------------------------------: |
-|  1   |     Alibaba Cloud     |           Networking           | [ECS Security Group Open All   Port](https://github.com/HuoCorp/TerraformGoat/tree/main/aliyun/networking/ecs_security_group_open_all_port) |
-|  2   |     Alibaba Cloud     |           Networking           | [ECS Security Group Open   Common Port](https://github.com/HuoCorp/TerraformGoat/tree/main/aliyun/networking/ecs_security_group_open_common_port) |
+|  1   |     Alibaba Cloud     |           Networking           | [ECS Security Group Open All   Ports](https://github.com/HuoCorp/TerraformGoat/tree/main/aliyun/networking/ecs_security_group_open_all_ports) |
+|  2   |     Alibaba Cloud     |           Networking           | [ECS Security Group Open   Common Ports](https://github.com/HuoCorp/TerraformGoat/tree/main/aliyun/networking/ecs_security_group_open_common_ports) |
 |  3   |     Alibaba Cloud     |         Object Storage         | [Bucket HTTP Enable](https://github.com/HuoCorp/TerraformGoat/tree/main/aliyun/oss/bucket_http_enable) |
 |  4   |     Alibaba Cloud     |         Object Storage         | [Object ACL Writable](https://github.com/HuoCorp/TerraformGoat/tree/main/aliyun/oss/object_acl_writable) |
 |  5   |     Alibaba Cloud     |         Object Storage         | [Object ACL Readable](https://github.com/HuoCorp/TerraformGoat/tree/main/aliyun/oss/object_acl_readable) |
@@ -29,8 +29,8 @@ Currently supported cloud vendors include Alibaba Cloud, Tencent Cloud, Huawei C
 |  15  |     Alibaba Cloud     |   Elastic Computing Service    | [ECS SSRF](https://github.com/HuoCorp/TerraformGoat/tree/main/aliyun/ecs/ecs_ssrf) |
 |  16  |     Alibaba Cloud     |   Elastic Computing Service    | [ECS Unattached Disks Are   Unencrypted](https://github.com/HuoCorp/TerraformGoat/tree/main/aliyun/ecs/ecs_unattached_disks_are_unencrypted) |
 |  17  |     Alibaba Cloud     |   Elastic Computing Service    | [ECS Virtual Machine Disks   Are Unencrypted](https://github.com/HuoCorp/TerraformGoat/tree/main/aliyun/ecs/ecs_virtual_machine_disks_are_unencrypted) |
-|  18  |     Tencent Cloud     |           Networking           | [CVM Security Group Open All   Port](https://github.com/HuoCorp/TerraformGoat/tree/main/tencentcloud/networking/cvm_security_group_open_all_port) |
-|  19  |     Tencent Cloud     |           Networking           | [CVM Security Group Open   Common Port](https://github.com/HuoCorp/TerraformGoat/tree/main/tencentcloud/networking/cvm_security_group_open_common_port) |
+|  18  |     Tencent Cloud     |           Networking           | [CVM Security Group Open All   Ports](https://github.com/HuoCorp/TerraformGoat/tree/main/tencentcloud/networking/cvm_security_group_open_all_ports) |
+|  19  |     Tencent Cloud     |           Networking           | [CVM Security Group Open   Common Ports](https://github.com/HuoCorp/TerraformGoat/tree/main/tencentcloud/networking/cvm_security_group_open_common_ports) |
 |  20  |     Tencent Cloud     |         Object Storage         | [Bucket ACL Writable](https://github.com/HuoCorp/TerraformGoat/tree/main/tencentcloud/cos/bucket_acl_writable) |
 |  21  |     Tencent Cloud     |         Object Storage         | [Bucket ACL Readable](https://github.com/HuoCorp/TerraformGoat/tree/main/tencentcloud/cos/bucket_acl_readable) |
 |  22  |     Tencent Cloud     |         Object Storage         | [Bucket Public Access](https://github.com/HuoCorp/TerraformGoat/tree/main/tencentcloud/cos/bucket_public_access) |
@@ -49,7 +49,7 @@ Currently supported cloud vendors include Alibaba Cloud, Tencent Cloud, Huawei C
 |  35  |     Huawei Cloud      |         Object Storage         | [Wrong Policy Causes   Arbitrary File Uploads](https://github.com/HuoCorp/TerraformGoat/tree/main/huaweicloud/obs/policy_of_unrestricted_file_upload) |
 |  36  |     Huawei Cloud      |   Elastic Computing Service    | [ECS SSRF](https://github.com/HuoCorp/TerraformGoat/tree/main/huaweicloud/ecs/ecs_ssrf) |
 |  37  |     Huawei Cloud      |  Relational Database Service   | [RDS Mysql Baseline Checking   Environment](https://github.com/HuoCorp/TerraformGoat/tree/main/huaweicloud/rds/cis_rds_mysql) |
-|  38  |  Amazon Web Services  |           Networking           | [VPC Security Group Open All   Port](https://github.com/HuoCorp/TerraformGoat/tree/main/aws/networking/vpc_security_group_open_all_port) |
+|  38  |  Amazon Web Services  |           Networking           | [VPC Security Group Open All   Ports](https://github.com/HuoCorp/TerraformGoat/tree/main/aws/networking/vpc_security_group_open_all_ports) |
 |  39  |  Amazon Web Services  |           Networking           | [VPC Security Group Open   Common Ports](https://github.com/HuoCorp/TerraformGoat/tree/main/aws/networking/vpc_security_group_open_common_ports) |
 |  40  |  Amazon Web Services  |         Object Storage         | [Object ACL Writable](https://github.com/HuoCorp/TerraformGoat/tree/main/aws/s3/object_acl_writable) |
 |  41  |  Amazon Web Services  |         Object Storage         | [Bucket ACL Writable](https://github.com/HuoCorp/TerraformGoat/tree/main/aws/s3/bucket_acl_writable) |

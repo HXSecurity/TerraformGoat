@@ -1,17 +1,17 @@
-# AWS VPC security group open all port
+# AWS VPC security group open all ports
 
 English | [中文](./README_CN.md)
 
 ## Description
 
-This is a scenario used to build the AWS VPC security group open all port.
+This is a scenario used to build the AWS VPC security group open all ports.
 
 ## Deployment Environment
 
 Execute the following command in the container
 
 ```shell
-cd /TerraformGoat/aws/networking/vpc_security_group_open_all_port
+cd /TerraformGoat/aws/networking/vpc_security_group_open_all_ports
 ```
 
 Configure AWS Access Credentials

@@ -11,7 +11,7 @@
 在容器中执行以下命令
 
 ```shell
-cd /TerraformGoat/tencentcloud/networking/cvm_security_group_open_all_port
+cd /TerraformGoat/tencentcloud/networking/cvm_security_group_open_all_ports
 ```
 
 编辑 `terraform.tfvars` 文件，在文件中填入你的 `tencentcloud_secret_id` 和 `tencentcloud_secret_key`

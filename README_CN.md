@@ -11,8 +11,8 @@ Cloud Platform、Microsoft Azure 六个云厂商的云场景漏洞搭建。
 
 | 序号 |        云厂商         |   云服务类型   |                           漏洞环境                           |
 | :--: | :-------------------: | :------------: | :----------------------------------------------------------: |
-|  1   |        阿里云         |      网络      | [ECS 安全组允许所有端口访问](https://github.com/HuoCorp/TerraformGoat/tree/main/aliyun/networking/ecs_security_group_open_all_port) |
-|  2   |        阿里云         |      网络      | [ECS 安全组允许常见端口访问](https://github.com/HuoCorp/TerraformGoat/tree/main/aliyun/networking/ecs_security_group_open_common_port) |
+|  1   |        阿里云         |      网络      | [ECS 安全组允许所有端口访问](https://github.com/HuoCorp/TerraformGoat/tree/main/aliyun/networking/ecs_security_group_open_all_ports) |
+|  2   |        阿里云         |      网络      | [ECS 安全组允许常见端口访问](https://github.com/HuoCorp/TerraformGoat/tree/main/aliyun/networking/ecs_security_group_open_common_ports) |
 |  3   |        阿里云         |    对象存储    | [任意文件上传](https://github.com/HuoCorp/TerraformGoat/tree/main/aliyun/oss/unrestricted_file_upload) |
 |  4   |        阿里云         |    对象存储    | [Bucket 对象遍历](https://github.com/HuoCorp/TerraformGoat/tree/main/aliyun/oss/bucket_object_traversal) |
 |  5   |        阿里云         |    对象存储    | [Object ACL 可写](https://github.com/HuoCorp/TerraformGoat/tree/main/aliyun/oss/object_acl_writable) |
@@ -28,8 +28,8 @@ Cloud Platform、Microsoft Azure 六个云厂商的云场景漏洞搭建。
 |  15  |        阿里云         |  弹性计算服务  | [ECS SSRF 漏洞环境](https://github.com/HuoCorp/TerraformGoat/tree/main/aliyun/ecs/ecs_ssrf) |
 |  16  |        阿里云         |  弹性计算服务  | [ECS 未连接的磁盘未开启加密](https://github.com/HuoCorp/TerraformGoat/tree/main/aliyun/ecs/ecs_unattached_disks_are_unencrypted) |
 |  17  |        阿里云         |  弹性计算服务  | [ECS 虚拟机的磁盘未开启加密](https://github.com/HuoCorp/TerraformGoat/tree/main/aliyun/ecs/ecs_virtual_machine_disks_are_unencrypted) |
-|  18  |        腾讯云         |      网络      | [CVM 安全组允许所有端口访问](https://github.com/HuoCorp/TerraformGoat/tree/main/tencentcloud/networking/cvm_security_group_open_all_port) |
-|  19  |        腾讯云         |      网络      | [CVM 安全组允许常见端口访问](https://github.com/HuoCorp/TerraformGoat/tree/main/tencentcloud/networking/cvm_security_group_open_common_port) |
+|  18  |        腾讯云         |      网络      | [CVM 安全组允许所有端口访问](https://github.com/HuoCorp/TerraformGoat/tree/main/tencentcloud/networking/cvm_security_group_open_all_ports) |
+|  19  |        腾讯云         |      网络      | [CVM 安全组允许常见端口访问](https://github.com/HuoCorp/TerraformGoat/tree/main/tencentcloud/networking/cvm_security_group_open_common_ports) |
 |  20  |        腾讯云         |    对象存储    | [任意文件上传](https://github.com/HuoCorp/TerraformGoat/tree/main/tencentcloud/cos/unrestricted_file_upload) |
 |  21  |        腾讯云         |    对象存储    | [Bucket 对象遍历](https://github.com/HuoCorp/TerraformGoat/tree/main/tencentcloud/cos/bucket_object_traversal) |
 |  22  |        腾讯云         |    对象存储    | [Bucket 公开访问](https://github.com/HuoCorp/TerraformGoat/tree/main/tencentcloud/cos/bucket_public_access) |
@@ -48,7 +48,7 @@ Cloud Platform、Microsoft Azure 六个云厂商的云场景漏洞搭建。
 |  35  |        华为云         |    对象存储    | [错误的 Policy 策略导致任意文件上传](https://github.com/HuoCorp/TerraformGoat/tree/main/huaweicloud/obs/policy_of_unrestricted_file_upload) |
 |  36  |        华为云         |  弹性计算服务  | [ECS SSRF 漏洞环境](https://github.com/HuoCorp/TerraformGoat/tree/main/huaweicloud/ecs/ecs_ssrf) |
 |  37  |        华为云         |  关系型数据库  | [RDS Mysql基线检查环境](https://github.com/HuoCorp/TerraformGoat/tree/main/huaweicloud/rds/cis_rds_mysql) |
-|  38  |  Amazon Web Services  |      网络      | [VPC 安全组允许所有端口访问](https://github.com/HuoCorp/TerraformGoat/tree/main/aws/networking/vpc_security_group_open_all_port) |
+|  38  |  Amazon Web Services  |      网络      | [VPC 安全组允许所有端口访问](https://github.com/HuoCorp/TerraformGoat/tree/main/aws/networking/vpc_security_group_open_all_ports) |
 |  39  |  Amazon Web Services  |      网络      | [VPC 安全组允许常见端口访问](https://github.com/HuoCorp/TerraformGoat/tree/main/aws/networking/vpc_security_group_open_common_ports) |
 |  40  |  Amazon Web Services  |    对象存储    | [任意文件上传](https://github.com/HuoCorp/TerraformGoat/tree/main/aws/s3/unrestricted_file_upload) |
 |  41  |  Amazon Web Services  |    对象存储    | [Object ACL 可写](https://github.com/HuoCorp/TerraformGoat/tree/main/aws/s3/object_acl_writable) |
