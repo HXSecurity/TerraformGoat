@@ -63,7 +63,7 @@ Cloud Platform、Microsoft Azure 六个云厂商的云场景漏洞搭建。
 |  50  |  Amazon Web Services  |  弹性计算服务  | [EBS 卷未使用](https://github.com/HuoCorp/TerraformGoat/tree/main/aws/ec2/EBS_volumes_are_not_used) |
 |  51  |  Amazon Web Services  |  弹性计算服务  | [EC2 SSRF 漏洞环境](https://github.com/HuoCorp/TerraformGoat/tree/main/aws/ec2/ec2_ssrf) |
 |  52  |  Amazon Web Services  |  弹性计算服务  | [控制台接管漏洞环境](https://github.com/HuoCorp/TerraformGoat/tree/main/aws/ec2/console_takeover) |
-|  53  |  Amazon Web Services  |  弹性计算服务  | [EBS 卷加密默认未开启](https://github.com/HuoCorp/TerraformGoat/tree/main/aws/ec2/EBS_volume_encryption_is_disabled) |
+|  53  |  Amazon Web Services  |  弹性计算服务  | [EBS 卷加密默认未开启](https://github.com/HuoCorp/TerraformGoat/tree/main/aws/ec2/EBS_volumes_encryption_is_disabled) |
 |  54  |  Amazon Web Services  |  弹性计算服务  | [EBS 卷快照未开启加密](https://github.com/HuoCorp/TerraformGoat/tree/main/aws/ec2/snapshots_of_EBS_volumes_are_unencrypted) |
 |  55  |  Amazon Web Services  | 身份和访问管理 | [IAM 提权环境](https://github.com/HuoCorp/TerraformGoat/tree/main/aws/iam/privilege_escalation) |
 |  56  | Google Cloud Platform |    对象存储    | [任意文件上传](https://github.com/HuoCorp/TerraformGoat/tree/main/gcp/cs/unrestricted_file_upload) |

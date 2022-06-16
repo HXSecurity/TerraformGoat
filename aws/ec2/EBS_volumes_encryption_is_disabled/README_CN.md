@@ -11,7 +11,7 @@
 在容器中执行以下命令
 
 ```shell
-cd /TerraformGoat/aws/ec2/EBS_volume_encryption_is_disabled
+cd /TerraformGoat/aws/ec2/EBS_volumes_encryption_is_disabled
 ```
 
 配置 AWS 访问凭证
