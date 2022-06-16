@@ -63,17 +63,18 @@ Currently supported cloud vendors include Alibaba Cloud, Tencent Cloud, Huawei C
 |  49  |  Amazon Web Services  |         Object Storage         | [Bucket Default Encryption   Disable](https://github.com/HuoCorp/TerraformGoat/tree/main/aws/s3/bucket_default_encryption_disable) |
 |  50  |  Amazon Web Services  |   Elastic Computing Service    | [EC2 SSRF](https://github.com/HuoCorp/TerraformGoat/tree/main/aws/ec2/ec2_ssrf) |
 |  51  |  Amazon Web Services  |   Elastic Computing Service    | [Console Takeover](https://github.com/HuoCorp/TerraformGoat/tree/main/aws/ec2/console_takeover) |
-|  52  |  Amazon Web Services  |   Elastic Computing Service    | [EBS Volume Encryption Is   Disabled](https://github.com/HuoCorp/TerraformGoat/tree/main/aws/ec2/EBS_volume_encryption_is_disabled) |
-|  53  |  Amazon Web Services  |   Elastic Computing Service    | [Snapshots Of EBS Volumes Are   Unencrypted](https://github.com/HuoCorp/TerraformGoat/tree/main/aws/ec2/snapshots_of_EBS_volumes_are_unencrypted) |
-|  54  |  Amazon Web Services  | Identity and Access Management | [IAM Privilege Escalation](https://github.com/HuoCorp/TerraformGoat/tree/main/aws/iam/privilege_escalation) |
-|  55  | Google Cloud Platform |         Object Storage         | [Object ACL Writable](https://github.com/HuoCorp/TerraformGoat/tree/main/gcp/cs/object_acl_writable) |
-|  56  | Google Cloud Platform |         Object Storage         | [Bucket ACL Writable](https://github.com/HuoCorp/TerraformGoat/tree/main/gcp/cs/bucket_acl_writable) |
-|  57  | Google Cloud Platform |         Object Storage         | [Bucket Object Traversal](https://github.com/HuoCorp/TerraformGoat/tree/main/gcp/cs/bucket_object_traversal) |
-|  58  | Google Cloud Platform |         Object Storage         | [Unrestricted File Upload](https://github.com/HuoCorp/TerraformGoat/tree/main/gcp/cs/unrestricted_file_upload) |
-|  59  | Google Cloud Platform |   Elastic Computing Service    | [VM Command Execution](https://github.com/HuoCorp/TerraformGoat/tree/main/gcp/vm/vm_command_execution) |
-|  60  |    Microsoft Azure    |         Object Storage         | [Blob Public Access](https://github.com/HuoCorp/TerraformGoat/tree/main/azure/blob/blob_public_access/) |
-|  61  |    Microsoft Azure    |         Object Storage         | [Container Blob Traversal](https://github.com/HuoCorp/TerraformGoat/tree/main/azure/blob/container_blob_traversal/) |
-|  62  |    Microsoft Azure    |   Elastic Computing Service    | [VM Command Execution](https://github.com/HuoCorp/TerraformGoat/tree/main/azure/vm/vm_command_execution) |
+|  52  |  Amazon Web Services  |   Elastic Computing Service    | [EBS Volumes Are Not Used](https://github.com/HuoCorp/TerraformGoat/tree/main/aws/ec2/EBS_volumes_are_not_used) |
+|  53  |  Amazon Web Services  |   Elastic Computing Service    | [EBS Volumes Encryption Is   Disabled](https://github.com/HuoCorp/TerraformGoat/tree/main/aws/ec2/EBS_volumes_encryption_is_disabled) |
+|  54  |  Amazon Web Services  |   Elastic Computing Service    | [Snapshots Of EBS Volumes Are   Unencrypted](https://github.com/HuoCorp/TerraformGoat/tree/main/aws/ec2/snapshots_of_EBS_volumes_are_unencrypted) |
+|  55  |  Amazon Web Services  | Identity and Access Management | [IAM Privilege Escalation](https://github.com/HuoCorp/TerraformGoat/tree/main/aws/iam/privilege_escalation) |
+|  56  | Google Cloud Platform |         Object Storage         | [Object ACL Writable](https://github.com/HuoCorp/TerraformGoat/tree/main/gcp/cs/object_acl_writable) |
+|  57  | Google Cloud Platform |         Object Storage         | [Bucket ACL Writable](https://github.com/HuoCorp/TerraformGoat/tree/main/gcp/cs/bucket_acl_writable) |
+|  58  | Google Cloud Platform |         Object Storage         | [Bucket Object Traversal](https://github.com/HuoCorp/TerraformGoat/tree/main/gcp/cs/bucket_object_traversal) |
+|  59  | Google Cloud Platform |         Object Storage         | [Unrestricted File Upload](https://github.com/HuoCorp/TerraformGoat/tree/main/gcp/cs/unrestricted_file_upload) |
+|  60  | Google Cloud Platform |   Elastic Computing Service    | [VM Command Execution](https://github.com/HuoCorp/TerraformGoat/tree/main/gcp/vm/vm_command_execution) |
+|  61  |    Microsoft Azure    |         Object Storage         | [Blob Public Access](https://github.com/HuoCorp/TerraformGoat/tree/main/azure/blob/blob_public_access/) |
+|  62  |    Microsoft Azure    |         Object Storage         | [Container Blob Traversal](https://github.com/HuoCorp/TerraformGoat/tree/main/azure/blob/container_blob_traversal/) |
+|  63  |    Microsoft Azure    |   Elastic Computing Service    | [VM Command Execution](https://github.com/HuoCorp/TerraformGoat/tree/main/azure/vm/vm_command_execution) |
 
 ## :dizzy: Install
 

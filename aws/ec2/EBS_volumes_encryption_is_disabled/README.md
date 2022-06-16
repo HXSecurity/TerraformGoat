@@ -1,17 +1,17 @@
-# AWS EBS volume encryption is disabled
+# AWS EBS volumes encryption is disabled
 
 English | [中文](./README_CN.md)
 
 ## Description
 
-This is a scenario used to build the AWS EBS volume encryption is disabled.
+This is a scenario used to build the AWS EBS volumes encryption is disabled.
 
 ## Deployment Environment
 
 Execute the following command in the container
 
 ```shell
-cd /TerraformGoat/aws/ec2/EBS_volume_encryption_is_disabled
+cd /TerraformGoat/aws/ec2/EBS_volumes_encryption_is_disabled
 ```
 
 Configure AWS Access Credentials
