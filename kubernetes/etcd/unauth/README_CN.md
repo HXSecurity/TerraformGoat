@@ -13,7 +13,7 @@
 在容器中执行以下命令
 
 ```shell
-cd /TerraformGoat/kubernets/etcd/unauth
+cd /TerraformGoat/kubernetes/etcd/unauth
 ```
 
 配置阿里云访问凭证
