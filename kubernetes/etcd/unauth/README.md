@@ -13,7 +13,7 @@ After building the environment with Terraform, users can obtain api object resou
 Execute the following command in the container
 
 ```shell
-cd /TerraformGoat/kubernets/etcd/unauth
+cd /TerraformGoat/kubernetes/etcd/unauth
 ```
 
 Configure Alibaba Cloud Access Credentials
@@ -41,7 +41,7 @@ After the environment is set up, You can see the etcd access address of the scen
 
 ## Vulnerability Utilization
 
-we can use "etcdctl" tool to read secrets on kubernets cluster.
+we can use "etcdctl" tool to read secrets on kubernetes cluster.
 
 for example, get "deployment controller" token
 
