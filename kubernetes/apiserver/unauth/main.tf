@@ -21,45 +21,6 @@ resource "alicloud_instance" "instance" {
     destination = "/root/kk" // deploy_k8s.sh用来安装k8s
   }
 
-  provisioner "file" {
-    connection {
-      type     = "ssh"
-      host     = self.public_ip
-      user     = "root"
-      password = "Huoxian@123"
-      timeout  = "1h"
-    }
-
-    source      = "resource/ca.crt"
-    destination = "/root/ca.crt"
-  }
-
-  provisioner "file" {
-    connection {
-      type     = "ssh"
-      host     = self.public_ip
-      user     = "root"
-      password = "Huoxian@123"
-      timeout  = "1h"
-    }
-
-    source      = "resource/server.crt"
-    destination = "/root/server.crt"
-  }
-
-  provisioner "file" {
-    connection {
-      type     = "ssh"
-      host     = self.public_ip
-      user     = "root"
-      password = "Huoxian@123"
-      timeout  = "1h"
-    }
-
-    source      = "resource/server.key"
-    destination = "/root/server.key"
-  }
-
   provisioner "remote-exec" {
     connection {
       type     = "ssh"
@@ -69,16 +30,6 @@ resource "alicloud_instance" "instance" {
       timeout  = "1h"
     }
     script = "resource/deploy_k8s.sh"
-  }
-
-  provisioner "remote-exec" {
-    connection {
-      type     = "ssh"
-      host     = self.public_ip
-      user     = "root"
-      password = "Huoxian@123"
-      timeout  = "1h"
-    }
   }
 
   depends_on = [
