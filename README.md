@@ -1,10 +1,10 @@
 # TerraformGoat
 
-[![License: Apache-2.0](https://img.shields.io/badge/license-Apache--2.0-blue)](https://github.com/HuoCorp/TerraformGoat/blob/main/LICENSE) [![GitHub release](https://img.shields.io/github/release/HuoCorp/TerraformGoat.svg)](https://github.com/HuoCorp/TerraformGoat/releases) [![Github Stars](https://img.shields.io/github/stars/HuoCorp/TerraformGoat)](https://github.com/HuoCorp/TerraformGoat/stargazers) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/HuoCorp/TerraformGoat/pulls) [![tweet](https://img.shields.io/twitter/url?url=https://github.com/HuoCorp/TerraformGoat)](https://twitter.com/intent/tweet/?text=TerraformGoat%20is%20HuoCorp%20research%20lab's%20%22Vulnerable%20by%20Design%22%20multi%20cloud%20deployment%20tool.%20Check%20it%20out%20https%3A%2F%2Fgithub.com%2FHuoCorp%2FTerraformGoat%0A%23TerraformGoat%20%23Terraform%20%23Cloud%20%23Security%20%23cloudsecurity)
+[![License: Apache-2.0](https://img.shields.io/badge/license-Apache--2.0-blue)](https://github.com/selefra/TerraformGoat/blob/main/LICENSE) [![GitHub release](https://img.shields.io/github/release/selefra/TerraformGoat.svg)](https://github.com/selefra/TerraformGoat/releases) [![Github Stars](https://img.shields.io/github/stars/selefra/TerraformGoat)](https://github.com/selefra/TerraformGoat/stargazers) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/selefra/TerraformGoat/pulls) [![tweet](https://img.shields.io/twitter/url?url=https://github.com/selefra/TerraformGoat)](https://twitter.com/intent/tweet/?text=TerraformGoat%20is%20selefra%20research%20lab's%20%22Vulnerable%20by%20Design%22%20multi%20cloud%20deployment%20tool.%20Check%20it%20out%20https%3A%2F%2Fgithub.com%2Fselefra%2FTerraformGoat%0A%23TerraformGoat%20%23Terraform%20%23Cloud%20%23Security%20%23cloudsecurity)
 
 English | [中文](./README_CN.md)
 
-TerraformGoat is HuoCorp research lab's "Vulnerable by Design" multi cloud deployment tool.
+TerraformGoat is selefra research lab's "Vulnerable by Design" multi cloud deployment tool.
 
 Currently supported cloud vendors include Alibaba Cloud, Tencent Cloud, Huawei Cloud, Amazon Web Services, Google Cloud Platform, Microsoft Azure.
 
@@ -12,70 +12,70 @@ Currently supported cloud vendors include Alibaba Cloud, Tencent Cloud, Huawei C
 
 |  ID  | Cloud Service Company |    Types Of Cloud Services     |                    Vulnerable Environment                    |
 | :--: | :-------------------: | :----------------------------: | :----------------------------------------------------------: |
-|  1   |     Alibaba Cloud     |           Networking           | [VPC Security Group Open All   Ports](https://github.com/HuoCorp/TerraformGoat/tree/main/aliyun/networking/vpc_security_group_open_all_ports) |
-|  2   |     Alibaba Cloud     |           Networking           | [VPC Security Group Open   Common Ports](https://github.com/HuoCorp/TerraformGoat/tree/main/aliyun/networking/vpc_security_group_open_common_ports) |
-|  3   |     Alibaba Cloud     |         Object Storage         | [Bucket HTTP Enable](https://github.com/HuoCorp/TerraformGoat/tree/main/aliyun/oss/bucket_http_enable) |
-|  4   |     Alibaba Cloud     |         Object Storage         | [Object ACL Writable](https://github.com/HuoCorp/TerraformGoat/tree/main/aliyun/oss/object_acl_writable) |
-|  5   |     Alibaba Cloud     |         Object Storage         | [Object ACL Readable](https://github.com/HuoCorp/TerraformGoat/tree/main/aliyun/oss/object_acl_readable) |
-|  6   |     Alibaba Cloud     |         Object Storage         | [Special Bucket Policy](https://github.com/HuoCorp/TerraformGoat/tree/main/aliyun/oss/special_bucket_policy) |
-|  7   |     Alibaba Cloud     |         Object Storage         | [Bucket Public Access](https://github.com/HuoCorp/TerraformGoat/tree/main/aliyun/oss/bucket_public_access) |
-|  8   |     Alibaba Cloud     |         Object Storage         | [Object Public Access](https://github.com/HuoCorp/TerraformGoat/tree/main/aliyun/oss/object_public_access) |
-|  9   |     Alibaba Cloud     |         Object Storage         | [Bucket Logging Disable](https://github.com/HuoCorp/TerraformGoat/tree/main/aliyun/oss/bucket_logging_disable) |
-|  10  |     Alibaba Cloud     |         Object Storage         | [Bucket Policy Readable](https://github.com/HuoCorp/TerraformGoat/tree/main/aliyun/oss/bucket_policy_readable) |
-|  11  |     Alibaba Cloud     |         Object Storage         | [Bucket Object Traversal](https://github.com/HuoCorp/TerraformGoat/tree/main/aliyun/oss/bucket_object_traversal) |
-|  12  |     Alibaba Cloud     |         Object Storage         | [Unrestricted File Upload](https://github.com/HuoCorp/TerraformGoat/tree/main/aliyun/oss/unrestricted_file_upload) |
-|  13  |     Alibaba Cloud     |         Object Storage         | [Server Side Encryption No   KMS Set](https://github.com/HuoCorp/TerraformGoat/tree/main/aliyun/oss/server_side_encryption_no_kms_set) |
-|  14  |     Alibaba Cloud     |         Object Storage         | [Server Side Encryption Not   Using BYOK](https://github.com/HuoCorp/TerraformGoat/tree/main/aliyun/oss/server_side_encryption_not_using_BYOK) |
-|  15  |     Alibaba Cloud     |   Elastic Computing Service    | [ECS SSRF](https://github.com/HuoCorp/TerraformGoat/tree/main/aliyun/ecs/ecs_ssrf) |
-|  16  |     Alibaba Cloud     |   Elastic Computing Service    | [ECS Unattached Disks Are   Unencrypted](https://github.com/HuoCorp/TerraformGoat/tree/main/aliyun/ecs/ecs_unattached_disks_are_unencrypted) |
-|  17  |     Alibaba Cloud     |   Elastic Computing Service    | [ECS Virtual Machine Disks   Are Unencrypted](https://github.com/HuoCorp/TerraformGoat/tree/main/aliyun/ecs/ecs_virtual_machine_disks_are_unencrypted) |
-|  18  |     Tencent Cloud     |           Networking           | [VPC Security Group Open All   Ports](https://github.com/HuoCorp/TerraformGoat/tree/main/tencentcloud/networking/vpc_security_group_open_all_ports) |
-|  19  |     Tencent Cloud     |           Networking           | [VPC Security Group Open   Common Ports](https://github.com/HuoCorp/TerraformGoat/tree/main/tencentcloud/networking/vpc_security_group_open_common_ports) |
-|  20  |     Tencent Cloud     |         Object Storage         | [Bucket ACL Writable](https://github.com/HuoCorp/TerraformGoat/tree/main/tencentcloud/cos/bucket_acl_writable) |
-|  21  |     Tencent Cloud     |         Object Storage         | [Bucket ACL Readable](https://github.com/HuoCorp/TerraformGoat/tree/main/tencentcloud/cos/bucket_acl_readable) |
-|  22  |     Tencent Cloud     |         Object Storage         | [Bucket Public Access](https://github.com/HuoCorp/TerraformGoat/tree/main/tencentcloud/cos/bucket_public_access) |
-|  23  |     Tencent Cloud     |         Object Storage         | [Object Public Access](https://github.com/HuoCorp/TerraformGoat/tree/main/tencentcloud/cos/object_public_access) |
-|  24  |     Tencent Cloud     |         Object Storage         | [Unrestricted File Upload](https://github.com/HuoCorp/TerraformGoat/tree/main/tencentcloud/cos/unrestricted_file_upload) |
-|  25  |     Tencent Cloud     |         Object Storage         | [Bucket Object Traversal](https://github.com/HuoCorp/TerraformGoat/tree/main/tencentcloud/cos/bucket_object_traversal) |
-|  26  |     Tencent Cloud     |         Object Storage         | [Bucket Logging Disable](https://github.com/HuoCorp/TerraformGoat/tree/main/tencentcloud/cos/bucket_logging_disable) |
-|  27  |     Tencent Cloud     |         Object Storage         | [Server Side Encryption   Disable](https://github.com/HuoCorp/TerraformGoat/tree/main/tencentcloud/cos/server_side_encryption_disable) |
-|  28  |     Tencent Cloud     |   Elastic Computing Service    | [CVM SSRF](https://github.com/HuoCorp/TerraformGoat/tree/main/tencentcloud/cvm/cvm_ssrf) |
-|  29  |     Tencent Cloud     |   Elastic Computing Service    | [CBS Storage Are Not Used](https://github.com/HuoCorp/TerraformGoat/tree/main/tencentcloud/cvm/cbs_storage_are_not_used) |
-|  30  |     Tencent Cloud     |   Elastic Computing Service    | [CVM Virtual Machine Disks   Are Unencrypted](https://github.com/HuoCorp/TerraformGoat/tree/main/tencentcloud/cvm/cvm_virtual_machine_disks_are_unencrypted) |
-|  31  |     Huawei Cloud      |           Networking           | [ECS Unsafe Security Group](https://github.com/HuoCorp/TerraformGoat/tree/main/huaweicloud/networking/cis_unsafe_secgroup) |
-|  32  |     Huawei Cloud      |         Object Storage         | [Object ACL Writable](https://github.com/HuoCorp/TerraformGoat/tree/main/huaweicloud/obs/object_acl_writable) |
-|  33  |     Huawei Cloud      |         Object Storage         | [Special Bucket Policy](https://github.com/HuoCorp/TerraformGoat/tree/main/huaweicloud/obs/special_bucket_policy) |
-|  34  |     Huawei Cloud      |         Object Storage         | [Unrestricted File Upload](https://github.com/HuoCorp/TerraformGoat/tree/main/huaweicloud/obs/unrestricted_file_upload) |
-|  35  |     Huawei Cloud      |         Object Storage         | [Bucket Object Traversal](https://github.com/HuoCorp/TerraformGoat/tree/main/huaweicloud/obs/bucket_object_traversal) |
-|  36  |     Huawei Cloud      |         Object Storage         | [Wrong Policy Causes   Arbitrary File Uploads](https://github.com/HuoCorp/TerraformGoat/tree/main/huaweicloud/obs/policy_of_unrestricted_file_upload) |
-|  37  |     Huawei Cloud      |   Elastic Computing Service    | [ECS SSRF](https://github.com/HuoCorp/TerraformGoat/tree/main/huaweicloud/ecs/ecs_ssrf) |
-|  38  |     Huawei Cloud      |  Relational Database Service   | [RDS Mysql Baseline Checking   Environment](https://github.com/HuoCorp/TerraformGoat/tree/main/huaweicloud/rds/cis_rds_mysql) |
-|  39  |  Amazon Web Services  |           Networking           | [VPC Security Group Open All   Ports](https://github.com/HuoCorp/TerraformGoat/tree/main/aws/networking/vpc_security_group_open_all_ports) |
-|  40  |  Amazon Web Services  |           Networking           | [VPC Security Group Open   Common Ports](https://github.com/HuoCorp/TerraformGoat/tree/main/aws/networking/vpc_security_group_open_common_ports) |
-|  41  |  Amazon Web Services  |         Object Storage         | [Object ACL Writable](https://github.com/HuoCorp/TerraformGoat/tree/main/aws/s3/object_acl_writable) |
-|  42  |  Amazon Web Services  |         Object Storage         | [Bucket ACL Writable](https://github.com/HuoCorp/TerraformGoat/tree/main/aws/s3/bucket_acl_writable) |
-|  43  |  Amazon Web Services  |         Object Storage         | [Bucket ACL Readable](https://github.com/HuoCorp/TerraformGoat/tree/main/aws/s3/bucket_acl_readable) |
-|  44  |  Amazon Web Services  |         Object Storage         | [MFA Delete Is Disable](https://github.com/HuoCorp/TerraformGoat/tree/main/aws/s3/mfa_delete_is_disable) |
-|  45  |  Amazon Web Services  |         Object Storage         | [Special Bucket Policy](https://github.com/HuoCorp/TerraformGoat/tree/main/aws/s3/special_bucket_policy) |
-|  46  |  Amazon Web Services  |         Object Storage         | [Bucket Object Traversal](https://github.com/HuoCorp/TerraformGoat/tree/main/aws/s3/bucket_object_traversal) |
-|  47  |  Amazon Web Services  |         Object Storage         | [Unrestricted File Upload](https://github.com/HuoCorp/TerraformGoat/tree/main/aws/s3/unrestricted_file_upload) |
-|  48  |  Amazon Web Services  |         Object Storage         | [Bucket Logging Disable](https://github.com/HuoCorp/TerraformGoat/tree/main/aws/s3/bucket_logging_disable) |
-|  49  |  Amazon Web Services  |         Object Storage         | [Bucket Allow HTTP Access](https://github.com/HuoCorp/TerraformGoat/tree/main/aws/s3/bucket_allow_http_access) |
-|  50  |  Amazon Web Services  |         Object Storage         | [Bucket Default Encryption   Disable](https://github.com/HuoCorp/TerraformGoat/tree/main/aws/s3/bucket_default_encryption_disable) |
-|  51  |  Amazon Web Services  |   Elastic Computing Service    | [EC2 SSRF](https://github.com/HuoCorp/TerraformGoat/tree/main/aws/ec2/ec2_ssrf) |
-|  52  |  Amazon Web Services  |   Elastic Computing Service    | [Console Takeover](https://github.com/HuoCorp/TerraformGoat/tree/main/aws/ec2/console_takeover) |
-|  53  |  Amazon Web Services  |   Elastic Computing Service    | [EBS Volumes Are Not Used](https://github.com/HuoCorp/TerraformGoat/tree/main/aws/ec2/EBS_volumes_are_not_used) |
-|  54  |  Amazon Web Services  |   Elastic Computing Service    | [EBS Volumes Encryption Is   Disabled](https://github.com/HuoCorp/TerraformGoat/tree/main/aws/ec2/EBS_volumes_encryption_is_disabled) |
-|  55  |  Amazon Web Services  |   Elastic Computing Service    | [Snapshots Of EBS Volumes Are   Unencrypted](https://github.com/HuoCorp/TerraformGoat/tree/main/aws/ec2/snapshots_of_EBS_volumes_are_unencrypted) |
-|  56  |  Amazon Web Services  | Identity and Access Management | [IAM Privilege Escalation](https://github.com/HuoCorp/TerraformGoat/tree/main/aws/iam/privilege_escalation) |
-|  57  | Google Cloud Platform |         Object Storage         | [Object ACL Writable](https://github.com/HuoCorp/TerraformGoat/tree/main/gcp/cs/object_acl_writable) |
-|  58  | Google Cloud Platform |         Object Storage         | [Bucket ACL Writable](https://github.com/HuoCorp/TerraformGoat/tree/main/gcp/cs/bucket_acl_writable) |
-|  59  | Google Cloud Platform |         Object Storage         | [Bucket Object Traversal](https://github.com/HuoCorp/TerraformGoat/tree/main/gcp/cs/bucket_object_traversal) |
-|  60  | Google Cloud Platform |         Object Storage         | [Unrestricted File Upload](https://github.com/HuoCorp/TerraformGoat/tree/main/gcp/cs/unrestricted_file_upload) |
-|  61  | Google Cloud Platform |   Elastic Computing Service    | [VM Command Execution](https://github.com/HuoCorp/TerraformGoat/tree/main/gcp/vm/vm_command_execution) |
-|  62  |    Microsoft Azure    |         Object Storage         | [Blob Public Access](https://github.com/HuoCorp/TerraformGoat/tree/main/azure/blob/blob_public_access/) |
-|  63  |    Microsoft Azure    |         Object Storage         | [Container Blob Traversal](https://github.com/HuoCorp/TerraformGoat/tree/main/azure/blob/container_blob_traversal/) |
-|  64  |    Microsoft Azure    |   Elastic Computing Service    | [VM Command Execution](https://github.com/HuoCorp/TerraformGoat/tree/main/azure/vm/vm_command_execution) |
+|  1   |     Alibaba Cloud     |           Networking           | [VPC Security Group Open All   Ports](https://github.com/selefra/TerraformGoat/tree/main/aliyun/networking/vpc_security_group_open_all_ports) |
+|  2   |     Alibaba Cloud     |           Networking           | [VPC Security Group Open   Common Ports](https://github.com/selefra/TerraformGoat/tree/main/aliyun/networking/vpc_security_group_open_common_ports) |
+|  3   |     Alibaba Cloud     |         Object Storage         | [Bucket HTTP Enable](https://github.com/selefra/TerraformGoat/tree/main/aliyun/oss/bucket_http_enable) |
+|  4   |     Alibaba Cloud     |         Object Storage         | [Object ACL Writable](https://github.com/selefra/TerraformGoat/tree/main/aliyun/oss/object_acl_writable) |
+|  5   |     Alibaba Cloud     |         Object Storage         | [Object ACL Readable](https://github.com/selefra/TerraformGoat/tree/main/aliyun/oss/object_acl_readable) |
+|  6   |     Alibaba Cloud     |         Object Storage         | [Special Bucket Policy](https://github.com/selefra/TerraformGoat/tree/main/aliyun/oss/special_bucket_policy) |
+|  7   |     Alibaba Cloud     |         Object Storage         | [Bucket Public Access](https://github.com/selefra/TerraformGoat/tree/main/aliyun/oss/bucket_public_access) |
+|  8   |     Alibaba Cloud     |         Object Storage         | [Object Public Access](https://github.com/selefra/TerraformGoat/tree/main/aliyun/oss/object_public_access) |
+|  9   |     Alibaba Cloud     |         Object Storage         | [Bucket Logging Disable](https://github.com/selefra/TerraformGoat/tree/main/aliyun/oss/bucket_logging_disable) |
+|  10  |     Alibaba Cloud     |         Object Storage         | [Bucket Policy Readable](https://github.com/selefra/TerraformGoat/tree/main/aliyun/oss/bucket_policy_readable) |
+|  11  |     Alibaba Cloud     |         Object Storage         | [Bucket Object Traversal](https://github.com/selefra/TerraformGoat/tree/main/aliyun/oss/bucket_object_traversal) |
+|  12  |     Alibaba Cloud     |         Object Storage         | [Unrestricted File Upload](https://github.com/selefra/TerraformGoat/tree/main/aliyun/oss/unrestricted_file_upload) |
+|  13  |     Alibaba Cloud     |         Object Storage         | [Server Side Encryption No   KMS Set](https://github.com/selefra/TerraformGoat/tree/main/aliyun/oss/server_side_encryption_no_kms_set) |
+|  14  |     Alibaba Cloud     |         Object Storage         | [Server Side Encryption Not   Using BYOK](https://github.com/selefra/TerraformGoat/tree/main/aliyun/oss/server_side_encryption_not_using_BYOK) |
+|  15  |     Alibaba Cloud     |   Elastic Computing Service    | [ECS SSRF](https://github.com/selefra/TerraformGoat/tree/main/aliyun/ecs/ecs_ssrf) |
+|  16  |     Alibaba Cloud     |   Elastic Computing Service    | [ECS Unattached Disks Are   Unencrypted](https://github.com/selefra/TerraformGoat/tree/main/aliyun/ecs/ecs_unattached_disks_are_unencrypted) |
+|  17  |     Alibaba Cloud     |   Elastic Computing Service    | [ECS Virtual Machine Disks   Are Unencrypted](https://github.com/selefra/TerraformGoat/tree/main/aliyun/ecs/ecs_virtual_machine_disks_are_unencrypted) |
+|  18  |     Tencent Cloud     |           Networking           | [VPC Security Group Open All   Ports](https://github.com/selefra/TerraformGoat/tree/main/tencentcloud/networking/vpc_security_group_open_all_ports) |
+|  19  |     Tencent Cloud     |           Networking           | [VPC Security Group Open   Common Ports](https://github.com/selefra/TerraformGoat/tree/main/tencentcloud/networking/vpc_security_group_open_common_ports) |
+|  20  |     Tencent Cloud     |         Object Storage         | [Bucket ACL Writable](https://github.com/selefra/TerraformGoat/tree/main/tencentcloud/cos/bucket_acl_writable) |
+|  21  |     Tencent Cloud     |         Object Storage         | [Bucket ACL Readable](https://github.com/selefra/TerraformGoat/tree/main/tencentcloud/cos/bucket_acl_readable) |
+|  22  |     Tencent Cloud     |         Object Storage         | [Bucket Public Access](https://github.com/selefra/TerraformGoat/tree/main/tencentcloud/cos/bucket_public_access) |
+|  23  |     Tencent Cloud     |         Object Storage         | [Object Public Access](https://github.com/selefra/TerraformGoat/tree/main/tencentcloud/cos/object_public_access) |
+|  24  |     Tencent Cloud     |         Object Storage         | [Unrestricted File Upload](https://github.com/selefra/TerraformGoat/tree/main/tencentcloud/cos/unrestricted_file_upload) |
+|  25  |     Tencent Cloud     |         Object Storage         | [Bucket Object Traversal](https://github.com/selefra/TerraformGoat/tree/main/tencentcloud/cos/bucket_object_traversal) |
+|  26  |     Tencent Cloud     |         Object Storage         | [Bucket Logging Disable](https://github.com/selefra/TerraformGoat/tree/main/tencentcloud/cos/bucket_logging_disable) |
+|  27  |     Tencent Cloud     |         Object Storage         | [Server Side Encryption   Disable](https://github.com/selefra/TerraformGoat/tree/main/tencentcloud/cos/server_side_encryption_disable) |
+|  28  |     Tencent Cloud     |   Elastic Computing Service    | [CVM SSRF](https://github.com/selefra/TerraformGoat/tree/main/tencentcloud/cvm/cvm_ssrf) |
+|  29  |     Tencent Cloud     |   Elastic Computing Service    | [CBS Storage Are Not Used](https://github.com/selefra/TerraformGoat/tree/main/tencentcloud/cvm/cbs_storage_are_not_used) |
+|  30  |     Tencent Cloud     |   Elastic Computing Service    | [CVM Virtual Machine Disks   Are Unencrypted](https://github.com/selefra/TerraformGoat/tree/main/tencentcloud/cvm/cvm_virtual_machine_disks_are_unencrypted) |
+|  31  |     Huawei Cloud      |           Networking           | [ECS Unsafe Security Group](https://github.com/selefra/TerraformGoat/tree/main/huaweicloud/networking/cis_unsafe_secgroup) |
+|  32  |     Huawei Cloud      |         Object Storage         | [Object ACL Writable](https://github.com/selefra/TerraformGoat/tree/main/huaweicloud/obs/object_acl_writable) |
+|  33  |     Huawei Cloud      |         Object Storage         | [Special Bucket Policy](https://github.com/selefra/TerraformGoat/tree/main/huaweicloud/obs/special_bucket_policy) |
+|  34  |     Huawei Cloud      |         Object Storage         | [Unrestricted File Upload](https://github.com/selefra/TerraformGoat/tree/main/huaweicloud/obs/unrestricted_file_upload) |
+|  35  |     Huawei Cloud      |         Object Storage         | [Bucket Object Traversal](https://github.com/selefra/TerraformGoat/tree/main/huaweicloud/obs/bucket_object_traversal) |
+|  36  |     Huawei Cloud      |         Object Storage         | [Wrong Policy Causes   Arbitrary File Uploads](https://github.com/selefra/TerraformGoat/tree/main/huaweicloud/obs/policy_of_unrestricted_file_upload) |
+|  37  |     Huawei Cloud      |   Elastic Computing Service    | [ECS SSRF](https://github.com/selefra/TerraformGoat/tree/main/huaweicloud/ecs/ecs_ssrf) |
+|  38  |     Huawei Cloud      |  Relational Database Service   | [RDS Mysql Baseline Checking   Environment](https://github.com/selefra/TerraformGoat/tree/main/huaweicloud/rds/cis_rds_mysql) |
+|  39  |  Amazon Web Services  |           Networking           | [VPC Security Group Open All   Ports](https://github.com/selefra/TerraformGoat/tree/main/aws/networking/vpc_security_group_open_all_ports) |
+|  40  |  Amazon Web Services  |           Networking           | [VPC Security Group Open   Common Ports](https://github.com/selefra/TerraformGoat/tree/main/aws/networking/vpc_security_group_open_common_ports) |
+|  41  |  Amazon Web Services  |         Object Storage         | [Object ACL Writable](https://github.com/selefra/TerraformGoat/tree/main/aws/s3/object_acl_writable) |
+|  42  |  Amazon Web Services  |         Object Storage         | [Bucket ACL Writable](https://github.com/selefra/TerraformGoat/tree/main/aws/s3/bucket_acl_writable) |
+|  43  |  Amazon Web Services  |         Object Storage         | [Bucket ACL Readable](https://github.com/selefra/TerraformGoat/tree/main/aws/s3/bucket_acl_readable) |
+|  44  |  Amazon Web Services  |         Object Storage         | [MFA Delete Is Disable](https://github.com/selefra/TerraformGoat/tree/main/aws/s3/mfa_delete_is_disable) |
+|  45  |  Amazon Web Services  |         Object Storage         | [Special Bucket Policy](https://github.com/selefra/TerraformGoat/tree/main/aws/s3/special_bucket_policy) |
+|  46  |  Amazon Web Services  |         Object Storage         | [Bucket Object Traversal](https://github.com/selefra/TerraformGoat/tree/main/aws/s3/bucket_object_traversal) |
+|  47  |  Amazon Web Services  |         Object Storage         | [Unrestricted File Upload](https://github.com/selefra/TerraformGoat/tree/main/aws/s3/unrestricted_file_upload) |
+|  48  |  Amazon Web Services  |         Object Storage         | [Bucket Logging Disable](https://github.com/selefra/TerraformGoat/tree/main/aws/s3/bucket_logging_disable) |
+|  49  |  Amazon Web Services  |         Object Storage         | [Bucket Allow HTTP Access](https://github.com/selefra/TerraformGoat/tree/main/aws/s3/bucket_allow_http_access) |
+|  50  |  Amazon Web Services  |         Object Storage         | [Bucket Default Encryption   Disable](https://github.com/selefra/TerraformGoat/tree/main/aws/s3/bucket_default_encryption_disable) |
+|  51  |  Amazon Web Services  |   Elastic Computing Service    | [EC2 SSRF](https://github.com/selefra/TerraformGoat/tree/main/aws/ec2/ec2_ssrf) |
+|  52  |  Amazon Web Services  |   Elastic Computing Service    | [Console Takeover](https://github.com/selefra/TerraformGoat/tree/main/aws/ec2/console_takeover) |
+|  53  |  Amazon Web Services  |   Elastic Computing Service    | [EBS Volumes Are Not Used](https://github.com/selefra/TerraformGoat/tree/main/aws/ec2/EBS_volumes_are_not_used) |
+|  54  |  Amazon Web Services  |   Elastic Computing Service    | [EBS Volumes Encryption Is   Disabled](https://github.com/selefra/TerraformGoat/tree/main/aws/ec2/EBS_volumes_encryption_is_disabled) |
+|  55  |  Amazon Web Services  |   Elastic Computing Service    | [Snapshots Of EBS Volumes Are   Unencrypted](https://github.com/selefra/TerraformGoat/tree/main/aws/ec2/snapshots_of_EBS_volumes_are_unencrypted) |
+|  56  |  Amazon Web Services  | Identity and Access Management | [IAM Privilege Escalation](https://github.com/selefra/TerraformGoat/tree/main/aws/iam/privilege_escalation) |
+|  57  | Google Cloud Platform |         Object Storage         | [Object ACL Writable](https://github.com/selefra/TerraformGoat/tree/main/gcp/cs/object_acl_writable) |
+|  58  | Google Cloud Platform |         Object Storage         | [Bucket ACL Writable](https://github.com/selefra/TerraformGoat/tree/main/gcp/cs/bucket_acl_writable) |
+|  59  | Google Cloud Platform |         Object Storage         | [Bucket Object Traversal](https://github.com/selefra/TerraformGoat/tree/main/gcp/cs/bucket_object_traversal) |
+|  60  | Google Cloud Platform |         Object Storage         | [Unrestricted File Upload](https://github.com/selefra/TerraformGoat/tree/main/gcp/cs/unrestricted_file_upload) |
+|  61  | Google Cloud Platform |   Elastic Computing Service    | [VM Command Execution](https://github.com/selefra/TerraformGoat/tree/main/gcp/vm/vm_command_execution) |
+|  62  |    Microsoft Azure    |         Object Storage         | [Blob Public Access](https://github.com/selefra/TerraformGoat/tree/main/azure/blob/blob_public_access/) |
+|  63  |    Microsoft Azure    |         Object Storage         | [Container Blob Traversal](https://github.com/selefra/TerraformGoat/tree/main/azure/blob/container_blob_traversal/) |
+|  64  |    Microsoft Azure    |   Elastic Computing Service    | [VM Command Execution](https://github.com/selefra/TerraformGoat/tree/main/azure/vm/vm_command_execution) |
 
 ## :dizzy: Install
 
@@ -135,7 +135,7 @@ docker exec -it terraformgoat_azure_0.0.4 /bin/bash
 
 After entering the container, cd to the corresponding scenario directory and you can start deploying the scenario.
 
-Here is a demonstration of the  [Alibaba Cloud Bucket Object Traversal](https://github.com/HuoCorp/TerraformGoat/tree/main/aliyun/oss/bucket_object_traversal) scenario build.
+Here is a demonstration of the  [Alibaba Cloud Bucket Object Traversal](https://github.com/selefra/TerraformGoat/tree/main/aliyun/oss/bucket_object_traversal) scenario build.
 
 ```bash
 docker pull registry.cn-beijing.aliyuncs.com/huoxian_pub/terraformgoat_aliyun:0.0.4
@@ -178,15 +178,15 @@ docker rmi $(docker images -a -q -f "reference=registry.cn-beijing.aliyuncs.com/
 
 1. The README of each vulnerable environment is executed within the TerraformGoat container environment, so the TerraformGoat container environment needs to be deployed first.
 2. Due to the horizontal risk of intranet horizontal on the cloud in some scenarios, it is strongly recommended that users use their own test accounts to configure the scenarios, avoid using the cloud account of the production environment, and install TerraformGoat using Dockerfile to isolate the user's local cloud vendor token and the test account token.
-3. TerraformGoat is used for educational purposes only, It is not allowed to use it for illegal and criminal purposes, any consequences arising from TerraformGoat are the responsibility of the person using it, and not the HuoCorp organization.
+3. TerraformGoat is used for educational purposes only, It is not allowed to use it for illegal and criminal purposes, any consequences arising from TerraformGoat are the responsibility of the person using it, and not the selefra organization.
 
 ## :confetti_ball: Contributing
 
-Contributions are welcomed and greatly appreciated. Further reading — [CONTRIBUTING.md](https://github.com/HuoCorp/TerraformGoat/blob/main/CONTRIBUTING.md) for details on contribution workflow.
+Contributions are welcomed and greatly appreciated. Further reading — [CONTRIBUTING.md](https://github.com/selefra/TerraformGoat/blob/main/CONTRIBUTING.md) for details on contribution workflow.
 
 ## 🪪 License
 
-TerraformGoat is under the Apache 2.0 license. See the [LICENSE](https://github.com/HuoCorp/TerraformGoat/blob/main/LICENSE) file for details.
+TerraformGoat is under the Apache 2.0 license. See the [LICENSE](https://github.com/selefra/TerraformGoat/blob/main/LICENSE) file for details.
 
 ## :crystal_ball: Stats
 

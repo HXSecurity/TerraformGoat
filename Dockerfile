@@ -1,5 +1,5 @@
 FROM ubuntu:20.04 AS aliyun
-LABEL maintainer="HuoCorp research lab <https://github.com/HuoCorp>"
+LABEL maintainer="selefra research lab <https://github.com/selefra>"
 COPY . /TerraformGoat
 RUN apt-get update -y && \
     apt-get -yq --no-install-recommends install gnupg2 groff less lsb-release software-properties-common curl vim && \
@@ -19,7 +19,7 @@ RUN apt-get update -y && \
 WORKDIR /TerraformGoat
 
 FROM ubuntu:20.04 AS tencentcloud
-LABEL maintainer="HuoCorp research lab <https://github.com/HuoCorp>"
+LABEL maintainer="selefra research lab <https://github.com/selefra>"
 COPY . /TerraformGoat
 RUN apt-get update -y && \
     apt-get -yq --no-install-recommends install curl gnupg2 groff less lsb-release python3-pip software-properties-common vim && \
@@ -37,7 +37,7 @@ RUN apt-get update -y && \
 WORKDIR /TerraformGoat
 
 FROM ubuntu:20.04 AS huaweicloud
-LABEL maintainer="HuoCorp research lab <https://github.com/HuoCorp>"
+LABEL maintainer="selefra research lab <https://github.com/selefra>"
 COPY . /TerraformGoat
 RUN apt-get update -y && \
     apt-get -yq --no-install-recommends install gnupg2 groff less lsb-release software-properties-common curl vim && \
@@ -55,7 +55,7 @@ RUN apt-get update -y && \
 WORKDIR /TerraformGoat
 
 FROM ubuntu:20.04 AS aws
-LABEL maintainer="HuoCorp research lab <https://github.com/HuoCorp>"
+LABEL maintainer="selefra research lab <https://github.com/selefra>"
 COPY . /TerraformGoat
 RUN apt-get update -y && \
     apt-get -yq --no-install-recommends install gnupg2 groff less lsb-release software-properties-common curl unzip vim && \
@@ -75,7 +75,7 @@ RUN apt-get update -y && \
 WORKDIR /TerraformGoat
 
 FROM ubuntu:20.04 AS gcp
-LABEL maintainer="HuoCorp research lab <https://github.com/HuoCorp>"
+LABEL maintainer="selefra research lab <https://github.com/selefra>"
 COPY . /TerraformGoat
 RUN apt-get update -y && \
     apt-get -yq --no-install-recommends install gnupg2 groff less lsb-release software-properties-common curl vim && \
@@ -95,7 +95,7 @@ RUN apt-get update -y && \
 WORKDIR /TerraformGoat
 
 FROM ubuntu:20.04 AS azure
-LABEL maintainer="HuoCorp research lab <https://github.com/HuoCorp>"
+LABEL maintainer="selefra research lab <https://github.com/selefra>"
 COPY . /TerraformGoat
 RUN apt-get update -y && \
     apt-get -yq --no-install-recommends install gnupg2 groff less lsb-release software-properties-common curl vim && \

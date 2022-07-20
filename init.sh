@@ -8,8 +8,8 @@ cat << "EOF"
  \/   \___|_|  |_|  \__,_|_|  \___/|_|  |_| |_| |_\____/\___/ \__,_|\__|                                                               
 EOF
 echo -e "
-                   Welcome To TerraformGoat v0.0.4
+                   Welcome To TerraformGoat v0.0.5
 
-      Repository URL: https://github.com/HuoCorp/TerraformGoat.git
+      Repository URL: https://github.com/selefra/TerraformGoat.git
 
 ------------------------------------------------------------------------\033[0m"
