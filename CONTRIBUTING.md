@@ -32,7 +32,7 @@ git commit -m "your-commit-message"
 # Push your new feature branch
 git push my_feature_branch
 
-# Create a new pull request to https://github.com/HuoCorp/TerraformGoat.git
+# Create a new pull request to https://github.com/selefra/TerraformGoat.git
 ```
 
 ### Update your pull request with latest changes
