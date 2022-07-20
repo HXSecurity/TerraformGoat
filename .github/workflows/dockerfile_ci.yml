@@ -15,7 +15,7 @@ on:
 env:
   DOCKER_LOGIN_NAME: ${{ secrets.DOCKER_LOGIN_NAME }}
   DOCKER_LOGIN_PASS: ${{ secrets.DOCKER_LOGIN_PASS }}
-  DOCKER_TAG: "0.0.5"
+  DOCKER_TAG: "0.0.4"
 jobs:
   docker:
     runs-on: ubuntu-latest
