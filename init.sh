@@ -10,6 +10,6 @@ EOF
 echo -e "
                         Welcome To TerraformGoat
 
-      Repository URL: https://github.com/selefra/TerraformGoat.git
+      Repository URL: https://github.com/HXSecurity/TerraformGoat.git
 
 ------------------------------------------------------------------------\033[0m"
