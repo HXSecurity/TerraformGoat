@@ -42,9 +42,9 @@ EOF
 }
 
 resource "aws_s3_object" "PutObject_Flag" {
-  bucket       = aws_s3_bucket.CreateBucket.id
-  key          = "flag.txt"
-  source       = "./flag.txt"
+  bucket = aws_s3_bucket.CreateBucket.id
+  key    = "flag.txt"
+  source = "./flag.txt"
 }
 
 
