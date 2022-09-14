@@ -6,11 +6,11 @@ on:
     paths:
       - "Dockerfile"
       - ".github/workflows/dockerfile_ci.yml"
-  pull_request:
-    branches: [main]
-    paths:
-      - "Dockerfile"
-      - ".github/workflows/dockerfile_ci.yml"
+  #pull_request:
+  #  branches: [main]
+  #  paths:
+   #   - "Dockerfile"
+   #   - ".github/workflows/dockerfile_ci.yml"
 
 env:
   DOCKER_LOGIN_NAME: ${{ secrets.DOCKER_LOGIN_NAME }}
