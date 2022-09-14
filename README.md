@@ -86,49 +86,49 @@ Depending on the cloud service provider you are using, choose the corresponding 
 Alibaba Cloud
 
 ```bash
-docker pull registry.cn-beijing.aliyuncs.com/huoxian_pub/terraformgoat_aliyun:0.0.4
-docker run -itd --name terraformgoat_aliyun_0.0.4 registry.cn-beijing.aliyuncs.com/huoxian_pub/terraformgoat_aliyun:0.0.4
-docker exec -it terraformgoat_aliyun_0.0.4 /bin/bash
+docker pull registry.cn-hongkong.aliyuncs.com/huoxian_pub/terraformgoat_aliyun:0.0.5
+docker run -itd --name terraformgoat_aliyun_0.0.5 registry.cn-hongkong.aliyuncs.com/huoxian_pub/terraformgoat_aliyun:0.0.5
+docker exec -it terraformgoat_aliyun_0.0.5 /bin/bash
 ```
 
 Tencent Cloud
 
 ```bash
-docker pull registry.cn-beijing.aliyuncs.com/huoxian_pub/terraformgoat_tencentcloud:0.0.4
-docker run -itd --name terraformgoat_tencentcloud_0.0.4 registry.cn-beijing.aliyuncs.com/huoxian_pub/terraformgoat_tencentcloud:0.0.4
-docker exec -it terraformgoat_tencentcloud_0.0.4 /bin/bash
+docker pull registry.cn-hongkong.aliyuncs.com/huoxian_pub/terraformgoat_tencentcloud:0.0.5
+docker run -itd --name terraformgoat_tencentcloud_0.0.5 registry.cn-hongkong.aliyuncs.com/huoxian_pub/terraformgoat_tencentcloud:0.0.5
+docker exec -it terraformgoat_tencentcloud_0.0.5 /bin/bash
 ```
 
 Huawei Cloud
 
 ```bash
-docker pull registry.cn-beijing.aliyuncs.com/huoxian_pub/terraformgoat_huaweicloud:0.0.4
-docker run -itd --name terraformgoat_huaweicloud_0.0.4 registry.cn-beijing.aliyuncs.com/huoxian_pub/terraformgoat_huaweicloud:0.0.4
-docker exec -it terraformgoat_huaweicloud_0.0.4 /bin/bash
+docker pull registry.cn-hongkong.aliyuncs.com/huoxian_pub/terraformgoat_huaweicloud:0.0.5
+docker run -itd --name terraformgoat_huaweicloud_0.0.5 registry.cn-hongkong.aliyuncs.com/huoxian_pub/terraformgoat_huaweicloud:0.0.5
+docker exec -it terraformgoat_huaweicloud_0.0.5 /bin/bash
 ```
 
 Amazon Web Services
 
 ```bash
-docker pull registry.cn-beijing.aliyuncs.com/huoxian_pub/terraformgoat_aws:0.0.4
-docker run -itd --name terraformgoat_aws_0.0.4 registry.cn-beijing.aliyuncs.com/huoxian_pub/terraformgoat_aws:0.0.4
-docker exec -it terraformgoat_aws_0.0.4 /bin/bash
+docker pull registry.cn-hongkong.aliyuncs.com/huoxian_pub/terraformgoat_aws:0.0.5
+docker run -itd --name terraformgoat_aws_0.0.5 registry.cn-hongkong.aliyuncs.com/huoxian_pub/terraformgoat_aws:0.0.5
+docker exec -it terraformgoat_aws_0.0.5 /bin/bash
 ```
 
 Google Cloud Platform
 
 ```bash
-docker pull registry.cn-beijing.aliyuncs.com/huoxian_pub/terraformgoat_gcp:0.0.4
-docker run -itd --name terraformgoat_gcp_0.0.4 registry.cn-beijing.aliyuncs.com/huoxian_pub/terraformgoat_gcp:0.0.4
-docker exec -it terraformgoat_gcp_0.0.4 /bin/bash
+docker pull registry.cn-hongkong.aliyuncs.com/huoxian_pub/terraformgoat_gcp:0.0.5
+docker run -itd --name terraformgoat_gcp_0.0.5 registry.cn-hongkong.aliyuncs.com/huoxian_pub/terraformgoat_gcp:0.0.5
+docker exec -it terraformgoat_gcp_0.0.5 /bin/bash
 ```
 
 Microsoft Azure
 
 ```bash
-docker pull registry.cn-beijing.aliyuncs.com/huoxian_pub/terraformgoat_azure:0.0.4
-docker run -itd --name terraformgoat_azure_0.0.4 registry.cn-beijing.aliyuncs.com/huoxian_pub/terraformgoat_azure:0.0.4
-docker exec -it terraformgoat_azure_0.0.4 /bin/bash
+docker pull registry.cn-hongkong.aliyuncs.com/huoxian_pub/terraformgoat_azure:0.0.5
+docker run -itd --name terraformgoat_azure_0.0.5 registry.cn-hongkong.aliyuncs.com/huoxian_pub/terraformgoat_azure:0.0.5
+docker exec -it terraformgoat_azure_0.0.5 /bin/bash
 ```
 
 ## :page_facing_up: Demo
@@ -138,12 +138,12 @@ After entering the container, cd to the corresponding scenario directory and you
 Here is a demonstration of the  [Alibaba Cloud Bucket Object Traversal](https://github.com/HXSecurity/TerraformGoat/tree/main/aliyun/oss/bucket_object_traversal) scenario build.
 
 ```bash
-docker pull registry.cn-beijing.aliyuncs.com/huoxian_pub/terraformgoat_aliyun:0.0.4
-docker run -itd --name terraformgoat_aliyun_0.0.4 registry.cn-beijing.aliyuncs.com/huoxian_pub/terraformgoat_aliyun:0.0.4
-docker exec -it terraformgoat_aliyun_0.0.4 /bin/bash
+docker pull registry.cn-hongkong.aliyuncs.com/huoxian_pub/terraformgoat_aliyun:0.0.5
+docker run -itd --name terraformgoat_aliyun_0.0.5 registry.cn-hongkong.aliyuncs.com/huoxian_pub/terraformgoat_aliyun:0.0.5
+docker exec -it terraformgoat_aliyun_0.0.5 /bin/bash
 ```
 
-![img](./images/1655118629.png)
+![img](./images/1663151143.png)
 
 ```bash
 cd /TerraformGoat/aliyun/oss/bucket_object_traversal/
@@ -171,7 +171,7 @@ If you are in a container, first execute the `exit` command to exit the containe
 ```shell
 docker stop $(docker ps -a -q -f "name=terraformgoat*")
 docker rm $(docker ps -a -q -f "name=terraformgoat*")
-docker rmi $(docker images -a -q -f "reference=registry.cn-beijing.aliyuncs.com/huoxian_pub/terraformgoat*")
+docker rmi $(docker images -a -q -f "reference=registry.cn-hongkong.aliyuncs.com/huoxian_pub/terraformgoat*")
 ```
 
 ## ⚠️ Notice
