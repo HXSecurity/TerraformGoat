@@ -24,20 +24,20 @@ jobs:
       - name: checkout code
         uses: actions/checkout@v2
       - name: login aliyun docker hub
-        run: echo "${{ env.DOCKER_LOGIN_PASS }}" | docker login registry.cn-beijing.aliyuncs.com -u "${{ env.DOCKER_LOGIN_NAME }}" --password-stdin
+        run: echo "${{ env.DOCKER_LOGIN_PASS }}" | docker login registry.cn-hongkong.aliyuncs.com -u "${{ env.DOCKER_LOGIN_NAME }}" --password-stdin
       - name: build
         run: |
-            docker build -t registry.cn-beijing.aliyuncs.com/huoxian_pub/terraformgoat_aliyun:${{ env.DOCKER_TAG }} --target aliyun .
-            docker build -t registry.cn-beijing.aliyuncs.com/huoxian_pub/terraformgoat_tencentcloud:${{ env.DOCKER_TAG }} --target tencentcloud .
-            docker build -t registry.cn-beijing.aliyuncs.com/huoxian_pub/terraformgoat_huaweicloud:${{ env.DOCKER_TAG }} --target huaweicloud .
-            docker build -t registry.cn-beijing.aliyuncs.com/huoxian_pub/terraformgoat_aws:${{ env.DOCKER_TAG }} --target aws .
-            docker build -t registry.cn-beijing.aliyuncs.com/huoxian_pub/terraformgoat_gcp:${{ env.DOCKER_TAG }} --target gcp .
-            docker build -t registry.cn-beijing.aliyuncs.com/huoxian_pub/terraformgoat_azure:${{ env.DOCKER_TAG }} --target azure .
+            docker build -t registry.cn-hongkong.aliyuncs.com/huoxian_pub/terraformgoat_aliyun:${{ env.DOCKER_TAG }} --target aliyun .
+            docker build -t registry.cn-hongkong.aliyuncs.com/huoxian_pub/terraformgoat_tencentcloud:${{ env.DOCKER_TAG }} --target tencentcloud .
+            docker build -t registry.cn-hongkong.aliyuncs.com/huoxian_pub/terraformgoat_huaweicloud:${{ env.DOCKER_TAG }} --target huaweicloud .
+            docker build -t registry.cn-hongkong.aliyuncs.com/huoxian_pub/terraformgoat_aws:${{ env.DOCKER_TAG }} --target aws .
+            docker build -t registry.cn-hongkong.aliyuncs.com/huoxian_pub/terraformgoat_gcp:${{ env.DOCKER_TAG }} --target gcp .
+            docker build -t registry.cn-hongkong.aliyuncs.com/huoxian_pub/terraformgoat_azure:${{ env.DOCKER_TAG }} --target azure .
       - name: push
         run: |
-            docker push registry.cn-beijing.aliyuncs.com/huoxian_pub/terraformgoat_aliyun:${{ env.DOCKER_TAG }}
-            docker push registry.cn-beijing.aliyuncs.com/huoxian_pub/terraformgoat_tencentcloud:${{ env.DOCKER_TAG }}
-            docker push registry.cn-beijing.aliyuncs.com/huoxian_pub/terraformgoat_huaweicloud:${{ env.DOCKER_TAG }}
-            docker push registry.cn-beijing.aliyuncs.com/huoxian_pub/terraformgoat_aws:${{ env.DOCKER_TAG }}
-            docker push registry.cn-beijing.aliyuncs.com/huoxian_pub/terraformgoat_gcp:${{ env.DOCKER_TAG }}
-            docker push registry.cn-beijing.aliyuncs.com/huoxian_pub/terraformgoat_azure:${{ env.DOCKER_TAG }}
+            docker push registry.cn-hongkong.aliyuncs.com/huoxian_pub/terraformgoat_aliyun:${{ env.DOCKER_TAG }}
+            docker push registry.cn-hongkong.aliyuncs.com/huoxian_pub/terraformgoat_tencentcloud:${{ env.DOCKER_TAG }}
+            docker push registry.cn-hongkong.aliyuncs.com/huoxian_pub/terraformgoat_huaweicloud:${{ env.DOCKER_TAG }}
+            docker push registry.cn-hongkong.aliyuncs.com/huoxian_pub/terraformgoat_aws:${{ env.DOCKER_TAG }}
+            docker push registry.cn-hongkong.aliyuncs.com/huoxian_pub/terraformgoat_gcp:${{ env.DOCKER_TAG }}
+            docker push registry.cn-hongkong.aliyuncs.com/huoxian_pub/terraformgoat_azure:${{ env.DOCKER_TAG }}
