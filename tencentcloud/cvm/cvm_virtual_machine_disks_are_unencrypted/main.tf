@@ -11,7 +11,7 @@ resource "tencentcloud_instance" "instance" {
 }
 
 data "tencentcloud_instance_types" "instance_types" {
-   filter {
+  filter {
     name   = "instance-family"
     values = ["S6"]
   }
