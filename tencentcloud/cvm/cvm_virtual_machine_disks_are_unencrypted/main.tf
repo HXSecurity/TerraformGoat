@@ -11,6 +11,10 @@ resource "tencentcloud_instance" "instance" {
 }
 
 data "tencentcloud_instance_types" "instance_types" {
-  cpu_core_count = 1
-  memory_size    = 1
+   filter {
+    name   = "instance-family"
+    values = ["S6"]
+  }
+  cpu_core_count = 2
+  memory_size    = 2
 }
