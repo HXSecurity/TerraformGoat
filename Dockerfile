@@ -12,8 +12,8 @@ RUN apt-get update -y && \
     echo "plugin_cache_dir = \"$HOME/.terraform.d/plugin-cache\"" > ~/.terraformrc && \
     mkdir -p $HOME/.terraform.d/plugin-cache && \
     cd /TerraformGoat/aliyun/oss/bucket_http_enable && terraform init && \
-    curl -O "https://aliyuncli.alicdn.com/aliyun-cli-linux-3.0.32-amd64.tgz" && \
-    tar xzvf aliyun-cli-linux-3.0.32-amd64.tgz && \
+    curl -O "https://github.com/aliyun/aliyun-cli/releases/download/v3.0.131/aliyun-cli-linux-3.0.131-amd64.tgz" && \
+    tar xzvf aliyun-cli-linux-3.0.131-amd64.tgz && \
     cp aliyun /usr/local/bin && \
     echo "bash init.sh" >> ~/.bashrc
 WORKDIR /TerraformGoat
