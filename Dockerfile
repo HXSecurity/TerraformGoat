@@ -2,7 +2,7 @@ FROM ubuntu:20.04 AS aliyun
 LABEL maintainer="HXSecurity research lab <https://github.com/HXSecurity>"
 COPY . /TerraformGoat
 RUN apt-get update -y && \
-    apt-get -yq --no-install-recommends install gnupg2 groff less lsb-release software-properties-common curl vim && \
+    apt-get -yq --no-install-recommends install gnupg2 groff less lsb-release software-properties-common curl vim wget && \
     curl -fsSL https://apt.releases.hashicorp.com/gpg | apt-key add - 2>/dev/null && \
     apt-add-repository "deb [arch=amd64] https://apt.releases.hashicorp.com $(lsb_release -cs) main" && \
     apt-get update && \
@@ -12,7 +12,7 @@ RUN apt-get update -y && \
     echo "plugin_cache_dir = \"$HOME/.terraform.d/plugin-cache\"" > ~/.terraformrc && \
     mkdir -p $HOME/.terraform.d/plugin-cache && \
     cd /TerraformGoat/aliyun/oss/bucket_http_enable && terraform init && \
-    curl -O "https://github.com/aliyun/aliyun-cli/releases/download/v3.0.131/aliyun-cli-linux-3.0.131-amd64.tgz" && \
+    wget "https://github.com/aliyun/aliyun-cli/releases/download/v3.0.131/aliyun-cli-linux-3.0.131-amd64.tgz" && \
     tar xzvf aliyun-cli-linux-3.0.131-amd64.tgz && \
     cp aliyun /usr/local/bin && \
     echo "bash init.sh" >> ~/.bashrc
