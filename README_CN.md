@@ -85,49 +85,49 @@ TerraformGoat 使用 Docker 镜像部署，因此需要 Docker Engine 环境支�
 阿里云
 
 ```bash
-docker pull registry.cn-hongkong.aliyuncs.com/huoxian_pub/terraformgoat_aliyun:0.0.6
-docker run -itd --name terraformgoat_aliyun_0.0.6 registry.cn-hongkong.aliyuncs.com/huoxian_pub/terraformgoat_aliyun:0.0.6
-docker exec -it terraformgoat_aliyun_0.0.6 /bin/bash
+docker pull registry.cn-hongkong.aliyuncs.com/huoxian_pub/terraformgoat_aliyun:0.0.7
+docker run -itd --name terraformgoat_aliyun_0.0.7 registry.cn-hongkong.aliyuncs.com/huoxian_pub/terraformgoat_aliyun:0.0.7
+docker exec -it terraformgoat_aliyun_0.0.7 /bin/bash
 ```
 
 腾讯云
 
 ```bash
-docker pull registry.cn-hongkong.aliyuncs.com/huoxian_pub/terraformgoat_tencentcloud:0.0.6
-docker run -itd --name terraformgoat_tencentcloud_0.0.6 registry.cn-hongkong.aliyuncs.com/huoxian_pub/terraformgoat_tencentcloud:0.0.6
-docker exec -it terraformgoat_tencentcloud_0.0.6 /bin/bash
+docker pull registry.cn-hongkong.aliyuncs.com/huoxian_pub/terraformgoat_tencentcloud:0.0.7
+docker run -itd --name terraformgoat_tencentcloud_0.0.7 registry.cn-hongkong.aliyuncs.com/huoxian_pub/terraformgoat_tencentcloud:0.0.7
+docker exec -it terraformgoat_tencentcloud_0.0.7 /bin/bash
 ```
 
 华为云
 
 ```bash
-docker pull registry.cn-hongkong.aliyuncs.com/huoxian_pub/terraformgoat_huaweicloud:0.0.6
-docker run -itd --name terraformgoat_huaweicloud_0.0.6 registry.cn-hongkong.aliyuncs.com/huoxian_pub/terraformgoat_huaweicloud:0.0.6
-docker exec -it terraformgoat_huaweicloud_0.0.6 /bin/bash
+docker pull registry.cn-hongkong.aliyuncs.com/huoxian_pub/terraformgoat_huaweicloud:0.0.7
+docker run -itd --name terraformgoat_huaweicloud_0.0.7 registry.cn-hongkong.aliyuncs.com/huoxian_pub/terraformgoat_huaweicloud:0.0.7
+docker exec -it terraformgoat_huaweicloud_0.0.7 /bin/bash
 ```
 
 Amazon Web Services
 
 ```bash
-docker pull registry.cn-hongkong.aliyuncs.com/huoxian_pub/terraformgoat_aws:0.0.6
-docker run -itd --name terraformgoat_aws_0.0.6 registry.cn-hongkong.aliyuncs.com/huoxian_pub/terraformgoat_aws:0.0.6
-docker exec -it terraformgoat_aws_0.0.6 /bin/bash
+docker pull registry.cn-hongkong.aliyuncs.com/huoxian_pub/terraformgoat_aws:0.0.7
+docker run -itd --name terraformgoat_aws_0.0.7 registry.cn-hongkong.aliyuncs.com/huoxian_pub/terraformgoat_aws:0.0.7
+docker exec -it terraformgoat_aws_0.0.7 /bin/bash
 ```
 
 Google Cloud Platform
 
 ```bash
-docker pull registry.cn-hongkong.aliyuncs.com/huoxian_pub/terraformgoat_gcp:0.0.6
-docker run -itd --name terraformgoat_gcp_0.0.6 registry.cn-hongkong.aliyuncs.com/huoxian_pub/terraformgoat_gcp:0.0.6
-docker exec -it terraformgoat_gcp_0.0.6 /bin/bash
+docker pull registry.cn-hongkong.aliyuncs.com/huoxian_pub/terraformgoat_gcp:0.0.7
+docker run -itd --name terraformgoat_gcp_0.0.7 registry.cn-hongkong.aliyuncs.com/huoxian_pub/terraformgoat_gcp:0.0.7
+docker exec -it terraformgoat_gcp_0.0.7 /bin/bash
 ```
 
 Microsoft Azure
 
 ```bash
-docker pull registry.cn-hongkong.aliyuncs.com/huoxian_pub/terraformgoat_azure:0.0.6
-docker run -itd --name terraformgoat_azure_0.0.6 registry.cn-hongkong.aliyuncs.com/huoxian_pub/terraformgoat_azure:0.0.6
-docker exec -it terraformgoat_azure_0.0.6 /bin/bash
+docker pull registry.cn-hongkong.aliyuncs.com/huoxian_pub/terraformgoat_azure:0.0.7
+docker run -itd --name terraformgoat_azure_0.0.7 registry.cn-hongkong.aliyuncs.com/huoxian_pub/terraformgoat_azure:0.0.7
+docker exec -it terraformgoat_azure_0.0.7 /bin/bash
 ```
 
 ## :page_facing_up: 演示
@@ -135,9 +135,9 @@ docker exec -it terraformgoat_azure_0.0.6 /bin/bash
 进入到容器后，cd 到对应的场景目录，就可以开始部署靶场了，这里以 [阿里云 Bucket 对象遍历](https://github.com/HXSecurity/TerraformGoat/tree/main/aliyun/oss/bucket_object_traversal) 漏洞场景的搭建进行演示：
 
 ```bash
-docker pull registry.cn-hongkong.aliyuncs.com/huoxian_pub/terraformgoat_aliyun:0.0.6
-docker run -itd --name terraformgoat_aliyun_0.0.6 registry.cn-hongkong.aliyuncs.com/huoxian_pub/terraformgoat_aliyun:0.0.6
-docker exec -it terraformgoat_aliyun_0.0.6 /bin/bash
+docker pull registry.cn-hongkong.aliyuncs.com/huoxian_pub/terraformgoat_aliyun:0.0.7
+docker run -itd --name terraformgoat_aliyun_0.0.7 registry.cn-hongkong.aliyuncs.com/huoxian_pub/terraformgoat_aliyun:0.0.7
+docker exec -it terraformgoat_aliyun_0.0.7 /bin/bash
 ```
 
 ![img](./images/1663151143.png)
